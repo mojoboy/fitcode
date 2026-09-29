@@ -1,0 +1,133 @@
+/* The wardrobe (landing page): every piece in the closet on a slowly turning cloud. */
+
+.wardrobe {
+  position: relative;
+  height: calc(100vh - var(--header));
+  height: calc(100dvh - var(--header));
+  min-height: 540px;
+  overflow: hidden;
+}
+
+.stage {
+  position: absolute;
+  inset: 0;
+  cursor: grab;
+  touch-action: none;          /* we handle dragging ourselves, so touch screens don't scroll */
+  user-select: none;
+  -webkit-user-select: none;
+}
+.stage.dragging { cursor: grabbing; }
+
+/* A zero-size point at the center of the stage; every piece is positioned from here.
+   --k: how many times bigger than its base size each piece is built (set by wardrobe.js). */
+.cloud { position: absolute; left: 50%; top: 45%; width: 0; height: 0; --k: 1; --label: 8.5px; }
+
+/* Each piece is built at the biggest size it can ever appear, then only ever scaled DOWN.
+   Browsers draw a moving element once and then stretch that drawing, so scaling a small
+   piece UP made it blurry. Shrinking a big drawing stays sharp. */
+.piece {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: inherit;
+  will-change: transform, opacity;
+}
+.piece-frame {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: calc(2px * var(--k));
+  background: var(--chip);     /* a soft grey tile while the photo loads */
+  box-shadow: 0 calc(10px * var(--k)) calc(24px * var(--k)) calc(-14px * var(--k)) rgba(18, 18, 18, .45);
+}
+/* The photo is 5% bigger than its frame and shrunk to fit. In focus it grows back to full
+   size, a slow zoom into the photo that never stretches it past its real resolution. */
+.piece-frame img {
+  position: absolute;
+  left: -2.5%;
+  top: -2.5%;
+  width: 105%;
+  height: 105%;
+  max-width: none;
+  object-fit: cover;
+  transform: scale(.952);
+  transition: transform 1.6s var(--ease);
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.piece.on .piece-frame img { transform: scale(1); }
+
+.piece-label {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  margin-top: calc(6px * var(--k));
+  transform: translate(-50%, 20%);
+  white-space: nowrap;
+  font-family: var(--sans);
+  font-size: calc(var(--label) * var(--k));
+  line-height: 1.35;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s ease, transform .5s var(--ease);
+}
+.piece-name { display: block; font-weight: 500; letter-spacing: -.01em; color: var(--ink); }
+.piece-meta { display: block; font-size: .82em; color: var(--ink-2); }
+.piece.on .piece-label { opacity: 1; transform: translate(-50%, 0); }
+/* Pieces in the lower half show their label above, clear of the buttons at the bottom */
+.piece.label-up .piece-label {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: calc(6px * var(--k));
+  transform: translate(-50%, -20%);
+}
+.piece.on.label-up .piece-label { transform: translate(-50%, 0); }
+
+.wardrobe-foot {
+  position: absolute;
+  left: var(--gutter);
+  right: var(--gutter);
+  bottom: 26px;
+  z-index: 3000;               /* above every piece in the cloud */
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: end;
+  gap: 16px;
+  pointer-events: none;        /* let drags pass through the empty parts */
+}
+.wardrobe-foot h1 {
+  margin: 0 0 10px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: -.01em;
+}
+.wardrobe-foot p { margin: 0; }
+.wardrobe-foot .pill { pointer-events: auto; }
+.wardrobe-credit {
+  justify-self: end;
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: right;
+  color: var(--ink-2);
+}
+
+@media (max-width: 720px) {
+  .cloud { top: 38%; --label: 13px; }
+  .wardrobe-foot {
+    bottom: 18px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+  .wardrobe-foot h1 { font-size: 32px; }
+  .wardrobe-foot .pill { width: 100%; }
+  .wardrobe-credit { justify-self: start; text-align: left; }
+}

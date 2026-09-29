@@ -1,0 +1,55 @@
+/* Your fit: the name and style mix on the left, the outfit in the middle, why it works on the right. */
+
+.fit {
+  min-height: calc(100vh - var(--header));
+  min-height: calc(100dvh - var(--header));
+  display: grid;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr) minmax(0, 330px);
+  align-items: center;
+  gap: 52px;
+  padding: 32px 56px 40px;
+}
+
+.fit-intro { display: flex; flex-direction: column; gap: 20px; }
+.fit-intro p { margin: 0; }
+.fit-name { margin: 0; font-size: clamp(56px, 5.6vw, 80px); line-height: .95; }
+.fit-lede { font-size: 17px; line-height: 1.5; color: var(--ink-2); }
+.fit-mix { display: flex; flex-direction: column; gap: 14px; padding-top: 4px; }
+.fit-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding-top: 6px; }
+
+.fit-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); align-content: center; gap: 16px; }
+.fit-piece { margin: 0; display: flex; flex-direction: column; gap: 8px; animation: arrive .9s var(--ease) backwards; }
+.fit-piece img { display: block; width: 100%; object-fit: cover; border-radius: 4px; background: var(--chip); transition: transform .6s var(--ease); }
+.fit-piece:hover img { transform: scale(1.02); }
+.fit-piece figcaption { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 14px; }
+.fit-hat, .fit-eyewear, .fit-jewelry { grid-column: span 2; }
+.fit-hat img, .fit-eyewear img, .fit-jewelry img { height: 124px; }
+.fit-top { grid-column: span 4; }
+.fit-bottom { grid-column: span 2; }
+.fit-top img, .fit-bottom img { height: 250px; }
+.fit-shoes { grid-column: span 6; }
+.fit-shoes img { height: 150px; }
+@keyframes arrive { from { opacity: 0; transform: translateY(26px) scale(.97); filter: blur(4px); } }
+
+.fit-why { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.fit-why h2 { margin: 0; font-size: 26px; font-weight: 500; letter-spacing: -.03em; }
+.fit-why h2 .serif { font-size: 30px; }
+.why-list { display: flex; flex-direction: column; gap: 14px; }
+.why-item { display: flex; flex-direction: column; gap: 6px; padding-bottom: 14px; border-bottom: 1px solid rgba(18, 18, 18, .1); }
+.why-item p, .why-empty, .fit-used { margin: 0; font-size: 14.5px; line-height: 1.45; }
+.why-item strong { font-weight: 500; }
+.fit-used { font-size: 12.5px; color: var(--ink-2); }
+.fit-why .q-source { margin: 0; }
+
+@media (max-width: 1179px) {
+  .fit { grid-template-columns: minmax(0, 1fr); align-items: start; gap: 36px; padding: 28px 40px 48px; }
+}
+
+@media (max-width: 720px) {
+  .fit { padding: 20px var(--gutter) 40px; }
+  .fit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .fit-hat, .fit-eyewear, .fit-jewelry, .fit-bottom { grid-column: span 1; }
+  .fit-top, .fit-shoes { grid-column: span 2; }
+  .fit-hat img, .fit-eyewear img, .fit-jewelry img { height: 110px; }
+  .fit-top img, .fit-bottom img { height: 220px; }
+}

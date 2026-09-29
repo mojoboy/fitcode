@@ -1,0 +1,372 @@
+{
+  "styles": [
+    "streetwear",
+    "athleisure",
+    "minimal",
+    "smart",
+    "trend",
+    "vintage",
+    "workwear"
+  ],
+  "brands": [
+    {
+      "name": "Supreme",
+      "style": "streetwear",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "Kith",
+      "style": "streetwear",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "Stüssy",
+      "style": "streetwear",
+      "aliases": [
+        "stussy"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Hellstar",
+      "style": "streetwear",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "Corteiz",
+      "style": "streetwear",
+      "aliases": [
+        "crtz"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Represent",
+      "style": "streetwear",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Fear of God",
+      "style": "streetwear",
+      "aliases": [
+        "essentials",
+        "fog"
+      ],
+      "trends": false
+    },
+    {
+      "name": "BAPE",
+      "style": "streetwear",
+      "aliases": [
+        "a bathing ape"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Palace",
+      "style": "streetwear",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "NUDE PROJECT",
+      "style": "streetwear",
+      "aliases": [
+        "nude"
+      ],
+      "trends": true
+    },
+    {
+      "name": "Scuffers",
+      "style": "streetwear",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "Aimé Leon Dore",
+      "style": "streetwear",
+      "aliases": [
+        "ald",
+        "aime leon dore"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Nike",
+      "style": "athleisure",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "Jordan",
+      "style": "athleisure",
+      "aliases": [
+        "air jordan"
+      ],
+      "trends": false
+    },
+    {
+      "name": "adidas",
+      "style": "athleisure",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "PUMA",
+      "style": "athleisure",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "New Balance",
+      "style": "athleisure",
+      "aliases": [
+        "nb"
+      ],
+      "trends": true
+    },
+    {
+      "name": "On",
+      "style": "athleisure",
+      "aliases": [
+        "on running",
+        "on cloud"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Hoka",
+      "style": "athleisure",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Lululemon",
+      "style": "athleisure",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Asics",
+      "style": "athleisure",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Uniqlo",
+      "style": "minimal",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "COS",
+      "style": "minimal",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "Everlane",
+      "style": "minimal",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Muji",
+      "style": "minimal",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Arket",
+      "style": "minimal",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "A.P.C.",
+      "style": "minimal",
+      "aliases": [
+        "apc"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Buck Mason",
+      "style": "minimal",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Ralph Lauren",
+      "style": "smart",
+      "aliases": [
+        "polo"
+      ],
+      "trends": false
+    },
+    {
+      "name": "J.Crew",
+      "style": "smart",
+      "aliases": [
+        "jcrew",
+        "j crew"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Todd Snyder",
+      "style": "smart",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Banana Republic",
+      "style": "smart",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Massimo Dutti",
+      "style": "smart",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Reiss",
+      "style": "smart",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Zara",
+      "style": "trend",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "Bershka",
+      "style": "trend",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "ASOS",
+      "style": "trend",
+      "aliases": [],
+      "trends": true
+    },
+    {
+      "name": "H&M",
+      "style": "trend",
+      "aliases": [
+        "hm",
+        "h and m"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Pull&Bear",
+      "style": "trend",
+      "aliases": [
+        "pull and bear"
+      ],
+      "trends": false
+    },
+    {
+      "name": "PacSun",
+      "style": "trend",
+      "aliases": [
+        "pacific sunwear"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Levi's",
+      "style": "vintage",
+      "aliases": [
+        "levis"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Vans",
+      "style": "vintage",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Converse",
+      "style": "vintage",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Dr. Martens",
+      "style": "vintage",
+      "aliases": [
+        "doc martens",
+        "docs"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Wrangler",
+      "style": "vintage",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Patagonia",
+      "style": "vintage",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Carhartt",
+      "style": "workwear",
+      "aliases": [
+        "wip"
+      ],
+      "trends": true
+    },
+    {
+      "name": "Dickies",
+      "style": "workwear",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Red Wing",
+      "style": "workwear",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "Timberland",
+      "style": "workwear",
+      "aliases": [
+        "timbs"
+      ],
+      "trends": false
+    },
+    {
+      "name": "Filson",
+      "style": "workwear",
+      "aliases": [],
+      "trends": false
+    },
+    {
+      "name": "The North Face",
+      "style": "workwear",
+      "aliases": [
+        "tnf",
+        "north face"
+      ],
+      "trends": false
+    }
+  ]
+}

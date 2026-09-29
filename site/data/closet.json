@@ -1,0 +1,597 @@
+{
+  "note": "Sample pieces from free Burst (Shopify) stock photos, not real products for sale.",
+  "items": [
+    {
+      "id": "hat-mustard-cap",
+      "name": "Mustard six-panel cap",
+      "slot": "hat",
+      "styles": [
+        "streetwear",
+        "vintage"
+      ],
+      "img": "img/closet/hat-mustard-cap.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/tan-colored-hat-on-monochrome-background",
+      "colors": [
+        "mustard"
+      ],
+      "warmth": 1,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "comfort",
+        "statement"
+      ],
+      "flags": []
+    },
+    {
+      "id": "hat-grey-beanie",
+      "name": "Heather grey beanie",
+      "slot": "hat",
+      "styles": [
+        "minimal",
+        "workwear"
+      ],
+      "img": "img/closet/hat-grey-beanie.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/kids-beanie",
+      "colors": [
+        "grey"
+      ],
+      "warmth": 3,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "comfort"
+      ],
+      "flags": []
+    },
+    {
+      "id": "hat-navy-beanie",
+      "name": "Navy knit beanie",
+      "slot": "hat",
+      "styles": [
+        "workwear",
+        "minimal"
+      ],
+      "img": "img/closet/hat-navy-beanie.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/childrens-black-beanie",
+      "colors": [
+        "navy"
+      ],
+      "warmth": 3,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "comfort"
+      ],
+      "flags": []
+    },
+    {
+      "id": "eyewear-rose-aviators",
+      "name": "Rose-tint aviators",
+      "slot": "eyewear",
+      "styles": [
+        "trend"
+      ],
+      "img": "img/closet/eyewear-rose-aviators.jpg",
+      "w": 699,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/pink-sunglasses-on-white",
+      "colors": [
+        "pink"
+      ],
+      "warmth": null,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "statement"
+      ],
+      "flags": []
+    },
+    {
+      "id": "eyewear-black-wayfarers",
+      "name": "Black wayfarer sunglasses",
+      "slot": "eyewear",
+      "styles": [
+        "streetwear",
+        "minimal"
+      ],
+      "img": "img/closet/eyewear-black-wayfarers.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/black-sunglasses-on-pink",
+      "colors": [
+        "black"
+      ],
+      "warmth": null,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [],
+      "flags": []
+    },
+    {
+      "id": "eyewear-black-aviators",
+      "name": "Classic black aviators",
+      "slot": "eyewear",
+      "styles": [
+        "smart"
+      ],
+      "img": "img/closet/eyewear-black-aviators.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/pair-of-silver-framed-sunglasses-on-a-stone-surface",
+      "colors": [
+        "silver",
+        "black"
+      ],
+      "warmth": null,
+      "formality": 2,
+      "fit": null,
+      "lifestyle": [
+        "polished"
+      ],
+      "flags": []
+    },
+    {
+      "id": "eyewear-brown-round",
+      "name": "Brown-lens round sunglasses",
+      "slot": "eyewear",
+      "styles": [
+        "vintage"
+      ],
+      "img": "img/closet/eyewear-brown-round.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/black-round-sunglasses-on-top-right-of-yellow-background",
+      "colors": [
+        "brown"
+      ],
+      "warmth": null,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "statement"
+      ],
+      "flags": []
+    },
+    {
+      "id": "eyewear-mirrored-round",
+      "name": "Mirrored round sunglasses",
+      "slot": "eyewear",
+      "styles": [
+        "trend",
+        "vintage"
+      ],
+      "img": "img/closet/eyewear-mirrored-round.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/black-round-sunglasses-on-top-left-of-blue-background",
+      "colors": [
+        "black"
+      ],
+      "warmth": null,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "statement"
+      ],
+      "flags": []
+    },
+    {
+      "id": "eyewear-tortoiseshell",
+      "name": "Tortoiseshell sunglasses",
+      "slot": "eyewear",
+      "styles": [
+        "minimal",
+        "smart"
+      ],
+      "img": "img/closet/eyewear-tortoiseshell.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/tortoise-shell-sunglass-frames-on-a-white-surface",
+      "colors": [
+        "brown"
+      ],
+      "warmth": null,
+      "formality": 2,
+      "fit": null,
+      "lifestyle": [
+        "polished"
+      ],
+      "flags": []
+    },
+    {
+      "id": "jewelry-leather-watch",
+      "name": "Black leather watch",
+      "slot": "jewelry",
+      "styles": [
+        "smart",
+        "minimal"
+      ],
+      "img": "img/closet/jewelry-leather-watch.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/mens-watch-in-sun",
+      "colors": [
+        "black"
+      ],
+      "warmth": null,
+      "formality": 2,
+      "fit": null,
+      "lifestyle": [
+        "polished"
+      ],
+      "flags": []
+    },
+    {
+      "id": "jewelry-gold-chain",
+      "name": "Layered gold chain",
+      "slot": "jewelry",
+      "styles": [
+        "trend",
+        "streetwear"
+      ],
+      "img": "img/closet/jewelry-gold-chain.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/gold-chain-necklace-on-corner",
+      "colors": [
+        "gold"
+      ],
+      "warmth": null,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "statement"
+      ],
+      "flags": [
+        "chain"
+      ]
+    },
+    {
+      "id": "jewelry-leather-bracelet",
+      "name": "Leather wrap bracelet",
+      "slot": "jewelry",
+      "styles": [
+        "vintage",
+        "workwear"
+      ],
+      "img": "img/closet/jewelry-leather-bracelet.jpg",
+      "w": 800,
+      "h": 534,
+      "source": "https://www.shopify.com/stock-photos/photos/anchor-bracelet-leather",
+      "colors": [
+        "brown"
+      ],
+      "warmth": null,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [],
+      "flags": []
+    },
+    {
+      "id": "jewelry-gold-bangle",
+      "name": "Thin gold bangle",
+      "slot": "jewelry",
+      "styles": [
+        "minimal"
+      ],
+      "img": "img/closet/jewelry-gold-bangle.jpg",
+      "w": 800,
+      "h": 534,
+      "source": "https://www.shopify.com/stock-photos/photos/simple-gold-bracelet",
+      "colors": [
+        "gold"
+      ],
+      "warmth": null,
+      "formality": 2,
+      "fit": null,
+      "lifestyle": [
+        "polished"
+      ],
+      "flags": []
+    },
+    {
+      "id": "top-teal-tee",
+      "name": "Teal tee",
+      "slot": "top",
+      "styles": [
+        "athleisure",
+        "minimal"
+      ],
+      "img": "img/closet/top-teal-tee.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/teal-t-shirt",
+      "colors": [
+        "teal"
+      ],
+      "warmth": 1,
+      "formality": 1,
+      "fit": "regular",
+      "lifestyle": [
+        "comfort"
+      ],
+      "flags": []
+    },
+    {
+      "id": "top-cobalt-tee",
+      "name": "Cobalt tee",
+      "slot": "top",
+      "styles": [
+        "minimal"
+      ],
+      "img": "img/closet/top-cobalt-tee.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/cobalt-blue-t-shirt",
+      "colors": [
+        "cobalt"
+      ],
+      "warmth": 1,
+      "formality": 1,
+      "fit": "slim",
+      "lifestyle": [
+        "comfort"
+      ],
+      "flags": [
+        "tight"
+      ]
+    },
+    {
+      "id": "top-sage-tee",
+      "name": "Sage tee",
+      "slot": "top",
+      "styles": [
+        "minimal"
+      ],
+      "img": "img/closet/top-sage-tee.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/grey-t-shirt",
+      "colors": [
+        "sage"
+      ],
+      "warmth": 1,
+      "formality": 1,
+      "fit": "relaxed",
+      "lifestyle": [
+        "comfort"
+      ],
+      "flags": []
+    },
+    {
+      "id": "top-denim-jacket",
+      "name": "Light-wash denim jacket",
+      "slot": "top",
+      "styles": [
+        "vintage",
+        "workwear"
+      ],
+      "img": "img/closet/top-denim-jacket.jpg",
+      "w": 800,
+      "h": 800,
+      "source": "https://www.shopify.com/stock-photos/photos/set-of-custom-enamel-pins",
+      "colors": [
+        "denim"
+      ],
+      "warmth": 2,
+      "formality": 1,
+      "fit": "regular",
+      "lifestyle": [
+        "layer"
+      ],
+      "flags": []
+    },
+    {
+      "id": "top-oxblood-overshirt",
+      "name": "Oxblood knit overshirt",
+      "slot": "top",
+      "styles": [
+        "smart",
+        "vintage"
+      ],
+      "img": "img/closet/top-oxblood-overshirt.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/dark-red-shirt-with-wooden-buttons",
+      "colors": [
+        "burgundy"
+      ],
+      "warmth": 2,
+      "formality": 2,
+      "fit": "relaxed",
+      "lifestyle": [
+        "layer",
+        "polished"
+      ],
+      "flags": []
+    },
+    {
+      "id": "mood-folded-stack",
+      "name": "Folded essentials",
+      "slot": "mood",
+      "styles": [
+        "minimal"
+      ],
+      "img": "img/closet/mood-folded-stack.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/folded-clothes"
+    },
+    {
+      "id": "mood-black-tees",
+      "name": "Black essential tees",
+      "slot": "mood",
+      "styles": [
+        "minimal",
+        "streetwear"
+      ],
+      "img": "img/closet/mood-black-tees.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/clothes-hangers-on-a-rail"
+    },
+    {
+      "id": "mood-black-overshirts",
+      "name": "Black overshirts",
+      "slot": "mood",
+      "styles": [
+        "workwear",
+        "smart"
+      ],
+      "img": "img/closet/mood-black-overshirts.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/fine-wooden-hangers-display-dark-clothes"
+    },
+    {
+      "id": "mood-denim-rack",
+      "name": "Vintage denim rack",
+      "slot": "mood",
+      "styles": [
+        "vintage"
+      ],
+      "img": "img/closet/mood-denim-rack.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/urban-vintage-denimn-on-hangers"
+    },
+    {
+      "id": "shoes-chunky-sneakers-studio",
+      "name": "Chunky sneakers, studio shot",
+      "slot": "mood",
+      "styles": [
+        "streetwear",
+        "trend"
+      ],
+      "img": "img/closet/shoes-chunky-sneakers-studio.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/black-and-white-sneakers-against-purple-and-white"
+    },
+    {
+      "id": "bottom-folded-jeans",
+      "name": "Folded indigo jeans",
+      "slot": "bottom",
+      "styles": [
+        "workwear",
+        "vintage"
+      ],
+      "img": "img/closet/bottom-folded-jeans.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/a-pile-of-denim-jeans-in-different-shades-of-blue",
+      "colors": [
+        "denim",
+        "navy"
+      ],
+      "warmth": 2,
+      "formality": 2,
+      "fit": "regular",
+      "lifestyle": [
+        "sturdy"
+      ],
+      "flags": []
+    },
+    {
+      "id": "bottom-light-jeans",
+      "name": "Light-wash jeans",
+      "slot": "bottom",
+      "styles": [
+        "minimal",
+        "vintage"
+      ],
+      "img": "img/closet/bottom-light-jeans.jpg",
+      "w": 667,
+      "h": 1000,
+      "source": "https://www.shopify.com/stock-photos/photos/close-up-of-the-pocket-of-lite-blue-jeans",
+      "colors": [
+        "denim"
+      ],
+      "warmth": 2,
+      "formality": 1,
+      "fit": "slim",
+      "lifestyle": [
+        "comfort"
+      ],
+      "flags": [
+        "tight"
+      ]
+    },
+    {
+      "id": "shoes-chunky-sneakers",
+      "name": "Chunky black-and-white sneakers",
+      "slot": "shoes",
+      "styles": [
+        "streetwear",
+        "athleisure"
+      ],
+      "img": "img/closet/shoes-chunky-sneakers.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/fashionable-black-and-white-sneakers",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "warmth": 1,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "comfort"
+      ],
+      "flags": []
+    },
+    {
+      "id": "shoes-work-boots",
+      "name": "Steel-toe work boots",
+      "slot": "shoes",
+      "styles": [
+        "workwear"
+      ],
+      "img": "img/closet/shoes-work-boots.jpg",
+      "w": 800,
+      "h": 533,
+      "source": "https://www.shopify.com/stock-photos/photos/steel-toed-boots",
+      "colors": [
+        "brown"
+      ],
+      "warmth": 3,
+      "formality": 1,
+      "fit": null,
+      "lifestyle": [
+        "sturdy"
+      ],
+      "flags": []
+    },
+    {
+      "id": "shoes-penny-loafers",
+      "name": "Leather penny loafers",
+      "slot": "shoes",
+      "styles": [
+        "smart",
+        "minimal"
+      ],
+      "img": "img/closet/shoes-penny-loafers.jpg",
+      "w": 800,
+      "h": 572,
+      "source": "https://www.shopify.com/stock-photos/photos/loafers-leaning-along-white-wall",
+      "colors": [
+        "brown"
+      ],
+      "warmth": 1,
+      "formality": 3,
+      "fit": null,
+      "lifestyle": [
+        "polished"
+      ],
+      "flags": []
+    }
+  ]
+}

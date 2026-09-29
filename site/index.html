@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>fitcode · your closet, read like data</title>
+  <meta name="description" content="Swipe a few pieces, answer a few questions, and get an outfit built for you, with the data behind every pick.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300..700&family=Newsreader:ital,opsz,wght@1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/wardrobe.css">
+  <link rel="stylesheet" href="css/swipe.css">
+  <link rel="stylesheet" href="css/questions.css">
+  <link rel="stylesheet" href="css/brands.css">
+  <link rel="stylesheet" href="css/tryon.css">
+  <link rel="stylesheet" href="css/fit.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#view">Skip to content</a>
+
+  <header class="top">
+    <span class="top-note eyebrow" id="top-note">Sample closet</span>
+    <nav class="top-nav" aria-label="Main">
+      <a class="logo" href="#/">fitcode</a>
+      <a class="chip" href="#/" data-nav="wardrobe">Wardrobe<sup>1</sup></a>
+      <a class="chip" href="#/swipe" data-nav="style">Style me<sup>2</sup></a>
+      <a class="chip" href="#/atlas" data-nav="atlas">Atlas<sup>3</sup></a>
+    </nav>
+    <div class="top-sound">
+      <span class="eyebrow" id="sound-text">Sound off</span>
+      <button type="button" class="sound" id="sound" aria-pressed="false" aria-label="Turn sound on">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <noscript><p class="noscript">fitcode needs JavaScript to build your outfit.</p></noscript>
+</body>
+</html>

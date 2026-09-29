@@ -1,0 +1,145 @@
+/* Try it on: intro on the left, the outfit stacked head to toe in the middle, "why this piece" on the right. */
+
+.tryon {
+  min-height: calc(100vh - var(--header));
+  min-height: calc(100dvh - var(--header));
+  display: grid;
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr) minmax(0, 320px);
+  align-items: center;
+  gap: 40px;
+  padding: 24px 56px 32px;
+}
+
+.tryon-intro { display: flex; flex-direction: column; gap: 18px; }
+.tryon-intro p { margin: 0; }
+.tryon-intro h1 { margin: 0; font-size: clamp(44px, 4.4vw, 60px); line-height: .98; letter-spacing: -.04em; font-weight: 500; }
+.tryon-intro h1 .serif { font-size: 1.1em; }
+.tryon-lede { font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+.tryon-nudge { padding: 12px 14px; border-radius: 12px; background: #EDECE7; font-size: 14px; line-height: 1.5; }
+.tryon-nudge[hidden] { display: none; }
+.tryon-block { display: flex; flex-direction: column; gap: 10px; }
+.tryon-actions { display: flex; flex-direction: column; align-items: stretch; gap: 10px; padding-top: 6px; }
+.tryon-actions .link-button { align-self: flex-start; }
+.tryon-actions .link-button[hidden] { display: none; }
+
+/* Bars used here and on Your fit */
+.read-bars { display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.read-row { display: flex; flex-direction: column; gap: 5px; }
+.read-head { display: flex; justify-content: space-between; font-size: 14px; }
+.read-pct { font-family: var(--mono); font-size: 11.5px; }
+.read-track { display: block; height: 3px; overflow: hidden; border-radius: 999px; background: var(--line); }
+.read-fill { display: block; height: 100%; border-radius: 999px; background: var(--ink); transition: width .6s var(--ease); }
+.read-empty { font-size: 14px; color: var(--ink-2); }
+.palette-dots { display: flex; gap: 6px; }
+.palette-dot { width: 26px; height: 26px; border: 1px solid rgba(18, 18, 18, .18); border-radius: 50%; }
+
+/* ---------- The stack ---------- */
+
+.stack { display: flex; flex-direction: column; gap: 6px; }
+.stack-row { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; }
+.stack-row.left { grid-template-areas: 'label tile .'; }
+.stack-row.right { grid-template-areas: '. tile label'; }
+.stack-label { grid-area: label; display: flex; align-items: center; min-width: 0; }
+.stack-row.right .stack-label { flex-direction: row-reverse; }
+.leader { flex: 1; min-width: 16px; height: 1px; background: rgba(18, 18, 18, .4); }
+.stack-row.left .leader { margin-right: 0; }
+.label-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: none;
+  width: 200px;
+  padding: 10px 10px 10px 14px;
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: 0 14px 30px -22px rgba(18, 18, 18, .5);
+}
+.label-text { display: flex; flex: 1; flex-direction: column; gap: 3px; min-width: 0; }
+.label-name {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 1.25;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;      /* long names wrap to two lines instead of being cut off */
+}
+.swap {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--chip);
+  cursor: pointer;
+  transition: background-color .25s ease, transform .3s ease;
+}
+.swap:hover { background: var(--chip-hover); transform: rotate(180deg); }
+
+/* Tile sizes shrink on shorter screens so the whole outfit fits */
+.tile {
+  grid-area: tile;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  background: var(--chip);
+  box-shadow: 0 18px 34px -26px rgba(18, 18, 18, .55);
+  cursor: pointer;
+  transition: transform .45s var(--ease), box-shadow .45s ease, outline-color .2s ease;
+  outline: 2px solid transparent;
+  outline-offset: 3px;
+}
+.tile:hover { transform: scale(1.035); }
+.tile.on { outline-color: var(--ink); }
+.tile img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.tile.swapped img { animation: swap-in .55s var(--ease) both; }
+.tile.drop { animation: drop .9s var(--ease) both; }
+@keyframes swap-in { from { opacity: 0; transform: scale(1.08); } }
+@keyframes drop { from { opacity: 0; transform: translateY(-28px); } }
+.tile-hat { height: min(96px, 10.5dvh); aspect-ratio: 150 / 96; }
+.tile-eyewear { height: min(86px, 9.5dvh); aspect-ratio: 160 / 86; }
+.tile-jewelry { height: min(86px, 9.5dvh); aspect-ratio: 130 / 86; }
+.tile-top { height: min(200px, 21.5dvh); aspect-ratio: 290 / 214; }
+.tile-bottom { height: min(214px, 23dvh); aspect-ratio: 200 / 228; }
+.tile-shoes { height: min(100px, 11dvh); aspect-ratio: 236 / 100; }
+
+/* ---------- Why this piece ---------- */
+
+.tryon-why { min-width: 0; }
+.why-panel { gap: 14px; }
+.why-name { font-size: 20px; font-weight: 500; line-height: 1.25; letter-spacing: -.02em; }
+.why-match { font-size: 14px; color: var(--ink-2); }
+.why-pct { font-family: var(--mono); font-size: 22px; color: var(--ink); }
+.why-signals { display: flex; flex-direction: column; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.why-signal { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; font-size: 14px; }
+.why-signal-weight { font-family: var(--mono); font-size: 11px; color: var(--ink-2); text-align: right; }
+.why-track { position: relative; display: block; height: 6px; overflow: hidden; border-radius: 999px; background: #EDECE7; }
+.why-fill { display: block; height: 100%; border-radius: 999px; background: var(--ink); }
+.why-value { font-family: var(--mono); font-size: 11.5px; text-align: right; }
+.why-reasons { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 12px 0 0 18px; border-top: 1px solid rgba(18, 18, 18, .1); font-size: 14px; line-height: 1.45; }
+.why-note { font-size: 12.5px; line-height: 1.5; color: var(--ink-2); }
+
+/* ---------- Smaller screens ---------- */
+
+@media (max-width: 1179px) {
+  .tryon { grid-template-columns: minmax(0, 1fr) minmax(0, 320px); align-items: start; padding: 28px 40px 48px; }
+  .tryon-intro { grid-column: 1 / -1; }
+  .tryon-actions { flex-direction: row; flex-wrap: wrap; }
+}
+
+@media (max-width: 720px) {
+  .tryon { grid-template-columns: minmax(0, 1fr); gap: 28px; padding: 20px var(--gutter) 40px; }
+  .stack { gap: 16px; }
+  .stack-row, .stack-row.left, .stack-row.right { grid-template-columns: minmax(0, 1fr); grid-template-areas: 'tile' 'label'; justify-items: center; gap: 8px; }
+  .stack-row .stack-label, .stack-row.right .stack-label { flex-direction: row; }
+  .leader { display: none; }
+  .label-card { width: min(280px, 100%); }
+  .tile-hat { height: 90px; } .tile-eyewear { height: 86px; } .tile-jewelry { height: 86px; }
+  .tile-top { height: 200px; } .tile-bottom { height: 220px; } .tile-shoes { height: 96px; }
+}

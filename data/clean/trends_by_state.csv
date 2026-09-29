@@ -1,0 +1,766 @@
+state,brand,interest,period_start,period_end,avg_state_interest,index_vs_avg,rank_in_brand,has_data
+Alabama,Carhartt,74.0,2025-09-28,2026-09-28,62.5,1.18,13,True
+Alaska,Carhartt,79.0,2025-09-28,2026-09-28,62.5,1.26,7,True
+Arizona,Carhartt,34.0,2025-09-28,2026-09-28,62.5,0.54,49,True
+Arkansas,Carhartt,66.0,2025-09-28,2026-09-28,62.5,1.06,21,True
+California,Carhartt,43.0,2025-09-28,2026-09-28,62.5,0.69,45,True
+Colorado,Carhartt,48.0,2025-09-28,2026-09-28,62.5,0.77,44,True
+Connecticut,Carhartt,54.0,2025-09-28,2026-09-28,62.5,0.86,37,True
+Delaware,Carhartt,62.0,2025-09-28,2026-09-28,62.5,0.99,27,True
+District of Columbia,Carhartt,40.0,2025-09-28,2026-09-28,62.5,0.64,46,True
+Florida,Carhartt,23.0,2025-09-28,2026-09-28,62.5,0.37,50,True
+Georgia,Carhartt,58.0,2025-09-28,2026-09-28,62.5,0.93,32,True
+Hawaii,Carhartt,20.0,2025-09-28,2026-09-28,62.5,0.32,51,True
+Idaho,Carhartt,77.0,2025-09-28,2026-09-28,62.5,1.23,9,True
+Illinois,Carhartt,66.0,2025-09-28,2026-09-28,62.5,1.06,21,True
+Indiana,Carhartt,71.0,2025-09-28,2026-09-28,62.5,1.14,16,True
+Iowa,Carhartt,76.0,2025-09-28,2026-09-28,62.5,1.22,11,True
+Kansas,Carhartt,55.0,2025-09-28,2026-09-28,62.5,0.88,34,True
+Kentucky,Carhartt,77.0,2025-09-28,2026-09-28,62.5,1.23,9,True
+Louisiana,Carhartt,50.0,2025-09-28,2026-09-28,62.5,0.8,41,True
+Maine,Carhartt,100.0,2025-09-28,2026-09-28,62.5,1.6,1,True
+Maryland,Carhartt,55.0,2025-09-28,2026-09-28,62.5,0.88,34,True
+Massachusetts,Carhartt,55.0,2025-09-28,2026-09-28,62.5,0.88,34,True
+Michigan,Carhartt,95.0,2025-09-28,2026-09-28,62.5,1.52,2,True
+Minnesota,Carhartt,67.0,2025-09-28,2026-09-28,62.5,1.07,19,True
+Mississippi,Carhartt,94.0,2025-09-28,2026-09-28,62.5,1.5,3,True
+Missouri,Carhartt,63.0,2025-09-28,2026-09-28,62.5,1.01,26,True
+Montana,Carhartt,76.0,2025-09-28,2026-09-28,62.5,1.22,11,True
+Nebraska,Carhartt,67.0,2025-09-28,2026-09-28,62.5,1.07,19,True
+Nevada,Carhartt,39.0,2025-09-28,2026-09-28,62.5,0.62,48,True
+New Hampshire,Carhartt,73.0,2025-09-28,2026-09-28,62.5,1.17,14,True
+New Jersey,Carhartt,54.0,2025-09-28,2026-09-28,62.5,0.86,37,True
+New Mexico,Carhartt,50.0,2025-09-28,2026-09-28,62.5,0.8,41,True
+New York,Carhartt,65.0,2025-09-28,2026-09-28,62.5,1.04,24,True
+North Carolina,Carhartt,66.0,2025-09-28,2026-09-28,62.5,1.06,21,True
+North Dakota,Carhartt,62.0,2025-09-28,2026-09-28,62.5,0.99,27,True
+Ohio,Carhartt,70.0,2025-09-28,2026-09-28,62.5,1.12,17,True
+Oklahoma,Carhartt,50.0,2025-09-28,2026-09-28,62.5,0.8,41,True
+Oregon,Carhartt,80.0,2025-09-28,2026-09-28,62.5,1.28,6,True
+Pennsylvania,Carhartt,65.0,2025-09-28,2026-09-28,62.5,1.04,24,True
+Rhode Island,Carhartt,52.0,2025-09-28,2026-09-28,62.5,0.83,40,True
+South Carolina,Carhartt,68.0,2025-09-28,2026-09-28,62.5,1.09,18,True
+South Dakota,Carhartt,61.0,2025-09-28,2026-09-28,62.5,0.98,30,True
+Tennessee,Carhartt,85.0,2025-09-28,2026-09-28,62.5,1.36,4,True
+Texas,Carhartt,40.0,2025-09-28,2026-09-28,62.5,0.64,46,True
+Utah,Carhartt,54.0,2025-09-28,2026-09-28,62.5,0.86,37,True
+Vermont,Carhartt,81.0,2025-09-28,2026-09-28,62.5,1.3,5,True
+Virginia,Carhartt,57.0,2025-09-28,2026-09-28,62.5,0.91,33,True
+Washington,Carhartt,62.0,2025-09-28,2026-09-28,62.5,0.99,27,True
+West Virginia,Carhartt,78.0,2025-09-28,2026-09-28,62.5,1.25,8,True
+Wisconsin,Carhartt,73.0,2025-09-28,2026-09-28,62.5,1.17,14,True
+Wyoming,Carhartt,60.0,2025-09-28,2026-09-28,62.5,0.96,31,True
+Alabama,Nike,66.0,2025-09-28,2026-09-28,59.2,1.11,12,True
+Alaska,Nike,42.0,2025-09-28,2026-09-28,59.2,0.71,47,True
+Arizona,Nike,55.0,2025-09-28,2026-09-28,59.2,0.93,36,True
+Arkansas,Nike,57.0,2025-09-28,2026-09-28,59.2,0.96,31,True
+California,Nike,69.0,2025-09-28,2026-09-28,59.2,1.17,9,True
+Colorado,Nike,52.0,2025-09-28,2026-09-28,59.2,0.88,40,True
+Connecticut,Nike,59.0,2025-09-28,2026-09-28,59.2,1.0,25,True
+Delaware,Nike,61.0,2025-09-28,2026-09-28,59.2,1.03,19,True
+District of Columbia,Nike,75.0,2025-09-28,2026-09-28,59.2,1.27,3,True
+Florida,Nike,59.0,2025-09-28,2026-09-28,59.2,1.0,25,True
+Georgia,Nike,71.0,2025-09-28,2026-09-28,59.2,1.2,7,True
+Hawaii,Nike,51.0,2025-09-28,2026-09-28,59.2,0.86,42,True
+Idaho,Nike,45.0,2025-09-28,2026-09-28,59.2,0.76,46,True
+Illinois,Nike,67.0,2025-09-28,2026-09-28,59.2,1.13,11,True
+Indiana,Nike,60.0,2025-09-28,2026-09-28,59.2,1.01,21,True
+Iowa,Nike,60.0,2025-09-28,2026-09-28,59.2,1.01,21,True
+Kansas,Nike,100.0,2025-09-28,2026-09-28,59.2,1.69,1,True
+Kentucky,Nike,71.0,2025-09-28,2026-09-28,59.2,1.2,7,True
+Louisiana,Nike,65.0,2025-09-28,2026-09-28,59.2,1.1,13,True
+Maine,Nike,36.0,2025-09-28,2026-09-28,59.2,0.61,50,True
+Maryland,Nike,68.0,2025-09-28,2026-09-28,59.2,1.15,10,True
+Massachusetts,Nike,55.0,2025-09-28,2026-09-28,59.2,0.93,36,True
+Michigan,Nike,60.0,2025-09-28,2026-09-28,59.2,1.01,21,True
+Minnesota,Nike,56.0,2025-09-28,2026-09-28,59.2,0.95,35,True
+Mississippi,Nike,73.0,2025-09-28,2026-09-28,59.2,1.23,4,True
+Missouri,Nike,59.0,2025-09-28,2026-09-28,59.2,1.0,25,True
+Montana,Nike,38.0,2025-09-28,2026-09-28,59.2,0.64,49,True
+Nebraska,Nike,63.0,2025-09-28,2026-09-28,59.2,1.06,15,True
+Nevada,Nike,62.0,2025-09-28,2026-09-28,59.2,1.05,17,True
+New Hampshire,Nike,39.0,2025-09-28,2026-09-28,59.2,0.66,48,True
+New Jersey,Nike,72.0,2025-09-28,2026-09-28,59.2,1.22,5,True
+New Mexico,Nike,54.0,2025-09-28,2026-09-28,59.2,0.91,38,True
+New York,Nike,72.0,2025-09-28,2026-09-28,59.2,1.22,5,True
+North Carolina,Nike,57.0,2025-09-28,2026-09-28,59.2,0.96,31,True
+North Dakota,Nike,50.0,2025-09-28,2026-09-28,59.2,0.84,44,True
+Ohio,Nike,59.0,2025-09-28,2026-09-28,59.2,1.0,25,True
+Oklahoma,Nike,58.0,2025-09-28,2026-09-28,59.2,0.98,30,True
+Oregon,Nike,82.0,2025-09-28,2026-09-28,59.2,1.39,2,True
+Pennsylvania,Nike,62.0,2025-09-28,2026-09-28,59.2,1.05,17,True
+Rhode Island,Nike,53.0,2025-09-28,2026-09-28,59.2,0.9,39,True
+South Carolina,Nike,59.0,2025-09-28,2026-09-28,59.2,1.0,25,True
+South Dakota,Nike,50.0,2025-09-28,2026-09-28,59.2,0.84,44,True
+Tennessee,Nike,63.0,2025-09-28,2026-09-28,59.2,1.06,15,True
+Texas,Nike,64.0,2025-09-28,2026-09-28,59.2,1.08,14,True
+Utah,Nike,57.0,2025-09-28,2026-09-28,59.2,0.96,31,True
+Vermont,Nike,34.0,2025-09-28,2026-09-28,59.2,0.57,51,True
+Virginia,Nike,60.0,2025-09-28,2026-09-28,59.2,1.01,21,True
+Washington,Nike,57.0,2025-09-28,2026-09-28,59.2,0.96,31,True
+West Virginia,Nike,51.0,2025-09-28,2026-09-28,59.2,0.86,42,True
+Wisconsin,Nike,52.0,2025-09-28,2026-09-28,59.2,0.88,40,True
+Wyoming,Nike,61.0,2025-09-28,2026-09-28,59.2,1.03,19,True
+Alabama,adidas,45.0,2025-09-28,2026-09-28,53.2,0.85,37,True
+Alaska,adidas,33.0,2025-09-28,2026-09-28,53.2,0.62,50,True
+Arizona,adidas,55.0,2025-09-28,2026-09-28,53.2,1.03,19,True
+Arkansas,adidas,45.0,2025-09-28,2026-09-28,53.2,0.85,37,True
+California,adidas,76.0,2025-09-28,2026-09-28,53.2,1.43,5,True
+Colorado,adidas,50.0,2025-09-28,2026-09-28,53.2,0.94,25,True
+Connecticut,adidas,54.0,2025-09-28,2026-09-28,53.2,1.02,21,True
+Delaware,adidas,56.0,2025-09-28,2026-09-28,53.2,1.05,16,True
+District of Columbia,adidas,84.0,2025-09-28,2026-09-28,53.2,1.58,2,True
+Florida,adidas,61.0,2025-09-28,2026-09-28,53.2,1.15,14,True
+Georgia,adidas,62.0,2025-09-28,2026-09-28,53.2,1.17,10,True
+Hawaii,adidas,50.0,2025-09-28,2026-09-28,53.2,0.94,25,True
+Idaho,adidas,45.0,2025-09-28,2026-09-28,53.2,0.85,37,True
+Illinois,adidas,64.0,2025-09-28,2026-09-28,53.2,1.2,8,True
+Indiana,adidas,50.0,2025-09-28,2026-09-28,53.2,0.94,25,True
+Iowa,adidas,49.0,2025-09-28,2026-09-28,53.2,0.92,30,True
+Kansas,adidas,100.0,2025-09-28,2026-09-28,53.2,1.88,1,True
+Kentucky,adidas,46.0,2025-09-28,2026-09-28,53.2,0.86,34,True
+Louisiana,adidas,52.0,2025-09-28,2026-09-28,53.2,0.98,24,True
+Maine,adidas,35.0,2025-09-28,2026-09-28,53.2,0.66,47,True
+Maryland,adidas,62.0,2025-09-28,2026-09-28,53.2,1.17,10,True
+Massachusetts,adidas,58.0,2025-09-28,2026-09-28,53.2,1.09,15,True
+Michigan,adidas,46.0,2025-09-28,2026-09-28,53.2,0.86,34,True
+Minnesota,adidas,39.0,2025-09-28,2026-09-28,53.2,0.73,44,True
+Mississippi,adidas,45.0,2025-09-28,2026-09-28,53.2,0.85,37,True
+Missouri,adidas,50.0,2025-09-28,2026-09-28,53.2,0.94,25,True
+Montana,adidas,32.0,2025-09-28,2026-09-28,53.2,0.6,51,True
+Nebraska,adidas,64.0,2025-09-28,2026-09-28,53.2,1.2,8,True
+Nevada,adidas,62.0,2025-09-28,2026-09-28,53.2,1.17,10,True
+New Hampshire,adidas,39.0,2025-09-28,2026-09-28,53.2,0.73,44,True
+New Jersey,adidas,68.0,2025-09-28,2026-09-28,53.2,1.28,7,True
+New Mexico,adidas,43.0,2025-09-28,2026-09-28,53.2,0.81,42,True
+New York,adidas,80.0,2025-09-28,2026-09-28,53.2,1.5,4,True
+North Carolina,adidas,53.0,2025-09-28,2026-09-28,53.2,1.0,22,True
+North Dakota,adidas,35.0,2025-09-28,2026-09-28,53.2,0.66,47,True
+Ohio,adidas,46.0,2025-09-28,2026-09-28,53.2,0.86,34,True
+Oklahoma,adidas,47.0,2025-09-28,2026-09-28,53.2,0.88,33,True
+Oregon,adidas,69.0,2025-09-28,2026-09-28,53.2,1.3,6,True
+Pennsylvania,adidas,50.0,2025-09-28,2026-09-28,53.2,0.94,25,True
+Rhode Island,adidas,49.0,2025-09-28,2026-09-28,53.2,0.92,30,True
+South Carolina,adidas,55.0,2025-09-28,2026-09-28,53.2,1.03,19,True
+South Dakota,adidas,41.0,2025-09-28,2026-09-28,53.2,0.77,43,True
+Tennessee,adidas,48.0,2025-09-28,2026-09-28,53.2,0.9,32,True
+Texas,adidas,62.0,2025-09-28,2026-09-28,53.2,1.17,10,True
+Utah,adidas,56.0,2025-09-28,2026-09-28,53.2,1.05,16,True
+Vermont,adidas,34.0,2025-09-28,2026-09-28,53.2,0.64,49,True
+Virginia,adidas,53.0,2025-09-28,2026-09-28,53.2,1.0,22,True
+Washington,adidas,56.0,2025-09-28,2026-09-28,53.2,1.05,16,True
+West Virginia,adidas,36.0,2025-09-28,2026-09-28,53.2,0.68,46,True
+Wisconsin,adidas,44.0,2025-09-28,2026-09-28,53.2,0.83,41,True
+Wyoming,adidas,81.0,2025-09-28,2026-09-28,53.2,1.52,3,True
+Alabama,PUMA,76.0,2025-09-28,2026-09-28,57.4,1.32,6,True
+Alaska,PUMA,34.0,2025-09-28,2026-09-28,57.4,0.59,49,True
+Arizona,PUMA,60.0,2025-09-28,2026-09-28,57.4,1.05,22,True
+Arkansas,PUMA,55.0,2025-09-28,2026-09-28,57.4,0.96,25,True
+California,PUMA,73.0,2025-09-28,2026-09-28,57.4,1.27,9,True
+Colorado,PUMA,46.0,2025-09-28,2026-09-28,57.4,0.8,36,True
+Connecticut,PUMA,58.0,2025-09-28,2026-09-28,57.4,1.01,23,True
+Delaware,PUMA,62.0,2025-09-28,2026-09-28,57.4,1.08,21,True
+District of Columbia,PUMA,100.0,2025-09-28,2026-09-28,57.4,1.74,1,True
+Florida,PUMA,73.0,2025-09-28,2026-09-28,57.4,1.27,9,True
+Georgia,PUMA,90.0,2025-09-28,2026-09-28,57.4,1.57,2,True
+Hawaii,PUMA,40.0,2025-09-28,2026-09-28,57.4,0.7,41,True
+Idaho,PUMA,37.0,2025-09-28,2026-09-28,57.4,0.64,46,True
+Illinois,PUMA,69.0,2025-09-28,2026-09-28,57.4,1.2,15,True
+Indiana,PUMA,53.0,2025-09-28,2026-09-28,57.4,0.92,27,True
+Iowa,PUMA,44.0,2025-09-28,2026-09-28,57.4,0.77,39,True
+Kansas,PUMA,72.0,2025-09-28,2026-09-28,57.4,1.25,11,True
+Kentucky,PUMA,48.0,2025-09-28,2026-09-28,57.4,0.84,34,True
+Louisiana,PUMA,81.0,2025-09-28,2026-09-28,57.4,1.41,5,True
+Maine,PUMA,34.0,2025-09-28,2026-09-28,57.4,0.59,49,True
+Maryland,PUMA,75.0,2025-09-28,2026-09-28,57.4,1.31,8,True
+Massachusetts,PUMA,67.0,2025-09-28,2026-09-28,57.4,1.17,17,True
+Michigan,PUMA,53.0,2025-09-28,2026-09-28,57.4,0.92,27,True
+Minnesota,PUMA,47.0,2025-09-28,2026-09-28,57.4,0.82,35,True
+Mississippi,PUMA,86.0,2025-09-28,2026-09-28,57.4,1.5,3,True
+Missouri,PUMA,53.0,2025-09-28,2026-09-28,57.4,0.92,27,True
+Montana,PUMA,34.0,2025-09-28,2026-09-28,57.4,0.59,49,True
+Nebraska,PUMA,41.0,2025-09-28,2026-09-28,57.4,0.71,40,True
+Nevada,PUMA,69.0,2025-09-28,2026-09-28,57.4,1.2,15,True
+New Hampshire,PUMA,40.0,2025-09-28,2026-09-28,57.4,0.7,41,True
+New Jersey,PUMA,71.0,2025-09-28,2026-09-28,57.4,1.24,12,True
+New Mexico,PUMA,40.0,2025-09-28,2026-09-28,57.4,0.7,41,True
+New York,PUMA,85.0,2025-09-28,2026-09-28,57.4,1.48,4,True
+North Carolina,PUMA,65.0,2025-09-28,2026-09-28,57.4,1.13,19,True
+North Dakota,PUMA,38.0,2025-09-28,2026-09-28,57.4,0.66,45,True
+Ohio,PUMA,45.0,2025-09-28,2026-09-28,57.4,0.78,38,True
+Oklahoma,PUMA,46.0,2025-09-28,2026-09-28,57.4,0.8,36,True
+Oregon,PUMA,49.0,2025-09-28,2026-09-28,57.4,0.85,32,True
+Pennsylvania,PUMA,56.0,2025-09-28,2026-09-28,57.4,0.98,24,True
+Rhode Island,PUMA,51.0,2025-09-28,2026-09-28,57.4,0.89,31,True
+South Carolina,PUMA,70.0,2025-09-28,2026-09-28,57.4,1.22,13,True
+South Dakota,PUMA,35.0,2025-09-28,2026-09-28,57.4,0.61,47,True
+Tennessee,PUMA,55.0,2025-09-28,2026-09-28,57.4,0.96,25,True
+Texas,PUMA,70.0,2025-09-28,2026-09-28,57.4,1.22,13,True
+Utah,PUMA,63.0,2025-09-28,2026-09-28,57.4,1.1,20,True
+Vermont,PUMA,39.0,2025-09-28,2026-09-28,57.4,0.68,44,True
+Virginia,PUMA,67.0,2025-09-28,2026-09-28,57.4,1.17,17,True
+Washington,PUMA,53.0,2025-09-28,2026-09-28,57.4,0.92,27,True
+West Virginia,PUMA,35.0,2025-09-28,2026-09-28,57.4,0.61,47,True
+Wisconsin,PUMA,49.0,2025-09-28,2026-09-28,57.4,0.85,32,True
+Wyoming,PUMA,76.0,2025-09-28,2026-09-28,57.4,1.32,6,True
+Alabama,COS,15.0,2025-09-28,2026-09-28,25.3,0.59,37,True
+Alaska,COS,,2025-09-28,2026-09-28,25.3,,,False
+Arizona,COS,21.0,2025-09-28,2026-09-28,25.3,0.83,23,True
+Arkansas,COS,15.0,2025-09-28,2026-09-28,25.3,0.59,37,True
+California,COS,61.0,2025-09-28,2026-09-28,25.3,2.41,3,True
+Colorado,COS,27.0,2025-09-28,2026-09-28,25.3,1.07,13,True
+Connecticut,COS,33.0,2025-09-28,2026-09-28,25.3,1.3,10,True
+Delaware,COS,19.0,2025-09-28,2026-09-28,25.3,0.75,27,True
+District of Columbia,COS,100.0,2025-09-28,2026-09-28,25.3,3.95,1,True
+Florida,COS,24.0,2025-09-28,2026-09-28,25.3,0.95,17,True
+Georgia,COS,30.0,2025-09-28,2026-09-28,25.3,1.19,12,True
+Hawaii,COS,23.0,2025-09-28,2026-09-28,25.3,0.91,20,True
+Idaho,COS,16.0,2025-09-28,2026-09-28,25.3,0.63,34,True
+Illinois,COS,35.0,2025-09-28,2026-09-28,25.3,1.38,7,True
+Indiana,COS,15.0,2025-09-28,2026-09-28,25.3,0.59,37,True
+Iowa,COS,12.0,2025-09-28,2026-09-28,25.3,0.47,45,True
+Kansas,COS,14.0,2025-09-28,2026-09-28,25.3,0.55,42,True
+Kentucky,COS,12.0,2025-09-28,2026-09-28,25.3,0.47,45,True
+Louisiana,COS,12.0,2025-09-28,2026-09-28,25.3,0.47,45,True
+Maine,COS,19.0,2025-09-28,2026-09-28,25.3,0.75,27,True
+Maryland,COS,34.0,2025-09-28,2026-09-28,25.3,1.34,8,True
+Massachusetts,COS,41.0,2025-09-28,2026-09-28,25.3,1.62,6,True
+Michigan,COS,18.0,2025-09-28,2026-09-28,25.3,0.71,31,True
+Minnesota,COS,25.0,2025-09-28,2026-09-28,25.3,0.99,16,True
+Mississippi,COS,13.0,2025-09-28,2026-09-28,25.3,0.51,43,True
+Missouri,COS,15.0,2025-09-28,2026-09-28,25.3,0.59,37,True
+Montana,COS,20.0,2025-09-28,2026-09-28,25.3,0.79,26,True
+Nebraska,COS,12.0,2025-09-28,2026-09-28,25.3,0.47,45,True
+Nevada,COS,26.0,2025-09-28,2026-09-28,25.3,1.03,14,True
+New Hampshire,COS,24.0,2025-09-28,2026-09-28,25.3,0.95,17,True
+New Jersey,COS,50.0,2025-09-28,2026-09-28,25.3,1.98,4,True
+New Mexico,COS,19.0,2025-09-28,2026-09-28,25.3,0.75,27,True
+New York,COS,66.0,2025-09-28,2026-09-28,25.3,2.61,2,True
+North Carolina,COS,21.0,2025-09-28,2026-09-28,25.3,0.83,23,True
+North Dakota,COS,13.0,2025-09-28,2026-09-28,25.3,0.51,43,True
+Ohio,COS,17.0,2025-09-28,2026-09-28,25.3,0.67,33,True
+Oklahoma,COS,16.0,2025-09-28,2026-09-28,25.3,0.63,34,True
+Oregon,COS,34.0,2025-09-28,2026-09-28,25.3,1.34,8,True
+Pennsylvania,COS,24.0,2025-09-28,2026-09-28,25.3,0.95,17,True
+Rhode Island,COS,21.0,2025-09-28,2026-09-28,25.3,0.83,23,True
+South Carolina,COS,16.0,2025-09-28,2026-09-28,25.3,0.63,34,True
+South Dakota,COS,,2025-09-28,2026-09-28,25.3,,,False
+Tennessee,COS,19.0,2025-09-28,2026-09-28,25.3,0.75,27,True
+Texas,COS,26.0,2025-09-28,2026-09-28,25.3,1.03,14,True
+Utah,COS,23.0,2025-09-28,2026-09-28,25.3,0.91,20,True
+Vermont,COS,18.0,2025-09-28,2026-09-28,25.3,0.71,31,True
+Virginia,COS,33.0,2025-09-28,2026-09-28,25.3,1.3,10,True
+Washington,COS,47.0,2025-09-28,2026-09-28,25.3,1.86,5,True
+West Virginia,COS,7.0,2025-09-28,2026-09-28,25.3,0.28,49,True
+Wisconsin,COS,15.0,2025-09-28,2026-09-28,25.3,0.59,37,True
+Wyoming,COS,22.0,2025-09-28,2026-09-28,25.3,0.87,22,True
+Alabama,Uniqlo,9.0,2025-09-28,2026-09-28,25.9,0.35,47,True
+Alaska,Uniqlo,18.0,2025-09-28,2026-09-28,25.9,0.69,27,True
+Arizona,Uniqlo,19.0,2025-09-28,2026-09-28,25.9,0.73,25,True
+Arkansas,Uniqlo,11.0,2025-09-28,2026-09-28,25.9,0.42,39,True
+California,Uniqlo,68.0,2025-09-28,2026-09-28,25.9,2.63,4,True
+Colorado,Uniqlo,20.0,2025-09-28,2026-09-28,25.9,0.77,22,True
+Connecticut,Uniqlo,29.0,2025-09-28,2026-09-28,25.9,1.12,13,True
+Delaware,Uniqlo,29.0,2025-09-28,2026-09-28,25.9,1.12,13,True
+District of Columbia,Uniqlo,100.0,2025-09-28,2026-09-28,25.9,3.86,1,True
+Florida,Uniqlo,25.0,2025-09-28,2026-09-28,25.9,0.97,19,True
+Georgia,Uniqlo,21.0,2025-09-28,2026-09-28,25.9,0.81,21,True
+Hawaii,Uniqlo,85.0,2025-09-28,2026-09-28,25.9,3.28,2,True
+Idaho,Uniqlo,11.0,2025-09-28,2026-09-28,25.9,0.42,39,True
+Illinois,Uniqlo,40.0,2025-09-28,2026-09-28,25.9,1.54,9,True
+Indiana,Uniqlo,15.0,2025-09-28,2026-09-28,25.9,0.58,32,True
+Iowa,Uniqlo,12.0,2025-09-28,2026-09-28,25.9,0.46,36,True
+Kansas,Uniqlo,17.0,2025-09-28,2026-09-28,25.9,0.66,28,True
+Kentucky,Uniqlo,9.0,2025-09-28,2026-09-28,25.9,0.35,47,True
+Louisiana,Uniqlo,10.0,2025-09-28,2026-09-28,25.9,0.39,43,True
+Maine,Uniqlo,16.0,2025-09-28,2026-09-28,25.9,0.62,31,True
+Maryland,Uniqlo,45.0,2025-09-28,2026-09-28,25.9,1.74,8,True
+Massachusetts,Uniqlo,54.0,2025-09-28,2026-09-28,25.9,2.08,6,True
+Michigan,Uniqlo,17.0,2025-09-28,2026-09-28,25.9,0.66,28,True
+Minnesota,Uniqlo,20.0,2025-09-28,2026-09-28,25.9,0.77,22,True
+Mississippi,Uniqlo,7.0,2025-09-28,2026-09-28,25.9,0.27,51,True
+Missouri,Uniqlo,12.0,2025-09-28,2026-09-28,25.9,0.46,36,True
+Montana,Uniqlo,10.0,2025-09-28,2026-09-28,25.9,0.39,43,True
+Nebraska,Uniqlo,11.0,2025-09-28,2026-09-28,25.9,0.42,39,True
+Nevada,Uniqlo,29.0,2025-09-28,2026-09-28,25.9,1.12,13,True
+New Hampshire,Uniqlo,19.0,2025-09-28,2026-09-28,25.9,0.73,25,True
+New Jersey,Uniqlo,52.0,2025-09-28,2026-09-28,25.9,2.01,7,True
+New Mexico,Uniqlo,15.0,2025-09-28,2026-09-28,25.9,0.58,32,True
+New York,Uniqlo,76.0,2025-09-28,2026-09-28,25.9,2.93,3,True
+North Carolina,Uniqlo,17.0,2025-09-28,2026-09-28,25.9,0.66,28,True
+North Dakota,Uniqlo,10.0,2025-09-28,2026-09-28,25.9,0.39,43,True
+Ohio,Uniqlo,13.0,2025-09-28,2026-09-28,25.9,0.5,35,True
+Oklahoma,Uniqlo,11.0,2025-09-28,2026-09-28,25.9,0.42,39,True
+Oregon,Uniqlo,29.0,2025-09-28,2026-09-28,25.9,1.12,13,True
+Pennsylvania,Uniqlo,32.0,2025-09-28,2026-09-28,25.9,1.24,11,True
+Rhode Island,Uniqlo,29.0,2025-09-28,2026-09-28,25.9,1.12,13,True
+South Carolina,Uniqlo,10.0,2025-09-28,2026-09-28,25.9,0.39,43,True
+South Dakota,Uniqlo,9.0,2025-09-28,2026-09-28,25.9,0.35,47,True
+Tennessee,Uniqlo,12.0,2025-09-28,2026-09-28,25.9,0.46,36,True
+Texas,Uniqlo,27.0,2025-09-28,2026-09-28,25.9,1.04,18,True
+Utah,Uniqlo,20.0,2025-09-28,2026-09-28,25.9,0.77,22,True
+Vermont,Uniqlo,23.0,2025-09-28,2026-09-28,25.9,0.89,20,True
+Virginia,Uniqlo,38.0,2025-09-28,2026-09-28,25.9,1.47,10,True
+Washington,Uniqlo,55.0,2025-09-28,2026-09-28,25.9,2.12,5,True
+West Virginia,Uniqlo,8.0,2025-09-28,2026-09-28,25.9,0.31,50,True
+Wisconsin,Uniqlo,14.0,2025-09-28,2026-09-28,25.9,0.54,34,True
+Wyoming,Uniqlo,31.0,2025-09-28,2026-09-28,25.9,1.2,12,True
+Alabama,Bershka,16.0,2025-09-28,2026-09-28,33.1,0.48,47,True
+Alaska,Bershka,25.0,2025-09-28,2026-09-28,33.1,0.76,32,True
+Arizona,Bershka,37.0,2025-09-28,2026-09-28,33.1,1.12,17,True
+Arkansas,Bershka,22.0,2025-09-28,2026-09-28,33.1,0.66,39,True
+California,Bershka,62.0,2025-09-28,2026-09-28,33.1,1.87,3,True
+Colorado,Bershka,31.0,2025-09-28,2026-09-28,33.1,0.94,23,True
+Connecticut,Bershka,41.0,2025-09-28,2026-09-28,33.1,1.24,12,True
+Delaware,Bershka,31.0,2025-09-28,2026-09-28,33.1,0.94,23,True
+District of Columbia,Bershka,60.0,2025-09-28,2026-09-28,33.1,1.81,4,True
+Florida,Bershka,59.0,2025-09-28,2026-09-28,33.1,1.78,5,True
+Georgia,Bershka,34.0,2025-09-28,2026-09-28,33.1,1.03,20,True
+Hawaii,Bershka,46.0,2025-09-28,2026-09-28,33.1,1.39,8,True
+Idaho,Bershka,25.0,2025-09-28,2026-09-28,33.1,0.76,32,True
+Illinois,Bershka,37.0,2025-09-28,2026-09-28,33.1,1.12,17,True
+Indiana,Bershka,28.0,2025-09-28,2026-09-28,33.1,0.85,27,True
+Iowa,Bershka,20.0,2025-09-28,2026-09-28,33.1,0.6,42,True
+Kansas,Bershka,100.0,2025-09-28,2026-09-28,33.1,3.02,1,True
+Kentucky,Bershka,18.0,2025-09-28,2026-09-28,33.1,0.54,45,True
+Louisiana,Bershka,22.0,2025-09-28,2026-09-28,33.1,0.66,39,True
+Maine,Bershka,27.0,2025-09-28,2026-09-28,33.1,0.82,30,True
+Maryland,Bershka,42.0,2025-09-28,2026-09-28,33.1,1.27,10,True
+Massachusetts,Bershka,46.0,2025-09-28,2026-09-28,33.1,1.39,8,True
+Michigan,Bershka,27.0,2025-09-28,2026-09-28,33.1,0.82,30,True
+Minnesota,Bershka,28.0,2025-09-28,2026-09-28,33.1,0.85,27,True
+Mississippi,Bershka,15.0,2025-09-28,2026-09-28,33.1,0.45,50,True
+Missouri,Bershka,19.0,2025-09-28,2026-09-28,33.1,0.57,44,True
+Montana,Bershka,17.0,2025-09-28,2026-09-28,33.1,0.51,46,True
+Nebraska,Bershka,22.0,2025-09-28,2026-09-28,33.1,0.66,39,True
+Nevada,Bershka,39.0,2025-09-28,2026-09-28,33.1,1.18,14,True
+New Hampshire,Bershka,24.0,2025-09-28,2026-09-28,33.1,0.73,34,True
+New Jersey,Bershka,47.0,2025-09-28,2026-09-28,33.1,1.42,7,True
+New Mexico,Bershka,29.0,2025-09-28,2026-09-28,33.1,0.88,25,True
+New York,Bershka,64.0,2025-09-28,2026-09-28,33.1,1.93,2,True
+North Carolina,Bershka,29.0,2025-09-28,2026-09-28,33.1,0.88,25,True
+North Dakota,Bershka,16.0,2025-09-28,2026-09-28,33.1,0.48,47,True
+Ohio,Bershka,23.0,2025-09-28,2026-09-28,33.1,0.69,36,True
+Oklahoma,Bershka,20.0,2025-09-28,2026-09-28,33.1,0.6,42,True
+Oregon,Bershka,34.0,2025-09-28,2026-09-28,33.1,1.03,20,True
+Pennsylvania,Bershka,28.0,2025-09-28,2026-09-28,33.1,0.85,27,True
+Rhode Island,Bershka,35.0,2025-09-28,2026-09-28,33.1,1.06,19,True
+South Carolina,Bershka,24.0,2025-09-28,2026-09-28,33.1,0.73,34,True
+South Dakota,Bershka,16.0,2025-09-28,2026-09-28,33.1,0.48,47,True
+Tennessee,Bershka,23.0,2025-09-28,2026-09-28,33.1,0.69,36,True
+Texas,Bershka,39.0,2025-09-28,2026-09-28,33.1,1.18,14,True
+Utah,Bershka,40.0,2025-09-28,2026-09-28,33.1,1.21,13,True
+Vermont,Bershka,32.0,2025-09-28,2026-09-28,33.1,0.97,22,True
+Virginia,Bershka,39.0,2025-09-28,2026-09-28,33.1,1.18,14,True
+Washington,Bershka,42.0,2025-09-28,2026-09-28,33.1,1.27,10,True
+West Virginia,Bershka,15.0,2025-09-28,2026-09-28,33.1,0.45,50,True
+Wisconsin,Bershka,23.0,2025-09-28,2026-09-28,33.1,0.69,36,True
+Wyoming,Bershka,52.0,2025-09-28,2026-09-28,33.1,1.57,6,True
+Alabama,Zara,25.0,2025-09-28,2026-09-28,34.2,0.73,31,True
+Alaska,Zara,19.0,2025-09-28,2026-09-28,34.2,0.56,42,True
+Arizona,Zara,34.0,2025-09-28,2026-09-28,34.2,0.99,19,True
+Arkansas,Zara,20.0,2025-09-28,2026-09-28,34.2,0.58,38,True
+California,Zara,63.0,2025-09-28,2026-09-28,34.2,1.84,4,True
+Colorado,Zara,29.0,2025-09-28,2026-09-28,34.2,0.85,26,True
+Connecticut,Zara,52.0,2025-09-28,2026-09-28,34.2,1.52,7,True
+Delaware,Zara,32.0,2025-09-28,2026-09-28,34.2,0.94,23,True
+District of Columbia,Zara,91.0,2025-09-28,2026-09-28,34.2,2.66,2,True
+Florida,Zara,55.0,2025-09-28,2026-09-28,34.2,1.61,6,True
+Georgia,Zara,43.0,2025-09-28,2026-09-28,34.2,1.26,12,True
+Hawaii,Zara,38.0,2025-09-28,2026-09-28,34.2,1.11,15,True
+Idaho,Zara,19.0,2025-09-28,2026-09-28,34.2,0.56,42,True
+Illinois,Zara,52.0,2025-09-28,2026-09-28,34.2,1.52,7,True
+Indiana,Zara,22.0,2025-09-28,2026-09-28,34.2,0.64,34,True
+Iowa,Zara,16.0,2025-09-28,2026-09-28,34.2,0.47,47,True
+Kansas,Zara,24.0,2025-09-28,2026-09-28,34.2,0.7,32,True
+Kentucky,Zara,19.0,2025-09-28,2026-09-28,34.2,0.56,42,True
+Louisiana,Zara,37.0,2025-09-28,2026-09-28,34.2,1.08,17,True
+Maine,Zara,20.0,2025-09-28,2026-09-28,34.2,0.58,38,True
+Maryland,Zara,52.0,2025-09-28,2026-09-28,34.2,1.52,7,True
+Massachusetts,Zara,57.0,2025-09-28,2026-09-28,34.2,1.67,5,True
+Michigan,Zara,30.0,2025-09-28,2026-09-28,34.2,0.88,24,True
+Minnesota,Zara,26.0,2025-09-28,2026-09-28,34.2,0.76,30,True
+Mississippi,Zara,21.0,2025-09-28,2026-09-28,34.2,0.61,36,True
+Missouri,Zara,21.0,2025-09-28,2026-09-28,34.2,0.61,36,True
+Montana,Zara,16.0,2025-09-28,2026-09-28,34.2,0.47,47,True
+Nebraska,Zara,18.0,2025-09-28,2026-09-28,34.2,0.53,45,True
+Nevada,Zara,49.0,2025-09-28,2026-09-28,34.2,1.43,10,True
+New Hampshire,Zara,23.0,2025-09-28,2026-09-28,34.2,0.67,33,True
+New Jersey,Zara,79.0,2025-09-28,2026-09-28,34.2,2.31,3,True
+New Mexico,Zara,18.0,2025-09-28,2026-09-28,34.2,0.53,45,True
+New York,Zara,100.0,2025-09-28,2026-09-28,34.2,2.92,1,True
+North Carolina,Zara,34.0,2025-09-28,2026-09-28,34.2,0.99,19,True
+North Dakota,Zara,15.0,2025-09-28,2026-09-28,34.2,0.44,49,True
+Ohio,Zara,28.0,2025-09-28,2026-09-28,34.2,0.82,29,True
+Oklahoma,Zara,20.0,2025-09-28,2026-09-28,34.2,0.58,38,True
+Oregon,Zara,30.0,2025-09-28,2026-09-28,34.2,0.88,24,True
+Pennsylvania,Zara,36.0,2025-09-28,2026-09-28,34.2,1.05,18,True
+Rhode Island,Zara,42.0,2025-09-28,2026-09-28,34.2,1.23,13,True
+South Carolina,Zara,29.0,2025-09-28,2026-09-28,34.2,0.85,26,True
+South Dakota,Zara,15.0,2025-09-28,2026-09-28,34.2,0.44,49,True
+Tennessee,Zara,29.0,2025-09-28,2026-09-28,34.2,0.85,26,True
+Texas,Zara,45.0,2025-09-28,2026-09-28,34.2,1.32,11,True
+Utah,Zara,34.0,2025-09-28,2026-09-28,34.2,0.99,19,True
+Vermont,Zara,22.0,2025-09-28,2026-09-28,34.2,0.64,34,True
+Virginia,Zara,41.0,2025-09-28,2026-09-28,34.2,1.2,14,True
+Washington,Zara,38.0,2025-09-28,2026-09-28,34.2,1.11,15,True
+West Virginia,Zara,14.0,2025-09-28,2026-09-28,34.2,0.41,51,True
+Wisconsin,Zara,20.0,2025-09-28,2026-09-28,34.2,0.58,38,True
+Wyoming,Zara,33.0,2025-09-28,2026-09-28,34.2,0.96,22,True
+Alabama,Supreme,31.0,2025-09-28,2026-09-28,38.0,0.82,29,True
+Alaska,Supreme,33.0,2025-09-28,2026-09-28,38.0,0.87,26,True
+Arizona,Supreme,34.0,2025-09-28,2026-09-28,38.0,0.89,23,True
+Arkansas,Supreme,28.0,2025-09-28,2026-09-28,38.0,0.74,36,True
+California,Supreme,72.0,2025-09-28,2026-09-28,38.0,1.89,3,True
+Colorado,Supreme,32.0,2025-09-28,2026-09-28,38.0,0.84,28,True
+Connecticut,Supreme,51.0,2025-09-28,2026-09-28,38.0,1.34,8,True
+Delaware,Supreme,35.0,2025-09-28,2026-09-28,38.0,0.92,22,True
+District of Columbia,Supreme,40.0,2025-09-28,2026-09-28,38.0,1.05,12,True
+Florida,Supreme,33.0,2025-09-28,2026-09-28,38.0,0.87,26,True
+Georgia,Supreme,45.0,2025-09-28,2026-09-28,38.0,1.18,10,True
+Hawaii,Supreme,60.0,2025-09-28,2026-09-28,38.0,1.58,4,True
+Idaho,Supreme,22.0,2025-09-28,2026-09-28,38.0,0.58,45,True
+Illinois,Supreme,99.0,2025-09-28,2026-09-28,38.0,2.61,2,True
+Indiana,Supreme,40.0,2025-09-28,2026-09-28,38.0,1.05,12,True
+Iowa,Supreme,15.0,2025-09-28,2026-09-28,38.0,0.39,48,True
+Kansas,Supreme,26.0,2025-09-28,2026-09-28,38.0,0.68,37,True
+Kentucky,Supreme,22.0,2025-09-28,2026-09-28,38.0,0.58,45,True
+Louisiana,Supreme,31.0,2025-09-28,2026-09-28,38.0,0.82,29,True
+Maine,Supreme,25.0,2025-09-28,2026-09-28,38.0,0.66,41,True
+Maryland,Supreme,50.0,2025-09-28,2026-09-28,38.0,1.32,9,True
+Massachusetts,Supreme,37.0,2025-09-28,2026-09-28,38.0,0.97,18,True
+Michigan,Supreme,39.0,2025-09-28,2026-09-28,38.0,1.03,15,True
+Minnesota,Supreme,26.0,2025-09-28,2026-09-28,38.0,0.68,37,True
+Mississippi,Supreme,38.0,2025-09-28,2026-09-28,38.0,1.0,16,True
+Missouri,Supreme,23.0,2025-09-28,2026-09-28,38.0,0.61,44,True
+Montana,Supreme,26.0,2025-09-28,2026-09-28,38.0,0.68,37,True
+Nebraska,Supreme,34.0,2025-09-28,2026-09-28,38.0,0.89,23,True
+Nevada,Supreme,54.0,2025-09-28,2026-09-28,38.0,1.42,7,True
+New Hampshire,Supreme,30.0,2025-09-28,2026-09-28,38.0,0.79,33,True
+New Jersey,Supreme,59.0,2025-09-28,2026-09-28,38.0,1.55,5,True
+New Mexico,Supreme,42.0,2025-09-28,2026-09-28,38.0,1.11,11,True
+New York,Supreme,100.0,2025-09-28,2026-09-28,38.0,2.63,1,True
+North Carolina,Supreme,31.0,2025-09-28,2026-09-28,38.0,0.82,29,True
+North Dakota,Supreme,,2025-09-28,2026-09-28,38.0,,,False
+Ohio,Supreme,26.0,2025-09-28,2026-09-28,38.0,0.68,37,True
+Oklahoma,Supreme,21.0,2025-09-28,2026-09-28,38.0,0.55,47,True
+Oregon,Supreme,36.0,2025-09-28,2026-09-28,38.0,0.95,20,True
+Pennsylvania,Supreme,34.0,2025-09-28,2026-09-28,38.0,0.89,23,True
+Rhode Island,Supreme,58.0,2025-09-28,2026-09-28,38.0,1.53,6,True
+South Carolina,Supreme,24.0,2025-09-28,2026-09-28,38.0,0.63,42,True
+South Dakota,Supreme,,2025-09-28,2026-09-28,38.0,,,False
+Tennessee,Supreme,36.0,2025-09-28,2026-09-28,38.0,0.95,20,True
+Texas,Supreme,29.0,2025-09-28,2026-09-28,38.0,0.76,34,True
+Utah,Supreme,38.0,2025-09-28,2026-09-28,38.0,1.0,16,True
+Vermont,Supreme,,2025-09-28,2026-09-28,38.0,,,False
+Virginia,Supreme,40.0,2025-09-28,2026-09-28,38.0,1.05,12,True
+Washington,Supreme,37.0,2025-09-28,2026-09-28,38.0,0.97,18,True
+West Virginia,Supreme,24.0,2025-09-28,2026-09-28,38.0,0.63,42,True
+Wisconsin,Supreme,31.0,2025-09-28,2026-09-28,38.0,0.82,29,True
+Wyoming,Supreme,29.0,2025-09-28,2026-09-28,38.0,0.76,34,True
+Alabama,Hellstar,71.0,2025-09-28,2026-09-28,48.7,1.46,8,True
+Alaska,Hellstar,27.0,2025-09-28,2026-09-28,48.7,0.55,43,True
+Arizona,Hellstar,55.0,2025-09-28,2026-09-28,48.7,1.13,18,True
+Arkansas,Hellstar,60.0,2025-09-28,2026-09-28,48.7,1.23,13,True
+California,Hellstar,74.0,2025-09-28,2026-09-28,48.7,1.52,6,True
+Colorado,Hellstar,30.0,2025-09-28,2026-09-28,48.7,0.62,40,True
+Connecticut,Hellstar,61.0,2025-09-28,2026-09-28,48.7,1.25,12,True
+Delaware,Hellstar,92.0,2025-09-28,2026-09-28,48.7,1.89,2,True
+District of Columbia,Hellstar,55.0,2025-09-28,2026-09-28,48.7,1.13,18,True
+Florida,Hellstar,80.0,2025-09-28,2026-09-28,48.7,1.64,4,True
+Georgia,Hellstar,92.0,2025-09-28,2026-09-28,48.7,1.89,2,True
+Hawaii,Hellstar,31.0,2025-09-28,2026-09-28,48.7,0.64,39,True
+Idaho,Hellstar,20.0,2025-09-28,2026-09-28,48.7,0.41,47,True
+Illinois,Hellstar,58.0,2025-09-28,2026-09-28,48.7,1.19,14,True
+Indiana,Hellstar,54.0,2025-09-28,2026-09-28,48.7,1.11,21,True
+Iowa,Hellstar,29.0,2025-09-28,2026-09-28,48.7,0.6,42,True
+Kansas,Hellstar,39.0,2025-09-28,2026-09-28,48.7,0.8,34,True
+Kentucky,Hellstar,46.0,2025-09-28,2026-09-28,48.7,0.94,29,True
+Louisiana,Hellstar,56.0,2025-09-28,2026-09-28,48.7,1.15,16,True
+Maine,Hellstar,17.0,2025-09-28,2026-09-28,48.7,0.35,49,True
+Maryland,Hellstar,69.0,2025-09-28,2026-09-28,48.7,1.42,9,True
+Massachusetts,Hellstar,47.0,2025-09-28,2026-09-28,48.7,0.97,27,True
+Michigan,Hellstar,50.0,2025-09-28,2026-09-28,48.7,1.03,25,True
+Minnesota,Hellstar,40.0,2025-09-28,2026-09-28,48.7,0.82,33,True
+Mississippi,Hellstar,100.0,2025-09-28,2026-09-28,48.7,2.05,1,True
+Missouri,Hellstar,43.0,2025-09-28,2026-09-28,48.7,0.88,32,True
+Montana,Hellstar,11.0,2025-09-28,2026-09-28,48.7,0.23,51,True
+Nebraska,Hellstar,46.0,2025-09-28,2026-09-28,48.7,0.94,29,True
+Nevada,Hellstar,73.0,2025-09-28,2026-09-28,48.7,1.5,7,True
+New Hampshire,Hellstar,26.0,2025-09-28,2026-09-28,48.7,0.53,45,True
+New Jersey,Hellstar,56.0,2025-09-28,2026-09-28,48.7,1.15,16,True
+New Mexico,Hellstar,44.0,2025-09-28,2026-09-28,48.7,0.9,31,True
+New York,Hellstar,65.0,2025-09-28,2026-09-28,48.7,1.33,11,True
+North Carolina,Hellstar,57.0,2025-09-28,2026-09-28,48.7,1.17,15,True
+North Dakota,Hellstar,20.0,2025-09-28,2026-09-28,48.7,0.41,47,True
+Ohio,Hellstar,47.0,2025-09-28,2026-09-28,48.7,0.97,27,True
+Oklahoma,Hellstar,37.0,2025-09-28,2026-09-28,48.7,0.76,36,True
+Oregon,Hellstar,32.0,2025-09-28,2026-09-28,48.7,0.66,38,True
+Pennsylvania,Hellstar,50.0,2025-09-28,2026-09-28,48.7,1.03,25,True
+Rhode Island,Hellstar,69.0,2025-09-28,2026-09-28,48.7,1.42,9,True
+South Carolina,Hellstar,76.0,2025-09-28,2026-09-28,48.7,1.56,5,True
+South Dakota,Hellstar,27.0,2025-09-28,2026-09-28,48.7,0.55,43,True
+Tennessee,Hellstar,51.0,2025-09-28,2026-09-28,48.7,1.05,24,True
+Texas,Hellstar,55.0,2025-09-28,2026-09-28,48.7,1.13,18,True
+Utah,Hellstar,24.0,2025-09-28,2026-09-28,48.7,0.49,46,True
+Vermont,Hellstar,12.0,2025-09-28,2026-09-28,48.7,0.25,50,True
+Virginia,Hellstar,54.0,2025-09-28,2026-09-28,48.7,1.11,21,True
+Washington,Hellstar,30.0,2025-09-28,2026-09-28,48.7,0.62,40,True
+West Virginia,Hellstar,35.0,2025-09-28,2026-09-28,48.7,0.72,37,True
+Wisconsin,Hellstar,38.0,2025-09-28,2026-09-28,48.7,0.78,35,True
+Wyoming,Hellstar,52.0,2025-09-28,2026-09-28,48.7,1.07,23,True
+Alabama,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Alaska,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Arizona,NUDE PROJECT,25.0,2025-09-28,2026-09-28,27.3,0.92,11,True
+Arkansas,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+California,NUDE PROJECT,35.0,2025-09-28,2026-09-28,27.3,1.28,7,True
+Colorado,NUDE PROJECT,23.0,2025-09-28,2026-09-28,27.3,0.84,14,True
+Connecticut,NUDE PROJECT,19.0,2025-09-28,2026-09-28,27.3,0.7,18,True
+Delaware,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+District of Columbia,NUDE PROJECT,76.0,2025-09-28,2026-09-28,27.3,2.78,3,True
+Florida,NUDE PROJECT,96.0,2025-09-28,2026-09-28,27.3,3.52,2,True
+Georgia,NUDE PROJECT,22.0,2025-09-28,2026-09-28,27.3,0.81,16,True
+Hawaii,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Idaho,NUDE PROJECT,38.0,2025-09-28,2026-09-28,27.3,1.39,6,True
+Illinois,NUDE PROJECT,29.0,2025-09-28,2026-09-28,27.3,1.06,10,True
+Indiana,NUDE PROJECT,25.0,2025-09-28,2026-09-28,27.3,0.92,11,True
+Iowa,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Kansas,NUDE PROJECT,17.0,2025-09-28,2026-09-28,27.3,0.62,21,True
+Kentucky,NUDE PROJECT,1.0,2025-09-28,2026-09-28,27.3,0.04,30,True
+Louisiana,NUDE PROJECT,16.0,2025-09-28,2026-09-28,27.3,0.59,23,True
+Maine,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Maryland,NUDE PROJECT,13.0,2025-09-28,2026-09-28,27.3,0.48,27,True
+Massachusetts,NUDE PROJECT,42.0,2025-09-28,2026-09-28,27.3,1.54,5,True
+Michigan,NUDE PROJECT,19.0,2025-09-28,2026-09-28,27.3,0.7,18,True
+Minnesota,NUDE PROJECT,1.0,2025-09-28,2026-09-28,27.3,0.04,30,True
+Mississippi,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Missouri,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Montana,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Nebraska,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Nevada,NUDE PROJECT,16.0,2025-09-28,2026-09-28,27.3,0.59,23,True
+New Hampshire,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+New Jersey,NUDE PROJECT,30.0,2025-09-28,2026-09-28,27.3,1.1,9,True
+New Mexico,NUDE PROJECT,31.0,2025-09-28,2026-09-28,27.3,1.14,8,True
+New York,NUDE PROJECT,46.0,2025-09-28,2026-09-28,27.3,1.68,4,True
+North Carolina,NUDE PROJECT,15.0,2025-09-28,2026-09-28,27.3,0.55,25,True
+North Dakota,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Ohio,NUDE PROJECT,11.0,2025-09-28,2026-09-28,27.3,0.4,28,True
+Oklahoma,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Oregon,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Pennsylvania,NUDE PROJECT,20.0,2025-09-28,2026-09-28,27.3,0.73,17,True
+Rhode Island,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+South Carolina,NUDE PROJECT,11.0,2025-09-28,2026-09-28,27.3,0.4,28,True
+South Dakota,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Tennessee,NUDE PROJECT,15.0,2025-09-28,2026-09-28,27.3,0.55,25,True
+Texas,NUDE PROJECT,24.0,2025-09-28,2026-09-28,27.3,0.88,13,True
+Utah,NUDE PROJECT,23.0,2025-09-28,2026-09-28,27.3,0.84,14,True
+Vermont,NUDE PROJECT,100.0,2025-09-28,2026-09-28,27.3,3.66,1,True
+Virginia,NUDE PROJECT,18.0,2025-09-28,2026-09-28,27.3,0.66,20,True
+Washington,NUDE PROJECT,17.0,2025-09-28,2026-09-28,27.3,0.62,21,True
+West Virginia,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Wisconsin,NUDE PROJECT,1.0,2025-09-28,2026-09-28,27.3,0.04,30,True
+Wyoming,NUDE PROJECT,,2025-09-28,2026-09-28,27.3,,,False
+Alabama,Scuffers,17.0,2025-09-28,2026-09-28,35.4,0.48,42,True
+Alaska,Scuffers,,2025-09-28,2026-09-28,35.4,,,False
+Arizona,Scuffers,41.0,2025-09-28,2026-09-28,35.4,1.16,13,True
+Arkansas,Scuffers,24.0,2025-09-28,2026-09-28,35.4,0.68,35,True
+California,Scuffers,50.0,2025-09-28,2026-09-28,35.4,1.41,6,True
+Colorado,Scuffers,38.0,2025-09-28,2026-09-28,35.4,1.07,16,True
+Connecticut,Scuffers,46.0,2025-09-28,2026-09-28,35.4,1.3,8,True
+Delaware,Scuffers,,2025-09-28,2026-09-28,35.4,,,False
+District of Columbia,Scuffers,,2025-09-28,2026-09-28,35.4,,,False
+Florida,Scuffers,26.0,2025-09-28,2026-09-28,35.4,0.73,30,True
+Georgia,Scuffers,25.0,2025-09-28,2026-09-28,35.4,0.71,32,True
+Hawaii,Scuffers,60.0,2025-09-28,2026-09-28,35.4,1.69,4,True
+Idaho,Scuffers,64.0,2025-09-28,2026-09-28,35.4,1.81,3,True
+Illinois,Scuffers,31.0,2025-09-28,2026-09-28,35.4,0.88,23,True
+Indiana,Scuffers,30.0,2025-09-28,2026-09-28,35.4,0.85,25,True
+Iowa,Scuffers,27.0,2025-09-28,2026-09-28,35.4,0.76,29,True
+Kansas,Scuffers,15.0,2025-09-28,2026-09-28,35.4,0.42,43,True
+Kentucky,Scuffers,21.0,2025-09-28,2026-09-28,35.4,0.59,40,True
+Louisiana,Scuffers,9.0,2025-09-28,2026-09-28,35.4,0.25,45,True
+Maine,Scuffers,41.0,2025-09-28,2026-09-28,35.4,1.16,13,True
+Maryland,Scuffers,24.0,2025-09-28,2026-09-28,35.4,0.68,35,True
+Massachusetts,Scuffers,44.0,2025-09-28,2026-09-28,35.4,1.24,10,True
+Michigan,Scuffers,29.0,2025-09-28,2026-09-28,35.4,0.82,27,True
+Minnesota,Scuffers,44.0,2025-09-28,2026-09-28,35.4,1.24,10,True
+Mississippi,Scuffers,15.0,2025-09-28,2026-09-28,35.4,0.42,43,True
+Missouri,Scuffers,24.0,2025-09-28,2026-09-28,35.4,0.68,35,True
+Montana,Scuffers,48.0,2025-09-28,2026-09-28,35.4,1.36,7,True
+Nebraska,Scuffers,46.0,2025-09-28,2026-09-28,35.4,1.3,8,True
+Nevada,Scuffers,34.0,2025-09-28,2026-09-28,35.4,0.96,21,True
+New Hampshire,Scuffers,37.0,2025-09-28,2026-09-28,35.4,1.05,18,True
+New Jersey,Scuffers,40.0,2025-09-28,2026-09-28,35.4,1.13,15,True
+New Mexico,Scuffers,24.0,2025-09-28,2026-09-28,35.4,0.68,35,True
+New York,Scuffers,35.0,2025-09-28,2026-09-28,35.4,0.99,19,True
+North Carolina,Scuffers,20.0,2025-09-28,2026-09-28,35.4,0.56,41,True
+North Dakota,Scuffers,,2025-09-28,2026-09-28,35.4,,,False
+Ohio,Scuffers,25.0,2025-09-28,2026-09-28,35.4,0.71,32,True
+Oklahoma,Scuffers,25.0,2025-09-28,2026-09-28,35.4,0.71,32,True
+Oregon,Scuffers,42.0,2025-09-28,2026-09-28,35.4,1.19,12,True
+Pennsylvania,Scuffers,32.0,2025-09-28,2026-09-28,35.4,0.9,22,True
+Rhode Island,Scuffers,38.0,2025-09-28,2026-09-28,35.4,1.07,16,True
+South Carolina,Scuffers,26.0,2025-09-28,2026-09-28,35.4,0.73,30,True
+South Dakota,Scuffers,,2025-09-28,2026-09-28,35.4,,,False
+Tennessee,Scuffers,29.0,2025-09-28,2026-09-28,35.4,0.82,27,True
+Texas,Scuffers,24.0,2025-09-28,2026-09-28,35.4,0.68,35,True
+Utah,Scuffers,100.0,2025-09-28,2026-09-28,35.4,2.82,1,True
+Vermont,Scuffers,68.0,2025-09-28,2026-09-28,35.4,1.92,2,True
+Virginia,Scuffers,30.0,2025-09-28,2026-09-28,35.4,0.85,25,True
+Washington,Scuffers,57.0,2025-09-28,2026-09-28,35.4,1.61,5,True
+West Virginia,Scuffers,31.0,2025-09-28,2026-09-28,35.4,0.88,23,True
+Wisconsin,Scuffers,35.0,2025-09-28,2026-09-28,35.4,0.99,19,True
+Wyoming,Scuffers,,2025-09-28,2026-09-28,35.4,,,False
+Alabama,Kith,9.0,2025-09-28,2026-09-28,19.2,0.47,37,True
+Alaska,Kith,10.0,2025-09-28,2026-09-28,19.2,0.52,35,True
+Arizona,Kith,15.0,2025-09-28,2026-09-28,19.2,0.78,20,True
+Arkansas,Kith,8.0,2025-09-28,2026-09-28,19.2,0.42,42,True
+California,Kith,38.0,2025-09-28,2026-09-28,19.2,1.98,6,True
+Colorado,Kith,12.0,2025-09-28,2026-09-28,19.2,0.62,25,True
+Connecticut,Kith,31.0,2025-09-28,2026-09-28,19.2,1.61,7,True
+Delaware,Kith,20.0,2025-09-28,2026-09-28,19.2,1.04,13,True
+District of Columbia,Kith,53.0,2025-09-28,2026-09-28,19.2,2.76,3,True
+Florida,Kith,27.0,2025-09-28,2026-09-28,19.2,1.41,9,True
+Georgia,Kith,19.0,2025-09-28,2026-09-28,19.2,0.99,15,True
+Hawaii,Kith,76.0,2025-09-28,2026-09-28,19.2,3.96,2,True
+Idaho,Kith,8.0,2025-09-28,2026-09-28,19.2,0.42,42,True
+Illinois,Kith,39.0,2025-09-28,2026-09-28,19.2,2.03,5,True
+Indiana,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+Iowa,Kith,6.0,2025-09-28,2026-09-28,19.2,0.31,48,True
+Kansas,Kith,12.0,2025-09-28,2026-09-28,19.2,0.62,25,True
+Kentucky,Kith,8.0,2025-09-28,2026-09-28,19.2,0.42,42,True
+Louisiana,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+Maine,Kith,9.0,2025-09-28,2026-09-28,19.2,0.47,37,True
+Maryland,Kith,30.0,2025-09-28,2026-09-28,19.2,1.56,8,True
+Massachusetts,Kith,22.0,2025-09-28,2026-09-28,19.2,1.15,11,True
+Michigan,Kith,19.0,2025-09-28,2026-09-28,19.2,0.99,15,True
+Minnesota,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+Mississippi,Kith,9.0,2025-09-28,2026-09-28,19.2,0.47,37,True
+Missouri,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+Montana,Kith,5.0,2025-09-28,2026-09-28,19.2,0.26,50,True
+Nebraska,Kith,8.0,2025-09-28,2026-09-28,19.2,0.42,42,True
+Nevada,Kith,22.0,2025-09-28,2026-09-28,19.2,1.15,11,True
+New Hampshire,Kith,9.0,2025-09-28,2026-09-28,19.2,0.47,37,True
+New Jersey,Kith,52.0,2025-09-28,2026-09-28,19.2,2.71,4,True
+New Mexico,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+New York,Kith,100.0,2025-09-28,2026-09-28,19.2,5.21,1,True
+North Carolina,Kith,14.0,2025-09-28,2026-09-28,19.2,0.73,21,True
+North Dakota,Kith,6.0,2025-09-28,2026-09-28,19.2,0.31,48,True
+Ohio,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+Oklahoma,Kith,9.0,2025-09-28,2026-09-28,19.2,0.47,37,True
+Oregon,Kith,14.0,2025-09-28,2026-09-28,19.2,0.73,21,True
+Pennsylvania,Kith,20.0,2025-09-28,2026-09-28,19.2,1.04,13,True
+Rhode Island,Kith,26.0,2025-09-28,2026-09-28,19.2,1.35,10,True
+South Carolina,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+South Dakota,Kith,,2025-09-28,2026-09-28,19.2,,,False
+Tennessee,Kith,13.0,2025-09-28,2026-09-28,19.2,0.68,24,True
+Texas,Kith,19.0,2025-09-28,2026-09-28,19.2,0.99,15,True
+Utah,Kith,14.0,2025-09-28,2026-09-28,19.2,0.73,21,True
+Vermont,Kith,10.0,2025-09-28,2026-09-28,19.2,0.52,35,True
+Virginia,Kith,19.0,2025-09-28,2026-09-28,19.2,0.99,15,True
+Washington,Kith,16.0,2025-09-28,2026-09-28,19.2,0.83,19,True
+West Virginia,Kith,7.0,2025-09-28,2026-09-28,19.2,0.36,47,True
+Wisconsin,Kith,11.0,2025-09-28,2026-09-28,19.2,0.57,27,True
+Wyoming,Kith,8.0,2025-09-28,2026-09-28,19.2,0.42,42,True
+Alabama,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Alaska,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Arizona,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Arkansas,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+California,ASOS,9.0,2025-09-28,2026-09-28,8.5,1.06,7,True
+Colorado,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Connecticut,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+Delaware,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+District of Columbia,ASOS,19.0,2025-09-28,2026-09-28,8.5,2.24,2,True
+Florida,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+Georgia,ASOS,9.0,2025-09-28,2026-09-28,8.5,1.06,7,True
+Hawaii,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Idaho,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Illinois,ASOS,9.0,2025-09-28,2026-09-28,8.5,1.06,7,True
+Indiana,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+Iowa,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+Kansas,ASOS,100.0,2025-09-28,2026-09-28,8.5,11.76,1,True
+Kentucky,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+Louisiana,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+Maine,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Maryland,ASOS,11.0,2025-09-28,2026-09-28,8.5,1.29,4,True
+Massachusetts,ASOS,9.0,2025-09-28,2026-09-28,8.5,1.06,7,True
+Michigan,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Minnesota,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Mississippi,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Missouri,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Montana,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+Nebraska,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Nevada,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+New Hampshire,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+New Jersey,ASOS,11.0,2025-09-28,2026-09-28,8.5,1.29,4,True
+New Mexico,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+New York,ASOS,14.0,2025-09-28,2026-09-28,8.5,1.65,3,True
+North Carolina,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+North Dakota,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+Ohio,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Oklahoma,ASOS,5.0,2025-09-28,2026-09-28,8.5,0.59,33,True
+Oregon,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Pennsylvania,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+Rhode Island,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+South Carolina,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+South Dakota,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+Tennessee,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Texas,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+Utah,ASOS,8.0,2025-09-28,2026-09-28,8.5,0.94,11,True
+Vermont,ASOS,6.0,2025-09-28,2026-09-28,8.5,0.71,22,True
+Virginia,ASOS,8.0,2025-09-28,2026-09-28,8.5,0.94,11,True
+Washington,ASOS,7.0,2025-09-28,2026-09-28,8.5,0.82,13,True
+West Virginia,ASOS,3.0,2025-09-28,2026-09-28,8.5,0.35,51,True
+Wisconsin,ASOS,4.0,2025-09-28,2026-09-28,8.5,0.47,43,True
+Wyoming,ASOS,11.0,2025-09-28,2026-09-28,8.5,1.29,4,True
+Alabama,New Balance,75.0,2025-09-28,2026-09-28,68.0,1.1,16,True
+Alaska,New Balance,34.0,2025-09-28,2026-09-28,68.0,0.5,50,True
+Arizona,New Balance,74.0,2025-09-28,2026-09-28,68.0,1.09,19,True
+Arkansas,New Balance,69.0,2025-09-28,2026-09-28,68.0,1.01,26,True
+California,New Balance,92.0,2025-09-28,2026-09-28,68.0,1.35,4,True
+Colorado,New Balance,52.0,2025-09-28,2026-09-28,68.0,0.76,44,True
+Connecticut,New Balance,79.0,2025-09-28,2026-09-28,68.0,1.16,14,True
+Delaware,New Balance,83.0,2025-09-28,2026-09-28,68.0,1.22,7,True
+District of Columbia,New Balance,88.0,2025-09-28,2026-09-28,68.0,1.29,6,True
+Florida,New Balance,69.0,2025-09-28,2026-09-28,68.0,1.01,26,True
+Georgia,New Balance,81.0,2025-09-28,2026-09-28,68.0,1.19,11,True
+Hawaii,New Balance,62.0,2025-09-28,2026-09-28,68.0,0.91,35,True
+Idaho,New Balance,44.0,2025-09-28,2026-09-28,68.0,0.65,46,True
+Illinois,New Balance,83.0,2025-09-28,2026-09-28,68.0,1.22,7,True
+Indiana,New Balance,65.0,2025-09-28,2026-09-28,68.0,0.96,30,True
+Iowa,New Balance,62.0,2025-09-28,2026-09-28,68.0,0.91,35,True
+Kansas,New Balance,73.0,2025-09-28,2026-09-28,68.0,1.07,21,True
+Kentucky,New Balance,75.0,2025-09-28,2026-09-28,68.0,1.1,16,True
+Louisiana,New Balance,80.0,2025-09-28,2026-09-28,68.0,1.18,13,True
+Maine,New Balance,63.0,2025-09-28,2026-09-28,68.0,0.93,32,True
+Maryland,New Balance,97.0,2025-09-28,2026-09-28,68.0,1.43,2,True
+Massachusetts,New Balance,100.0,2025-09-28,2026-09-28,68.0,1.47,1,True
+Michigan,New Balance,63.0,2025-09-28,2026-09-28,68.0,0.93,32,True
+Minnesota,New Balance,56.0,2025-09-28,2026-09-28,68.0,0.82,41,True
+Mississippi,New Balance,76.0,2025-09-28,2026-09-28,68.0,1.12,15,True
+Missouri,New Balance,63.0,2025-09-28,2026-09-28,68.0,0.93,32,True
+Montana,New Balance,28.0,2025-09-28,2026-09-28,68.0,0.41,51,True
+Nebraska,New Balance,67.0,2025-09-28,2026-09-28,68.0,0.99,28,True
+Nevada,New Balance,70.0,2025-09-28,2026-09-28,68.0,1.03,25,True
+New Hampshire,New Balance,60.0,2025-09-28,2026-09-28,68.0,0.88,37,True
+New Jersey,New Balance,93.0,2025-09-28,2026-09-28,68.0,1.37,3,True
+New Mexico,New Balance,58.0,2025-09-28,2026-09-28,68.0,0.85,39,True
+New York,New Balance,92.0,2025-09-28,2026-09-28,68.0,1.35,4,True
+North Carolina,New Balance,72.0,2025-09-28,2026-09-28,68.0,1.06,23,True
+North Dakota,New Balance,42.0,2025-09-28,2026-09-28,68.0,0.62,47,True
+Ohio,New Balance,64.0,2025-09-28,2026-09-28,68.0,0.94,31,True
+Oklahoma,New Balance,71.0,2025-09-28,2026-09-28,68.0,1.04,24,True
+Oregon,New Balance,53.0,2025-09-28,2026-09-28,68.0,0.78,43,True
+Pennsylvania,New Balance,73.0,2025-09-28,2026-09-28,68.0,1.07,21,True
+Rhode Island,New Balance,82.0,2025-09-28,2026-09-28,68.0,1.21,10,True
+South Carolina,New Balance,67.0,2025-09-28,2026-09-28,68.0,0.99,28,True
+South Dakota,New Balance,42.0,2025-09-28,2026-09-28,68.0,0.62,47,True
+Tennessee,New Balance,75.0,2025-09-28,2026-09-28,68.0,1.1,16,True
+Texas,New Balance,83.0,2025-09-28,2026-09-28,68.0,1.22,7,True
+Utah,New Balance,60.0,2025-09-28,2026-09-28,68.0,0.88,37,True
+Vermont,New Balance,38.0,2025-09-28,2026-09-28,68.0,0.56,49,True
+Virginia,New Balance,74.0,2025-09-28,2026-09-28,68.0,1.09,19,True
+Washington,New Balance,57.0,2025-09-28,2026-09-28,68.0,0.84,40,True
+West Virginia,New Balance,52.0,2025-09-28,2026-09-28,68.0,0.76,44,True
+Wisconsin,New Balance,56.0,2025-09-28,2026-09-28,68.0,0.82,41,True
+Wyoming,New Balance,81.0,2025-09-28,2026-09-28,68.0,1.19,11,True

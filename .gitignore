@@ -1,0 +1,12 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Rebuilt by scripts/clean_trends.py
+data/fitcode.duckdb
+
+# Local tools and private notes
+.claude/
+LEARNING.md
+assets/closet/canvas-assets.json
