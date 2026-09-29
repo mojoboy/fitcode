@@ -1,8 +1,14 @@
 # fitcode
 
-A website that builds you an outfit and shows the data behind every pick. Swipe a few pieces, answer eight quick questions, and a transparent scoring model picks a head-to-toe outfit, then explains each choice with the numbers that drove it.
+<a href="https://mojoboy.github.io/fitcode/"><img src="docs/wardrobe.jpg" alt="fitcode's home page: 28 clothing photos floating on a slowly turning 3D ball, above the line 'Your closet, read like data.'"></a>
+
+A website that builds you an outfit and shows the data behind every pick. Swipe a few pieces, answer eight quick questions, and a transparent scoring model picks a head-to-toe outfit from your taste, your state's weather this month (NOAA) and what people near you search for (Google Trends), then explains each choice with the numbers that drove it.
 
 **Live site:** https://mojoboy.github.io/fitcode/ · the closet is a sample of free stock photos, not a store.
+
+| Question 1: your state's weather | Try it on: every pick explains itself | Your fit |
+|:---:|:---:|:---:|
+| <img src="docs/questions.jpg" alt="Question 1 with Baltimore, MD typed in, and a card showing that Maryland averages a 79°F high and a 59°F low in September, with all 12 months as bars"> | <img src="docs/tryon.jpg" alt="Try it on: the outfit stacked head to toe, with the denim jacket's score on each signal and the reasons it was picked"> | <img src="docs/fit.jpg" alt="Your fit: the outfit, named 'Quiet utility.', with a reason for each piece"> |
 
 ## How the data flows
 
