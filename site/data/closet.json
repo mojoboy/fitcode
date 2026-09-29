@@ -9,7 +9,7 @@
         "streetwear",
         "vintage"
       ],
-      "img": "img/closet/hat-mustard-cap.jpg",
+      "img": "img/closet/hat-mustard-cap.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/tan-colored-hat-on-monochrome-background",
@@ -33,7 +33,7 @@
         "minimal",
         "workwear"
       ],
-      "img": "img/closet/hat-grey-beanie.jpg",
+      "img": "img/closet/hat-grey-beanie.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/kids-beanie",
@@ -56,7 +56,7 @@
         "workwear",
         "minimal"
       ],
-      "img": "img/closet/hat-navy-beanie.jpg",
+      "img": "img/closet/hat-navy-beanie.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/childrens-black-beanie",
@@ -78,7 +78,7 @@
       "styles": [
         "trend"
       ],
-      "img": "img/closet/eyewear-rose-aviators.jpg",
+      "img": "img/closet/eyewear-rose-aviators.webp",
       "w": 699,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/pink-sunglasses-on-white",
@@ -101,7 +101,7 @@
         "streetwear",
         "minimal"
       ],
-      "img": "img/closet/eyewear-black-wayfarers.jpg",
+      "img": "img/closet/eyewear-black-wayfarers.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/black-sunglasses-on-pink",
@@ -121,7 +121,7 @@
       "styles": [
         "smart"
       ],
-      "img": "img/closet/eyewear-black-aviators.jpg",
+      "img": "img/closet/eyewear-black-aviators.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/pair-of-silver-framed-sunglasses-on-a-stone-surface",
@@ -144,7 +144,7 @@
       "styles": [
         "vintage"
       ],
-      "img": "img/closet/eyewear-brown-round.jpg",
+      "img": "img/closet/eyewear-brown-round.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/black-round-sunglasses-on-top-right-of-yellow-background",
@@ -167,7 +167,7 @@
         "trend",
         "vintage"
       ],
-      "img": "img/closet/eyewear-mirrored-round.jpg",
+      "img": "img/closet/eyewear-mirrored-round.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/black-round-sunglasses-on-top-left-of-blue-background",
@@ -190,7 +190,7 @@
         "minimal",
         "smart"
       ],
-      "img": "img/closet/eyewear-tortoiseshell.jpg",
+      "img": "img/closet/eyewear-tortoiseshell.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/tortoise-shell-sunglass-frames-on-a-white-surface",
@@ -213,7 +213,7 @@
         "smart",
         "minimal"
       ],
-      "img": "img/closet/jewelry-leather-watch.jpg",
+      "img": "img/closet/jewelry-leather-watch.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/mens-watch-in-sun",
@@ -236,7 +236,7 @@
         "trend",
         "streetwear"
       ],
-      "img": "img/closet/jewelry-gold-chain.jpg",
+      "img": "img/closet/jewelry-gold-chain.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/gold-chain-necklace-on-corner",
@@ -261,7 +261,7 @@
         "vintage",
         "workwear"
       ],
-      "img": "img/closet/jewelry-leather-bracelet.jpg",
+      "img": "img/closet/jewelry-leather-bracelet.webp",
       "w": 800,
       "h": 534,
       "source": "https://www.shopify.com/stock-photos/photos/anchor-bracelet-leather",
@@ -281,7 +281,7 @@
       "styles": [
         "minimal"
       ],
-      "img": "img/closet/jewelry-gold-bangle.jpg",
+      "img": "img/closet/jewelry-gold-bangle.webp",
       "w": 800,
       "h": 534,
       "source": "https://www.shopify.com/stock-photos/photos/simple-gold-bracelet",
@@ -304,7 +304,7 @@
         "athleisure",
         "minimal"
       ],
-      "img": "img/closet/top-teal-tee.jpg",
+      "img": "img/closet/top-teal-tee.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/teal-t-shirt",
@@ -326,7 +326,7 @@
       "styles": [
         "minimal"
       ],
-      "img": "img/closet/top-cobalt-tee.jpg",
+      "img": "img/closet/top-cobalt-tee.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/cobalt-blue-t-shirt",
@@ -350,7 +350,7 @@
       "styles": [
         "minimal"
       ],
-      "img": "img/closet/top-sage-tee.jpg",
+      "img": "img/closet/top-sage-tee.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/grey-t-shirt",
@@ -373,7 +373,7 @@
         "vintage",
         "workwear"
       ],
-      "img": "img/closet/top-denim-jacket.jpg",
+      "img": "img/closet/top-denim-jacket.webp",
       "w": 800,
       "h": 800,
       "source": "https://www.shopify.com/stock-photos/photos/set-of-custom-enamel-pins",
@@ -396,7 +396,7 @@
         "smart",
         "vintage"
       ],
-      "img": "img/closet/top-oxblood-overshirt.jpg",
+      "img": "img/closet/top-oxblood-overshirt.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/dark-red-shirt-with-wooden-buttons",
@@ -419,7 +419,7 @@
       "styles": [
         "minimal"
       ],
-      "img": "img/closet/mood-folded-stack.jpg",
+      "img": "img/closet/mood-folded-stack.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/folded-clothes"
@@ -432,7 +432,7 @@
         "minimal",
         "streetwear"
       ],
-      "img": "img/closet/mood-black-tees.jpg",
+      "img": "img/closet/mood-black-tees.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/clothes-hangers-on-a-rail"
@@ -445,7 +445,7 @@
         "workwear",
         "smart"
       ],
-      "img": "img/closet/mood-black-overshirts.jpg",
+      "img": "img/closet/mood-black-overshirts.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/fine-wooden-hangers-display-dark-clothes"
@@ -457,7 +457,7 @@
       "styles": [
         "vintage"
       ],
-      "img": "img/closet/mood-denim-rack.jpg",
+      "img": "img/closet/mood-denim-rack.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/urban-vintage-denimn-on-hangers"
@@ -470,7 +470,7 @@
         "streetwear",
         "trend"
       ],
-      "img": "img/closet/shoes-chunky-sneakers-studio.jpg",
+      "img": "img/closet/shoes-chunky-sneakers-studio.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/black-and-white-sneakers-against-purple-and-white"
@@ -483,7 +483,7 @@
         "workwear",
         "vintage"
       ],
-      "img": "img/closet/bottom-folded-jeans.jpg",
+      "img": "img/closet/bottom-folded-jeans.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/a-pile-of-denim-jeans-in-different-shades-of-blue",
@@ -507,7 +507,7 @@
         "minimal",
         "vintage"
       ],
-      "img": "img/closet/bottom-light-jeans.jpg",
+      "img": "img/closet/bottom-light-jeans.webp",
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/close-up-of-the-pocket-of-lite-blue-jeans",
@@ -532,7 +532,7 @@
         "streetwear",
         "athleisure"
       ],
-      "img": "img/closet/shoes-chunky-sneakers.jpg",
+      "img": "img/closet/shoes-chunky-sneakers.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/fashionable-black-and-white-sneakers",
@@ -555,7 +555,7 @@
       "styles": [
         "workwear"
       ],
-      "img": "img/closet/shoes-work-boots.jpg",
+      "img": "img/closet/shoes-work-boots.webp",
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/steel-toed-boots",
@@ -578,7 +578,7 @@
         "smart",
         "minimal"
       ],
-      "img": "img/closet/shoes-penny-loafers.jpg",
+      "img": "img/closet/shoes-penny-loafers.webp",
       "w": 800,
       "h": 572,
       "source": "https://www.shopify.com/stock-photos/photos/loafers-leaning-along-white-wall",

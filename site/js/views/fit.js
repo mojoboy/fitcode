@@ -1,29 +1,35 @@
 // Your fit: the final outfit, its name, and why it works. It uses the same model (model.js) and
-// the same swaps as Try it on, so both pages always show the same outfit.
+// the same swaps as Try it on, so both pages always show the same outfit. A shared link
+// (#/fit/<code>) shows someone else's fit without touching your own saved answers.
 import * as store from '../store.js';
 import { h } from '../dom.js';
+import { encodeFit, decodeFit } from '../share.js';
 import { buildProfile, buildOutfit, explain, outfitName, leftOut, SLOT_NAMES } from '../model.js';
 
-export function mount(root, { data, setNote }) {
-  setNote('Your fit');
-  const saved = store.get();
+export function mount(root, { data, param, setNote }) {
+  const shared = param ? decodeFit(param) : null;
+  setNote(shared ? 'A shared fit' : 'Your fit');
+  const saved = shared || store.get();
   const profile = buildProfile(saved, data);
   const outfit = buildOutfit(data, profile, saved.overrides);
 
   root.innerHTML = `
     <section class="fit" aria-labelledby="fit-title">
       <div class="fit-intro">
-        <p class="eyebrow">Step 4 of 4 · Your fit</p>
+        <p class="eyebrow" data-step>Step 4 of 4 · Your fit</p>
+        <p class="fit-shared" data-shared hidden>Someone shared this fit with you. <a href="#/swipe">Make your own</a>.</p>
         <h1 id="fit-title" class="fit-name serif" data-name></h1>
         <p class="fit-lede" data-lede></p>
         <div class="fit-mix">
-          <p class="eyebrow">Your style mix</p>
+          <p class="eyebrow">Style mix</p>
           <ol class="read-bars" data-mix></ol>
         </div>
-        <div class="fit-actions">
-          <a class="pill pill-dark" href="#/try-on"><span class="arrow" aria-hidden="true">←</span> Back to try it on</a>
+        <div class="fit-actions" data-actions>
+          <button type="button" class="pill pill-dark" data-share>Copy a link to this fit</button>
+          <a class="pill pill-light" href="#/try-on"><span class="arrow" aria-hidden="true">←</span> Try it on</a>
           <button type="button" class="link-button" data-restart>Start over</button>
         </div>
+        <p class="fit-share-note" data-share-note hidden></p>
       </div>
       <div class="fit-grid" role="group" aria-label="Your outfit" data-grid></div>
       <aside class="fit-why" aria-labelledby="why-title">
@@ -36,7 +42,7 @@ export function mount(root, { data, setNote }) {
 
   const $ = (selector) => root.querySelector(selector);
   $('[data-name]').textContent = outfitName(profile);
-  $('[data-lede]').textContent = describe(profile);
+  $('[data-lede]').textContent = describe(profile, Boolean(shared));
 
   const mix = profile.mix.filter((m) => m.share > 0).slice(0, 3);
   $('[data-mix]').replaceChildren(...(mix.length ? mix.map((m) => h('li', { class: 'read-row' },
@@ -49,10 +55,16 @@ export function mount(root, { data, setNote }) {
     h('img', { src: piece.pick.item.img, alt: piece.pick.item.name }),
     h('figcaption', null, h('span', { class: 'eyebrow' }, `${String(i + 1).padStart(2, '0')} · ${SLOT_NAMES[piece.slot]}`), h('span', null, piece.pick.item.name)))));
 
-  // Why it works: each piece's two strongest reasons, then what the score used
-  const reasons = outfit.pieces
-    .map((piece) => ({ piece, top: explain(piece.pick, profile).slice(0, 2) }))
-    .filter((entry) => entry.top.length);
+  // Why it works: each piece's strongest reason, plus its next reason that hasn't already been
+  // said about another piece (so the same sentence doesn't repeat down the list)
+  const said = new Set();
+  const reasons = outfit.pieces.map((piece) => {
+    const all = explain(piece.pick, profile);
+    const second = all.slice(1).find((reason) => !said.has(reason.text));
+    const top = [all[0], second].filter(Boolean);
+    top.forEach((reason) => said.add(reason.text));
+    return { piece, top };
+  }).filter((entry) => entry.top.length);
   $('[data-why]').replaceChildren(...(reasons.length ? reasons.map(({ piece, top }) => h('div', { class: 'why-item' },
     h('span', { class: 'eyebrow' }, `${SLOT_NAMES[piece.slot]} · ${top.map((r) => r.label.replace(' · real data', '')).join(' + ')}`),
     h('p', null, h('strong', null, `${piece.pick.item.name}. `), top.map((r) => r.text).join(' '))))
@@ -62,6 +74,28 @@ export function mount(root, { data, setNote }) {
   const used = outfit.used.map((w) => `${w.name} ${Math.round((100 * w.pct) / weightSum)}%`);
   $('[data-used]').textContent = `${used.length ? `What the score used: ${used.join(' · ')}. ` : ''}${leftOut(profile)}`;
 
+  // A shared fit is read-only: no share, swap or start-over buttons, just a way to make your own
+  if (shared) {
+    $('[data-step]').textContent = 'A shared fit';
+    $('[data-shared]').hidden = false;
+    $('[data-actions]').replaceChildren(h('a', { class: 'pill pill-dark', href: '#/swipe' }, 'Make your own ', h('span', { class: 'arrow', 'aria-hidden': 'true' }, '→')));
+    return;
+  }
+  if (param) $('[data-lede]').textContent = "That share link didn't work, so this is your own fit.";
+
+  // Copy a link: the page address with everything that shapes this outfit packed after #/fit/
+  $('[data-share]').addEventListener('click', async () => {
+    const link = `${location.origin}${location.pathname}#/fit/${encodeFit(store.get(), data)}`;
+    const note = $('[data-share-note]');
+    try {
+      await navigator.clipboard.writeText(link);
+      note.textContent = 'Link copied. It carries your answers and your state, not your city.';
+    } catch {
+      note.textContent = `Copy this link: ${link}`;   // clipboard blocked: show it instead
+    }
+    note.hidden = false;
+  });
+
   $('[data-restart]').addEventListener('click', () => {
     if (!window.confirm('Clear your swipes, answers and brands, and start over?')) return;
     store.set({ swipes: [], answers: {}, brands: [], customBrands: [], overrides: {} });
@@ -69,8 +103,8 @@ export function mount(root, { data, setNote }) {
   });
 }
 
-// "Built from your 12 swipes, 6 answers and 3 brands."
-function describe(profile) {
+// "Built from your 12 swipes, 6 answers and 3 brands." (a shared fit leaves out the "your")
+function describe(profile, shared) {
   const { swipes, answered, brands } = profile.counts;
   const parts = [];
   if (swipes) parts.push(`${swipes} ${swipes === 1 ? 'swipe' : 'swipes'}`);
@@ -78,5 +112,5 @@ function describe(profile) {
   if (brands) parts.push(`${brands} ${brands === 1 ? 'brand' : 'brands'}`);
   if (!parts.length) return 'Built from nothing yet: swipe a few pieces and answer the questions, and this becomes yours.';
   const list = parts.length > 1 ? `${parts.slice(0, -1).join(', ')} and ${parts[parts.length - 1]}` : parts[0];
-  return `Built from your ${list}${profile.place ? `, for ${profile.place.name}` : ''}.`;
+  return `Built from ${shared ? '' : 'your '}${list}${profile.place ? `, for ${profile.place.name}` : ''}.`;
 }

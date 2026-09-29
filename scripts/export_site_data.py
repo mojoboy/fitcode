@@ -7,10 +7,10 @@ next to them. Run it again whenever a source table changes:
     .venv/Scripts/python scripts/export_site_data.py
 """
 import json
-import shutil
 from pathlib import Path
 
 import pandas as pd
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 CLOSET = ROOT / 'assets' / 'closet'
@@ -47,6 +47,14 @@ FLAGS = {
     'KS': 'Kansas ranks #1 for several unrelated brands, which points to a quirk in the data, '
           "not taste. It isn't used for recommendations until that's checked.",
 }
+
+
+WEBP_QUALITY = 80   # WebP at 80 looks the same as the JPG at this size, and is much smaller
+
+
+def save_webp(source, target):
+    with Image.open(source) as image:
+        image.convert('RGB').save(target, 'WEBP', quality=WEBP_QUALITY, method=6)
 
 
 def split(text):
@@ -91,16 +99,22 @@ def export_closet():
 
     photo_dir = SITE / 'img' / 'closet'
     photo_dir.mkdir(parents=True, exist_ok=True)
+    for old_copy in photo_dir.glob('*.jpg'):   # earlier exports copied JPGs here; the site now uses WebP
+        old_copy.unlink()
 
     items = []
+    before = after = 0
     for row in table.itertuples(index=False):
-        shutil.copy2(CLOSET / row.file, photo_dir / row.file)
+        target = photo_dir / f'{row.id}.webp'
+        save_webp(CLOSET / row.file, target)
+        before += (CLOSET / row.file).stat().st_size
+        after += target.stat().st_size
         item = {
             'id': row.id,
             'name': row.name,
             'slot': row.slot,
             'styles': row.style_tags.split(';'),
-            'img': f'img/closet/{row.file}',
+            'img': f'img/closet/{row.id}.webp',
             'w': int(row.width),
             'h': int(row.height),
             'source': row.source_page,
@@ -121,6 +135,7 @@ def export_closet():
         'note': 'Sample pieces from free Burst (Shopify) stock photos, not real products for sale.',
         'items': items,
     })
+    print(f'photos: {before / 1024:.0f} KB of JPG -> {after / 1024:.0f} KB of WebP ({1 - after / before:.0%} smaller)')
     return len(items)
 
 
@@ -191,7 +206,7 @@ def write_json(name, payload):
 
 if __name__ == '__main__':
     count = export_closet()
-    print(f'{count} closet pieces exported, photos copied to site/img/closet/')
+    print(f'{count} closet pieces exported, photos saved to site/img/closet/')
     brand_count, state_count = export_trends()
     print(f'Trends: {brand_count} brands x {state_count} states exported')
     listed, with_data = export_brands()

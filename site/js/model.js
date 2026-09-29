@@ -18,10 +18,11 @@ const ACCESSORY_SLOTS = ['hat', 'eyewear', 'jewelry'];
 // How many style points each source adds
 const POINTS = { like: 1, pass: -0.5, inspiration: 1, brand: 0.5 };
 // Your swipe on a piece is the strongest evidence there is, so it sets that piece's style score.
-// Pieces you didn't swipe are judged by their styles, and top out just below a real like.
+// Pieces you didn't swipe are judged by their styles and top out at 0.75, a clear step below a real
+// like: an unseen piece only beats one you liked when the other signals strongly favor it.
 const LIKED = 1;
 const PASSED = 0.1;
-const INFERRED_MAX = 0.9;
+const INFERRED_MAX = 0.75;
 const FIT_STEPS = [1, 0.8, 0.55, 0.4];   // your fit vs the piece's: same, 1 step apart, 2 steps, 3 steps
 
 // Everything the model knows about you, built from what's saved in the browser

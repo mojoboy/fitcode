@@ -16,6 +16,9 @@
 .fit-lede { font-size: 17px; line-height: 1.5; color: var(--ink-2); }
 .fit-mix { display: flex; flex-direction: column; gap: 14px; padding-top: 4px; }
 .fit-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; padding-top: 6px; }
+.fit-shared { padding: 12px 14px; border-radius: 12px; background: #EDECE7; font-size: 14px; line-height: 1.5; }
+.fit-shared[hidden], .fit-share-note[hidden] { display: none; }
+.fit-share-note { font-size: 13px; line-height: 1.5; color: var(--ink-2); overflow-wrap: anywhere; }
 
 .fit-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); align-content: center; gap: 16px; }
 .fit-piece { margin: 0; display: flex; flex-direction: column; gap: 8px; animation: arrive .9s var(--ease) backwards; }

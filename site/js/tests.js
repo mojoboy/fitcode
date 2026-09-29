@@ -5,6 +5,7 @@ import { buildProfile, buildOutfit, isStrong, SLOTS } from './model.js';
 import { tasteFromSwipes } from './taste.js';
 import { parsePlace } from './quiz.js';
 import { normalize } from './format.js';
+import { encodeFit, decodeFit } from './share.js';
 
 const results = [];
 function test(name, fn) {
@@ -87,6 +88,16 @@ test('the pieces you liked win their slots', () => {
     check(ids.includes(liked), `${liked} should be in ${ids.join(', ')}`);
   }
 });
+test('a liked piece beats an unseen one even when trends and color lean the other way', () => {
+  // Found by testing: with just two swipes, an unseen cobalt tee (trendier style in Maryland, close
+  // to navy) used to beat the denim jacket the visitor had liked.
+  const saved = {
+    swipes: [{ id: 'top-denim-jacket', vote: 1 }, { id: 'shoes-penny-loafers', vote: 1 }],
+    answers: { city: 'Baltimore, MD', colors: ['navy'], acc: 'none' },
+    brands: ['COS'],
+  };
+  check(idsOf(run(saved).outfit).includes('top-denim-jacket'), 'the liked denim jacket should be the top');
+});
 test('hard no: "Chains" removes the chain before scoring', () => {
   const { outfit } = run(SAMPLE);
   check(outfit.removed.some((r) => r.item.id === 'jewelry-gold-chain'), 'chain listed as removed');
@@ -152,6 +163,18 @@ test('a visitor who skipped everything still gets an outfit', () => {
   const { outfit } = run({ swipes: [], answers: {}, brands: [] });
   check(outfit.pieces.length >= 3, `pieces: ${outfit.pieces.length}`);
 });
+
+// ---------- Share links ----------
+
+test('a share link rebuilds the same outfit, without the city or typed-in brands', () => {
+  const saved = { ...SAMPLE, brands: [...SAMPLE.brands, 'zzbrand'], customBrands: ['zzbrand'], overrides: { top: 'top-sage-tee' } };
+  const decoded = decodeFit(encodeFit(saved, data));
+  same(idsOf(run(decoded, decoded.overrides).outfit), idsOf(run(saved, saved.overrides).outfit), 'outfit');
+  check(!JSON.stringify(decoded).includes('Baltimore'), 'the city should be left out');
+  same(parsePlace(decoded.answers.city, states).code, 'MD', 'state kept');
+  check(!decoded.brands.includes('zzbrand'), 'typed-in brand should be left out');
+});
+test('a broken share link is rejected, not half-read', () => same(decodeFit('not-a-real-link'), null, 'decoded'));
 
 // ---------- Show the results ----------
 
