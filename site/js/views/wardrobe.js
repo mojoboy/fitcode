@@ -153,12 +153,12 @@ export function mount(root, { data, setNote }) {
     }
   };
   const pieceAt = (target) => byElement.get(target.closest('.piece')) || null;
+  // Pointing at a piece is silent (sweeping across the cloud made a run of notes); only a click plays one
   const setHovered = (p) => {
     clearTimeout(leaveTimer);
     if (p === hovered) return;
     hovered = p;
     refresh();
-    if (p) tick(1100 + points.indexOf(p) * 18);
   };
   // A short grace period when the mouse leaves a piece, so sliding onto the next one doesn't flash
   const releaseHover = () => {
