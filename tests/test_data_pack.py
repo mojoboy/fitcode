@@ -95,5 +95,25 @@ class TrendsTests(unittest.TestCase):
             self.assertIn(code, self.states)
 
 
+class ClimateTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.states = load('climate.json')['states']
+
+    def test_same_places_as_the_trends_data(self):
+        self.assertEqual(set(self.states), set(load('trends.json')['states']))
+
+    def test_twelve_months_each_with_highs_above_lows(self):
+        for code, state in self.states.items():
+            self.assertEqual(len(state['months']), 12, code)
+            for month in state['months']:
+                self.assertLess(month['low'], month['high'], code)
+                self.assertGreaterEqual(month['precip'], 0, code)
+
+    def test_dc_borrows_marylands_numbers(self):
+        self.assertEqual(self.states['DC']['proxyFor'], 'MD')
+        self.assertEqual(self.states['DC']['months'], self.states['MD']['months'])
+
+
 if __name__ == '__main__':
     unittest.main()

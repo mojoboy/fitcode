@@ -111,9 +111,9 @@ export const NEVER = [
 export const QUESTIONS = [
   {
     key: 'where', title: 'Where you live', lead: 'Where do you', accent: 'live?', feeds: ['climate', 'trends'],
-    help: 'Your city sets the weather we dress you for. Your state tells us what people near you are searching for.',
-    hint: 'Type a city and state, or pick one',
-    note: 'Your city picks the weather we dress you for (NOAA 30-year climate normals, added in a later step). Your state picks the search trends we check (Google Trends).',
+    help: 'Your state sets the weather we dress you for and tells us what people near you are searching for.',
+    hint: 'Type a city and state, or just a state',
+    note: "Your state picks the weather we dress you for (NOAA's statewide averages for this month, 2021–2025) and the search trends we check (Google Trends). Your city isn't scored.",
   },
   {
     key: 'week', title: 'Your week', lead: 'What does a normal week', accent: 'look like?', feeds: ['life'],
@@ -153,15 +153,24 @@ export const QUESTIONS = [
   },
 ];
 
-// "Baltimore, MD", "Baltimore, Maryland" or "Washington, D.C." -> { city, code, typed }
+// "Baltimore, MD", "Baltimore, Maryland", "Washington, D.C." or just "Maryland" -> { city, code, typed }
 // code is the two-letter state code if we recognize the state, otherwise null.
 export function parsePlace(text, states) {
   const parts = String(text || '').split(',');
-  if (parts.length < 2) return { city: parts[0].trim(), code: null, typed: '' };
+  if (parts.length < 2) {
+    // No comma: a state on its own counts, if it's a full name or a code in capitals ("MD"), so
+    // typing "Al" on the way to "Albany" doesn't flash Alabama
+    const alone = parts[0].trim();
+    const code = /^[A-Z.]+$/.test(alone) || alone.length > 3 ? findState(alone, states) : null;
+    return code ? { city: '', code, typed: alone } : { city: alone, code: null, typed: '' };
+  }
   const city = parts.slice(0, -1).join(',').trim();
   const typed = parts[parts.length - 1].trim();
+  return { city, code: findState(typed, states), typed };
+}
+
+function findState(typed, states) {
   const short = typed.replace(/\./g, '').toUpperCase();
-  if (states[short]) return { city, code: short, typed };
-  const code = Object.keys(states).find((key) => states[key].name.toLowerCase() === typed.toLowerCase());
-  return { city, code: code || null, typed };
+  if (states[short]) return short;
+  return Object.keys(states).find((key) => states[key].name.toLowerCase() === typed.toLowerCase()) || null;
 }

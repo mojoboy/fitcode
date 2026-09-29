@@ -1,11 +1,12 @@
 // Share links: everything that shapes an outfit, packed into the address, like #/fit/eyJ2Ijox...
 // Only what the model uses goes in: your swipes, answers and brand picks, your state instead of
-// your city, and nothing you typed yourself. There's no server, so the link itself is the data.
+// your city, the month (it sets the weather), and nothing you typed yourself. There's no server,
+// so the link itself is the data.
 import { parsePlace } from './quiz.js';
 
 const VERSION = 1;
 
-export function encodeFit(saved, data) {
+export function encodeFit(saved, data, month) {
   const answers = { ...saved.answers };
   const place = parsePlace(answers.city, data.trends.states);
   answers.city = place.code ? `, ${place.code}` : '';     // keep the state, drop the city
@@ -17,6 +18,7 @@ export function encodeFit(saved, data) {
     answers,
     brands: saved.brands.filter((name) => listed.has(name)),   // typed-in brands aren't used either
     overrides: saved.overrides,
+    month,
   };
   return toBase64Url(JSON.stringify(payload));
 }
@@ -31,6 +33,8 @@ export function decodeFit(code) {
       answers: payload.answers && typeof payload.answers === 'object' ? payload.answers : {},
       brands: Array.isArray(payload.brands) ? payload.brands : [],
       overrides: payload.overrides && typeof payload.overrides === 'object' ? payload.overrides : {},
+      // Links made before the month was added have none, so they use the current month
+      month: Number.isInteger(payload.month) && payload.month >= 0 && payload.month < 12 ? payload.month : undefined,
     };
   } catch {
     return null;

@@ -1,0 +1,4604 @@
+{
+  "source": "NOAA nClimDiv statewide monthly averages",
+  "issued": "20260904",
+  "recent": [
+    2021,
+    2025
+  ],
+  "normal": [
+    1991,
+    2020
+  ],
+  "states": {
+    "AK": {
+      "name": "Alaska",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 14.7,
+          "low": 2.2,
+          "precip": 3.47,
+          "highNormal": 10.7,
+          "change": 4.0
+        },
+        {
+          "high": 14.7,
+          "low": 0.5,
+          "precip": 2.52,
+          "highNormal": 16.2,
+          "change": -1.5
+        },
+        {
+          "high": 22.6,
+          "low": 5.6,
+          "precip": 2.36,
+          "highNormal": 21.2,
+          "change": 1.4
+        },
+        {
+          "high": 33.0,
+          "low": 15.2,
+          "precip": 1.88,
+          "highNormal": 35.0,
+          "change": -1.9
+        },
+        {
+          "high": 47.8,
+          "low": 31.1,
+          "precip": 2.45,
+          "highNormal": 48.9,
+          "change": -1.2
+        },
+        {
+          "high": 60.3,
+          "low": 42.5,
+          "precip": 2.14,
+          "highNormal": 59.9,
+          "change": 0.4
+        },
+        {
+          "high": 61.8,
+          "low": 46.6,
+          "precip": 3.85,
+          "highNormal": 62.3,
+          "change": -0.5
+        },
+        {
+          "high": 57.5,
+          "low": 44.0,
+          "precip": 5.17,
+          "highNormal": 57.9,
+          "change": -0.4
+        },
+        {
+          "high": 47.7,
+          "low": 35.1,
+          "precip": 5.03,
+          "highNormal": 48.3,
+          "change": -0.6
+        },
+        {
+          "high": 34.4,
+          "low": 23.1,
+          "precip": 4.7,
+          "highNormal": 33.2,
+          "change": 1.2
+        },
+        {
+          "high": 20.1,
+          "low": 8.6,
+          "precip": 3.14,
+          "highNormal": 19.4,
+          "change": 0.8
+        },
+        {
+          "high": 12.7,
+          "low": -0.1,
+          "precip": 3.34,
+          "highNormal": 13.2,
+          "change": -0.6
+        }
+      ]
+    },
+    "AL": {
+      "name": "Alabama",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 56.2,
+          "low": 33.9,
+          "precip": 5.28,
+          "highNormal": 56.1,
+          "change": 0.1
+        },
+        {
+          "high": 63.7,
+          "low": 39.8,
+          "precip": 4.59,
+          "highNormal": 60.7,
+          "change": 3.0
+        },
+        {
+          "high": 71.1,
+          "low": 45.8,
+          "precip": 6.53,
+          "highNormal": 68.4,
+          "change": 2.7
+        },
+        {
+          "high": 76.2,
+          "low": 51.2,
+          "precip": 5.23,
+          "highNormal": 75.8,
+          "change": 0.5
+        },
+        {
+          "high": 82.7,
+          "low": 61.0,
+          "precip": 5.88,
+          "highNormal": 82.8,
+          "change": -0.1
+        },
+        {
+          "high": 89.0,
+          "low": 67.5,
+          "precip": 5.61,
+          "highNormal": 88.4,
+          "change": 0.7
+        },
+        {
+          "high": 91.0,
+          "low": 71.3,
+          "precip": 5.75,
+          "highNormal": 90.7,
+          "change": 0.2
+        },
+        {
+          "high": 90.4,
+          "low": 69.8,
+          "precip": 4.65,
+          "highNormal": 90.2,
+          "change": 0.2
+        },
+        {
+          "high": 85.9,
+          "low": 64.0,
+          "precip": 3.51,
+          "highNormal": 86.0,
+          "change": -0.0
+        },
+        {
+          "high": 77.8,
+          "low": 52.7,
+          "precip": 2.4,
+          "highNormal": 76.7,
+          "change": 1.1
+        },
+        {
+          "high": 68.0,
+          "low": 43.7,
+          "precip": 2.9,
+          "highNormal": 66.2,
+          "change": 1.7
+        },
+        {
+          "high": 61.0,
+          "low": 39.5,
+          "precip": 4.18,
+          "highNormal": 58.4,
+          "change": 2.6
+        }
+      ]
+    },
+    "AR": {
+      "name": "Arkansas",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 49.8,
+          "low": 29.7,
+          "precip": 5.02,
+          "highNormal": 50.0,
+          "change": -0.2
+        },
+        {
+          "high": 54.9,
+          "low": 33.7,
+          "precip": 3.85,
+          "highNormal": 54.8,
+          "change": 0.2
+        },
+        {
+          "high": 66.7,
+          "low": 42.4,
+          "precip": 5.58,
+          "highNormal": 63.4,
+          "change": 3.3
+        },
+        {
+          "high": 72.6,
+          "low": 49.9,
+          "precip": 6.56,
+          "highNormal": 72.4,
+          "change": 0.1
+        },
+        {
+          "high": 80.0,
+          "low": 59.6,
+          "precip": 6.34,
+          "highNormal": 79.9,
+          "change": 0.2
+        },
+        {
+          "high": 88.3,
+          "low": 67.4,
+          "precip": 4.15,
+          "highNormal": 87.4,
+          "change": 0.9
+        },
+        {
+          "high": 91.6,
+          "low": 71.1,
+          "precip": 4.23,
+          "highNormal": 91.0,
+          "change": 0.6
+        },
+        {
+          "high": 91.1,
+          "low": 69.6,
+          "precip": 3.1,
+          "highNormal": 90.6,
+          "change": 0.5
+        },
+        {
+          "high": 86.3,
+          "low": 62.3,
+          "precip": 2.63,
+          "highNormal": 84.5,
+          "change": 1.8
+        },
+        {
+          "high": 77.2,
+          "low": 51.7,
+          "precip": 3.3,
+          "highNormal": 73.9,
+          "change": 3.3
+        },
+        {
+          "high": 63.7,
+          "low": 41.4,
+          "precip": 3.55,
+          "highNormal": 61.6,
+          "change": 2.1
+        },
+        {
+          "high": 56.4,
+          "low": 37.0,
+          "precip": 3.78,
+          "highNormal": 52.3,
+          "change": 4.1
+        }
+      ]
+    },
+    "AZ": {
+      "name": "Arizona",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 54.6,
+          "low": 28.9,
+          "precip": 1.06,
+          "highNormal": 55.7,
+          "change": -1.2
+        },
+        {
+          "high": 60.0,
+          "low": 32.2,
+          "precip": 0.74,
+          "highNormal": 59.3,
+          "change": 0.6
+        },
+        {
+          "high": 63.7,
+          "low": 36.4,
+          "precip": 1.2,
+          "highNormal": 66.3,
+          "change": -2.6
+        },
+        {
+          "high": 75.2,
+          "low": 43.3,
+          "precip": 0.23,
+          "highNormal": 73.5,
+          "change": 1.7
+        },
+        {
+          "high": 83.7,
+          "low": 51.1,
+          "precip": 0.19,
+          "highNormal": 82.6,
+          "change": 1.0
+        },
+        {
+          "high": 94.2,
+          "low": 61.9,
+          "precip": 0.43,
+          "highNormal": 93.0,
+          "change": 1.2
+        },
+        {
+          "high": 97.3,
+          "low": 68.7,
+          "precip": 1.73,
+          "highNormal": 95.2,
+          "change": 2.1
+        },
+        {
+          "high": 94.0,
+          "low": 67.1,
+          "precip": 1.99,
+          "highNormal": 93.2,
+          "change": 0.9
+        },
+        {
+          "high": 89.2,
+          "low": 60.7,
+          "precip": 1.19,
+          "highNormal": 87.9,
+          "change": 1.2
+        },
+        {
+          "high": 78.3,
+          "low": 48.9,
+          "precip": 0.83,
+          "highNormal": 77.1,
+          "change": 1.2
+        },
+        {
+          "high": 65.7,
+          "low": 37.5,
+          "precip": 0.58,
+          "highNormal": 64.8,
+          "change": 0.9
+        },
+        {
+          "high": 59.5,
+          "low": 33.2,
+          "precip": 0.9,
+          "highNormal": 54.8,
+          "change": 4.7
+        }
+      ]
+    },
+    "CA": {
+      "name": "California",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 55.1,
+          "low": 34.8,
+          "precip": 3.58,
+          "highNormal": 54.6,
+          "change": 0.5
+        },
+        {
+          "high": 57.6,
+          "low": 35.4,
+          "precip": 3.34,
+          "highNormal": 57.3,
+          "change": 0.3
+        },
+        {
+          "high": 59.8,
+          "low": 37.6,
+          "precip": 3.64,
+          "highNormal": 62.3,
+          "change": -2.4
+        },
+        {
+          "high": 69.4,
+          "low": 43.0,
+          "precip": 0.92,
+          "highNormal": 67.6,
+          "change": 1.7
+        },
+        {
+          "high": 77.0,
+          "low": 49.6,
+          "precip": 0.5,
+          "highNormal": 75.6,
+          "change": 1.4
+        },
+        {
+          "high": 86.6,
+          "low": 57.5,
+          "precip": 0.21,
+          "highNormal": 84.5,
+          "change": 2.1
+        },
+        {
+          "high": 93.4,
+          "low": 63.8,
+          "precip": 0.14,
+          "highNormal": 90.9,
+          "change": 2.5
+        },
+        {
+          "high": 91.4,
+          "low": 62.4,
+          "precip": 0.36,
+          "highNormal": 90.4,
+          "change": 1.0
+        },
+        {
+          "high": 85.3,
+          "low": 57.9,
+          "precip": 0.54,
+          "highNormal": 85.2,
+          "change": 0.0
+        },
+        {
+          "high": 74.9,
+          "low": 48.9,
+          "precip": 1.27,
+          "highNormal": 74.4,
+          "change": 0.5
+        },
+        {
+          "high": 62.2,
+          "low": 40.2,
+          "precip": 2.49,
+          "highNormal": 62.0,
+          "change": 0.2
+        },
+        {
+          "high": 56.1,
+          "low": 37.3,
+          "precip": 4.97,
+          "highNormal": 53.7,
+          "change": 2.4
+        }
+      ]
+    },
+    "CO": {
+      "name": "Colorado",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 36.5,
+          "low": 12.3,
+          "precip": 1.05,
+          "highNormal": 38.9,
+          "change": -2.4
+        },
+        {
+          "high": 40.3,
+          "low": 14.4,
+          "precip": 1.14,
+          "highNormal": 41.8,
+          "change": -1.4
+        },
+        {
+          "high": 48.7,
+          "low": 22.0,
+          "precip": 1.71,
+          "highNormal": 50.7,
+          "change": -2.0
+        },
+        {
+          "high": 58.3,
+          "low": 28.8,
+          "precip": 1.06,
+          "highNormal": 57.5,
+          "change": 0.8
+        },
+        {
+          "high": 67.0,
+          "low": 38.8,
+          "precip": 2.23,
+          "highNormal": 67.0,
+          "change": -0.0
+        },
+        {
+          "high": 79.3,
+          "low": 49.2,
+          "precip": 1.77,
+          "highNormal": 78.3,
+          "change": 1.0
+        },
+        {
+          "high": 84.6,
+          "low": 54.2,
+          "precip": 1.95,
+          "highNormal": 83.5,
+          "change": 1.1
+        },
+        {
+          "high": 82.4,
+          "low": 52.9,
+          "precip": 2.04,
+          "highNormal": 80.9,
+          "change": 1.5
+        },
+        {
+          "high": 76.8,
+          "low": 45.8,
+          "precip": 1.29,
+          "highNormal": 73.6,
+          "change": 3.1
+        },
+        {
+          "high": 63.8,
+          "low": 34.4,
+          "precip": 1.26,
+          "highNormal": 61.1,
+          "change": 2.7
+        },
+        {
+          "high": 50.1,
+          "low": 23.2,
+          "precip": 0.97,
+          "highNormal": 48.2,
+          "change": 1.9
+        },
+        {
+          "high": 44.0,
+          "low": 18.3,
+          "precip": 1.1,
+          "highNormal": 38.7,
+          "change": 5.3
+        }
+      ]
+    },
+    "CT": {
+      "name": "Connecticut",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 37.3,
+          "low": 21.8,
+          "precip": 3.84,
+          "highNormal": 36.0,
+          "change": 1.3
+        },
+        {
+          "high": 40.1,
+          "low": 21.9,
+          "precip": 2.61,
+          "highNormal": 38.7,
+          "change": 1.3
+        },
+        {
+          "high": 50.1,
+          "low": 30.1,
+          "precip": 4.35,
+          "highNormal": 46.6,
+          "change": 3.5
+        },
+        {
+          "high": 59.9,
+          "low": 38.0,
+          "precip": 4.02,
+          "highNormal": 58.8,
+          "change": 1.1
+        },
+        {
+          "high": 70.1,
+          "low": 48.1,
+          "precip": 4.8,
+          "highNormal": 69.5,
+          "change": 0.6
+        },
+        {
+          "high": 78.8,
+          "low": 57.1,
+          "precip": 2.84,
+          "highNormal": 77.7,
+          "change": 1.1
+        },
+        {
+          "high": 83.8,
+          "low": 64.0,
+          "precip": 6.26,
+          "highNormal": 82.9,
+          "change": 0.9
+        },
+        {
+          "high": 81.2,
+          "low": 60.9,
+          "precip": 4.29,
+          "highNormal": 81.0,
+          "change": 0.2
+        },
+        {
+          "high": 74.3,
+          "low": 54.3,
+          "precip": 5.8,
+          "highNormal": 73.9,
+          "change": 0.4
+        },
+        {
+          "high": 65.0,
+          "low": 44.0,
+          "precip": 3.97,
+          "highNormal": 62.5,
+          "change": 2.5
+        },
+        {
+          "high": 52.4,
+          "low": 32.6,
+          "precip": 2.4,
+          "highNormal": 51.1,
+          "change": 1.4
+        },
+        {
+          "high": 42.2,
+          "low": 25.5,
+          "precip": 4.9,
+          "highNormal": 40.9,
+          "change": 1.2
+        }
+      ]
+    },
+    "DC": {
+      "name": "District of Columbia",
+      "proxyFor": "MD",
+      "months": [
+        {
+          "high": 43.1,
+          "low": 26.6,
+          "precip": 3.1,
+          "highNormal": 42.5,
+          "change": 0.5
+        },
+        {
+          "high": 48.0,
+          "low": 28.9,
+          "precip": 2.69,
+          "highNormal": 45.7,
+          "change": 2.4
+        },
+        {
+          "high": 58.4,
+          "low": 36.2,
+          "precip": 3.35,
+          "highNormal": 53.8,
+          "change": 4.5
+        },
+        {
+          "high": 67.1,
+          "low": 44.5,
+          "precip": 3.43,
+          "highNormal": 65.6,
+          "change": 1.6
+        },
+        {
+          "high": 74.1,
+          "low": 53.2,
+          "precip": 4.48,
+          "highNormal": 74.3,
+          "change": -0.1
+        },
+        {
+          "high": 83.3,
+          "low": 62.0,
+          "precip": 3.39,
+          "highNormal": 82.5,
+          "change": 0.8
+        },
+        {
+          "high": 88.1,
+          "low": 68.5,
+          "precip": 4.73,
+          "highNormal": 86.8,
+          "change": 1.3
+        },
+        {
+          "high": 85.0,
+          "low": 65.2,
+          "precip": 3.73,
+          "highNormal": 84.9,
+          "change": 0.0
+        },
+        {
+          "high": 78.7,
+          "low": 59.1,
+          "precip": 3.82,
+          "highNormal": 78.4,
+          "change": 0.3
+        },
+        {
+          "high": 69.1,
+          "low": 47.7,
+          "precip": 2.25,
+          "highNormal": 67.6,
+          "change": 1.5
+        },
+        {
+          "high": 57.5,
+          "low": 36.4,
+          "precip": 2.01,
+          "highNormal": 56.1,
+          "change": 1.3
+        },
+        {
+          "high": 48.1,
+          "low": 29.8,
+          "precip": 3.33,
+          "highNormal": 46.7,
+          "change": 1.4
+        }
+      ]
+    },
+    "DE": {
+      "name": "Delaware",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 44.0,
+          "low": 27.4,
+          "precip": 3.35,
+          "highNormal": 43.9,
+          "change": 0.1
+        },
+        {
+          "high": 48.1,
+          "low": 29.5,
+          "precip": 2.87,
+          "highNormal": 46.5,
+          "change": 1.6
+        },
+        {
+          "high": 58.1,
+          "low": 36.8,
+          "precip": 4.31,
+          "highNormal": 54.2,
+          "change": 3.9
+        },
+        {
+          "high": 66.7,
+          "low": 44.9,
+          "precip": 3.59,
+          "highNormal": 65.4,
+          "change": 1.3
+        },
+        {
+          "high": 74.0,
+          "low": 53.9,
+          "precip": 3.51,
+          "highNormal": 74.2,
+          "change": -0.2
+        },
+        {
+          "high": 83.5,
+          "low": 62.8,
+          "precip": 3.32,
+          "highNormal": 82.7,
+          "change": 0.8
+        },
+        {
+          "high": 87.8,
+          "low": 69.5,
+          "precip": 5.58,
+          "highNormal": 87.3,
+          "change": 0.5
+        },
+        {
+          "high": 84.8,
+          "low": 66.0,
+          "precip": 3.0,
+          "highNormal": 85.3,
+          "change": -0.5
+        },
+        {
+          "high": 78.8,
+          "low": 60.1,
+          "precip": 3.22,
+          "highNormal": 79.0,
+          "change": -0.1
+        },
+        {
+          "high": 69.6,
+          "low": 48.6,
+          "precip": 2.4,
+          "highNormal": 68.5,
+          "change": 1.1
+        },
+        {
+          "high": 58.2,
+          "low": 37.1,
+          "precip": 1.94,
+          "highNormal": 57.4,
+          "change": 0.9
+        },
+        {
+          "high": 48.9,
+          "low": 30.5,
+          "precip": 3.77,
+          "highNormal": 48.3,
+          "change": 0.5
+        }
+      ]
+    },
+    "FL": {
+      "name": "Florida",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 69.3,
+          "low": 46.9,
+          "precip": 2.42,
+          "highNormal": 69.5,
+          "change": -0.2
+        },
+        {
+          "high": 75.4,
+          "low": 52.8,
+          "precip": 2.4,
+          "highNormal": 72.6,
+          "change": 2.8
+        },
+        {
+          "high": 79.4,
+          "low": 56.4,
+          "precip": 3.28,
+          "highNormal": 77.0,
+          "change": 2.3
+        },
+        {
+          "high": 83.1,
+          "low": 60.3,
+          "precip": 3.23,
+          "highNormal": 82.1,
+          "change": 1.0
+        },
+        {
+          "high": 88.6,
+          "low": 66.9,
+          "precip": 3.88,
+          "highNormal": 87.5,
+          "change": 1.1
+        },
+        {
+          "high": 91.1,
+          "low": 72.1,
+          "precip": 7.55,
+          "highNormal": 90.4,
+          "change": 0.7
+        },
+        {
+          "high": 92.4,
+          "low": 74.5,
+          "precip": 7.36,
+          "highNormal": 91.6,
+          "change": 0.8
+        },
+        {
+          "high": 92.3,
+          "low": 74.6,
+          "precip": 7.49,
+          "highNormal": 91.3,
+          "change": 1.1
+        },
+        {
+          "high": 89.2,
+          "low": 71.4,
+          "precip": 7.32,
+          "highNormal": 89.0,
+          "change": 0.3
+        },
+        {
+          "high": 83.8,
+          "low": 63.7,
+          "precip": 3.28,
+          "highNormal": 83.6,
+          "change": 0.1
+        },
+        {
+          "high": 77.4,
+          "low": 56.6,
+          "precip": 2.43,
+          "highNormal": 76.6,
+          "change": 0.8
+        },
+        {
+          "high": 72.9,
+          "low": 52.0,
+          "precip": 2.57,
+          "highNormal": 71.5,
+          "change": 1.4
+        }
+      ]
+    },
+    "GA": {
+      "name": "Georgia",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 57.9,
+          "low": 35.0,
+          "precip": 4.73,
+          "highNormal": 57.8,
+          "change": 0.1
+        },
+        {
+          "high": 65.5,
+          "low": 41.2,
+          "precip": 4.02,
+          "highNormal": 61.9,
+          "change": 3.6
+        },
+        {
+          "high": 71.9,
+          "low": 46.4,
+          "precip": 5.0,
+          "highNormal": 69.0,
+          "change": 2.9
+        },
+        {
+          "high": 77.5,
+          "low": 51.1,
+          "precip": 4.0,
+          "highNormal": 76.4,
+          "change": 1.0
+        },
+        {
+          "high": 83.0,
+          "low": 60.3,
+          "precip": 4.61,
+          "highNormal": 83.4,
+          "change": -0.4
+        },
+        {
+          "high": 89.3,
+          "low": 67.2,
+          "precip": 4.61,
+          "highNormal": 88.6,
+          "change": 0.7
+        },
+        {
+          "high": 91.4,
+          "low": 71.3,
+          "precip": 5.87,
+          "highNormal": 91.0,
+          "change": 0.3
+        },
+        {
+          "high": 89.8,
+          "low": 70.1,
+          "precip": 6.08,
+          "highNormal": 89.9,
+          "change": -0.0
+        },
+        {
+          "high": 85.3,
+          "low": 63.7,
+          "precip": 4.21,
+          "highNormal": 85.4,
+          "change": -0.1
+        },
+        {
+          "high": 77.5,
+          "low": 52.8,
+          "precip": 2.12,
+          "highNormal": 76.8,
+          "change": 0.7
+        },
+        {
+          "high": 69.2,
+          "low": 44.4,
+          "precip": 2.27,
+          "highNormal": 67.4,
+          "change": 1.8
+        },
+        {
+          "high": 62.0,
+          "low": 39.6,
+          "precip": 3.58,
+          "highNormal": 60.0,
+          "change": 2.1
+        }
+      ]
+    },
+    "HI": {
+      "name": "Hawaii",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 72.1,
+          "low": 56.9,
+          "precip": 5.3,
+          "highNormal": 71.4,
+          "change": 0.8
+        },
+        {
+          "high": 71.0,
+          "low": 56.1,
+          "precip": 4.63,
+          "highNormal": 70.9,
+          "change": 0.1
+        },
+        {
+          "high": 71.7,
+          "low": 57.3,
+          "precip": 6.12,
+          "highNormal": 71.0,
+          "change": 0.7
+        },
+        {
+          "high": 72.3,
+          "low": 58.2,
+          "precip": 4.74,
+          "highNormal": 72.2,
+          "change": 0.1
+        },
+        {
+          "high": 73.5,
+          "low": 59.4,
+          "precip": 4.26,
+          "highNormal": 73.7,
+          "change": -0.3
+        },
+        {
+          "high": 75.1,
+          "low": 60.5,
+          "precip": 2.74,
+          "highNormal": 75.2,
+          "change": -0.1
+        },
+        {
+          "high": 76.6,
+          "low": 62.1,
+          "precip": 3.38,
+          "highNormal": 76.3,
+          "change": 0.3
+        },
+        {
+          "high": 76.9,
+          "low": 62.1,
+          "precip": 4.24,
+          "highNormal": 77.0,
+          "change": -0.1
+        },
+        {
+          "high": 76.7,
+          "low": 61.9,
+          "precip": 3.08,
+          "highNormal": 76.6,
+          "change": 0.1
+        },
+        {
+          "high": 75.9,
+          "low": 61.2,
+          "precip": 3.52,
+          "highNormal": 75.9,
+          "change": 0.0
+        },
+        {
+          "high": 74.2,
+          "low": 59.8,
+          "precip": 4.78,
+          "highNormal": 73.8,
+          "change": 0.4
+        },
+        {
+          "high": 72.4,
+          "low": 58.3,
+          "precip": 5.28,
+          "highNormal": 71.9,
+          "change": 0.5
+        }
+      ]
+    },
+    "IA": {
+      "name": "Iowa",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 28.8,
+          "low": 12.0,
+          "precip": 1.21,
+          "highNormal": 28.1,
+          "change": 0.7
+        },
+        {
+          "high": 34.1,
+          "low": 13.0,
+          "precip": 0.8,
+          "highNormal": 33.1,
+          "change": 1.0
+        },
+        {
+          "high": 50.3,
+          "low": 28.3,
+          "precip": 2.43,
+          "highNormal": 46.3,
+          "change": 4.0
+        },
+        {
+          "high": 60.4,
+          "low": 36.9,
+          "precip": 2.88,
+          "highNormal": 60.1,
+          "change": 0.3
+        },
+        {
+          "high": 72.6,
+          "low": 49.3,
+          "precip": 4.06,
+          "highNormal": 71.1,
+          "change": 1.5
+        },
+        {
+          "high": 83.7,
+          "low": 60.5,
+          "precip": 4.2,
+          "highNormal": 80.6,
+          "change": 3.1
+        },
+        {
+          "high": 83.7,
+          "low": 63.0,
+          "precip": 4.84,
+          "highNormal": 83.8,
+          "change": -0.2
+        },
+        {
+          "high": 82.7,
+          "low": 61.0,
+          "precip": 3.55,
+          "highNormal": 81.7,
+          "change": 0.9
+        },
+        {
+          "high": 79.2,
+          "low": 53.9,
+          "precip": 1.67,
+          "highNormal": 75.4,
+          "change": 3.7
+        },
+        {
+          "high": 66.8,
+          "low": 42.4,
+          "precip": 2.57,
+          "highNormal": 62.3,
+          "change": 4.4
+        },
+        {
+          "high": 49.3,
+          "low": 28.8,
+          "precip": 1.6,
+          "highNormal": 46.4,
+          "change": 2.9
+        },
+        {
+          "high": 36.5,
+          "low": 19.3,
+          "precip": 1.33,
+          "highNormal": 33.2,
+          "change": 3.3
+        }
+      ]
+    },
+    "ID": {
+      "name": "Idaho",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 32.5,
+          "low": 16.0,
+          "precip": 2.15,
+          "highNormal": 33.2,
+          "change": -0.7
+        },
+        {
+          "high": 35.2,
+          "low": 16.9,
+          "precip": 2.52,
+          "highNormal": 37.4,
+          "change": -2.2
+        },
+        {
+          "high": 44.5,
+          "low": 23.0,
+          "precip": 2.24,
+          "highNormal": 45.8,
+          "change": -1.4
+        },
+        {
+          "high": 53.0,
+          "low": 28.0,
+          "precip": 1.58,
+          "highNormal": 53.2,
+          "change": -0.2
+        },
+        {
+          "high": 62.9,
+          "low": 37.0,
+          "precip": 1.97,
+          "highNormal": 62.9,
+          "change": 0.0
+        },
+        {
+          "high": 74.5,
+          "low": 45.5,
+          "precip": 1.32,
+          "highNormal": 71.2,
+          "change": 3.3
+        },
+        {
+          "high": 85.8,
+          "low": 53.1,
+          "precip": 0.42,
+          "highNormal": 82.3,
+          "change": 3.5
+        },
+        {
+          "high": 81.6,
+          "low": 51.0,
+          "precip": 1.15,
+          "highNormal": 81.2,
+          "change": 0.3
+        },
+        {
+          "high": 74.0,
+          "low": 43.9,
+          "precip": 1.08,
+          "highNormal": 71.2,
+          "change": 2.8
+        },
+        {
+          "high": 58.4,
+          "low": 34.1,
+          "precip": 1.81,
+          "highNormal": 56.2,
+          "change": 2.2
+        },
+        {
+          "high": 42.7,
+          "low": 24.5,
+          "precip": 2.32,
+          "highNormal": 41.5,
+          "change": 1.2
+        },
+        {
+          "high": 36.1,
+          "low": 20.9,
+          "precip": 3.58,
+          "highNormal": 32.4,
+          "change": 3.7
+        }
+      ]
+    },
+    "IL": {
+      "name": "Illinois",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 34.6,
+          "low": 19.7,
+          "precip": 2.28,
+          "highNormal": 34.7,
+          "change": -0.2
+        },
+        {
+          "high": 40.8,
+          "low": 21.2,
+          "precip": 1.84,
+          "highNormal": 39.7,
+          "change": 1.0
+        },
+        {
+          "high": 55.7,
+          "low": 34.2,
+          "precip": 3.7,
+          "highNormal": 51.3,
+          "change": 4.4
+        },
+        {
+          "high": 64.2,
+          "low": 41.5,
+          "precip": 4.07,
+          "highNormal": 63.9,
+          "change": 0.2
+        },
+        {
+          "high": 74.8,
+          "low": 52.9,
+          "precip": 3.77,
+          "highNormal": 74.1,
+          "change": 0.7
+        },
+        {
+          "high": 84.8,
+          "low": 62.3,
+          "precip": 3.4,
+          "highNormal": 82.9,
+          "change": 1.9
+        },
+        {
+          "high": 85.5,
+          "low": 65.7,
+          "precip": 5.55,
+          "highNormal": 85.8,
+          "change": -0.3
+        },
+        {
+          "high": 84.3,
+          "low": 63.4,
+          "precip": 3.27,
+          "highNormal": 84.4,
+          "change": -0.0
+        },
+        {
+          "high": 80.6,
+          "low": 56.5,
+          "precip": 2.25,
+          "highNormal": 78.5,
+          "change": 2.2
+        },
+        {
+          "high": 69.5,
+          "low": 45.9,
+          "precip": 2.98,
+          "highNormal": 66.1,
+          "change": 3.3
+        },
+        {
+          "high": 53.4,
+          "low": 33.5,
+          "precip": 1.89,
+          "highNormal": 51.3,
+          "change": 2.1
+        },
+        {
+          "high": 43.0,
+          "low": 26.6,
+          "precip": 2.34,
+          "highNormal": 39.4,
+          "change": 3.5
+        }
+      ]
+    },
+    "IN": {
+      "name": "Indiana",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 35.6,
+          "low": 21.1,
+          "precip": 2.83,
+          "highNormal": 35.6,
+          "change": -0.0
+        },
+        {
+          "high": 42.0,
+          "low": 22.7,
+          "precip": 2.61,
+          "highNormal": 40.1,
+          "change": 1.9
+        },
+        {
+          "high": 55.8,
+          "low": 33.5,
+          "precip": 4.08,
+          "highNormal": 50.9,
+          "change": 4.9
+        },
+        {
+          "high": 63.9,
+          "low": 40.8,
+          "precip": 4.38,
+          "highNormal": 63.5,
+          "change": 0.3
+        },
+        {
+          "high": 74.1,
+          "low": 51.4,
+          "precip": 4.03,
+          "highNormal": 73.6,
+          "change": 0.5
+        },
+        {
+          "high": 83.5,
+          "low": 60.6,
+          "precip": 3.81,
+          "highNormal": 82.0,
+          "change": 1.5
+        },
+        {
+          "high": 85.0,
+          "low": 64.6,
+          "precip": 5.37,
+          "highNormal": 84.8,
+          "change": 0.2
+        },
+        {
+          "high": 83.6,
+          "low": 62.1,
+          "precip": 3.14,
+          "highNormal": 83.5,
+          "change": 0.1
+        },
+        {
+          "high": 79.7,
+          "low": 55.3,
+          "precip": 2.62,
+          "highNormal": 77.9,
+          "change": 1.8
+        },
+        {
+          "high": 68.7,
+          "low": 45.1,
+          "precip": 2.87,
+          "highNormal": 65.8,
+          "change": 3.0
+        },
+        {
+          "high": 53.1,
+          "low": 33.2,
+          "precip": 2.04,
+          "highNormal": 51.6,
+          "change": 1.5
+        },
+        {
+          "high": 43.5,
+          "low": 27.3,
+          "precip": 2.91,
+          "highNormal": 40.1,
+          "change": 3.4
+        }
+      ]
+    },
+    "KS": {
+      "name": "Kansas",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 40.8,
+          "low": 18.6,
+          "precip": 0.99,
+          "highNormal": 42.6,
+          "change": -1.8
+        },
+        {
+          "high": 46.2,
+          "low": 19.6,
+          "precip": 0.6,
+          "highNormal": 47.2,
+          "change": -1.0
+        },
+        {
+          "high": 60.3,
+          "low": 32.5,
+          "precip": 1.72,
+          "highNormal": 57.7,
+          "change": 2.6
+        },
+        {
+          "high": 69.2,
+          "low": 40.6,
+          "precip": 1.84,
+          "highNormal": 67.1,
+          "change": 2.1
+        },
+        {
+          "high": 76.3,
+          "low": 51.8,
+          "precip": 4.5,
+          "highNormal": 76.4,
+          "change": -0.1
+        },
+        {
+          "high": 87.8,
+          "low": 63.0,
+          "precip": 4.02,
+          "highNormal": 86.7,
+          "change": 1.1
+        },
+        {
+          "high": 91.4,
+          "low": 66.4,
+          "precip": 3.47,
+          "highNormal": 91.5,
+          "change": -0.1
+        },
+        {
+          "high": 91.1,
+          "low": 65.3,
+          "precip": 2.76,
+          "highNormal": 89.5,
+          "change": 1.6
+        },
+        {
+          "high": 86.0,
+          "low": 57.6,
+          "precip": 2.19,
+          "highNormal": 81.9,
+          "change": 4.1
+        },
+        {
+          "high": 73.8,
+          "low": 45.7,
+          "precip": 1.7,
+          "highNormal": 69.4,
+          "change": 4.4
+        },
+        {
+          "high": 58.4,
+          "low": 32.4,
+          "precip": 1.75,
+          "highNormal": 55.7,
+          "change": 2.7
+        },
+        {
+          "high": 50.0,
+          "low": 24.8,
+          "precip": 0.68,
+          "highNormal": 44.4,
+          "change": 5.6
+        }
+      ]
+    },
+    "KY": {
+      "name": "Kentucky",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 43.0,
+          "low": 25.4,
+          "precip": 4.95,
+          "highNormal": 43.5,
+          "change": -0.5
+        },
+        {
+          "high": 50.8,
+          "low": 29.4,
+          "precip": 5.17,
+          "highNormal": 48.2,
+          "change": 2.5
+        },
+        {
+          "high": 62.0,
+          "low": 37.3,
+          "precip": 4.46,
+          "highNormal": 57.5,
+          "change": 4.5
+        },
+        {
+          "high": 68.9,
+          "low": 44.6,
+          "precip": 4.9,
+          "highNormal": 68.7,
+          "change": 0.1
+        },
+        {
+          "high": 76.3,
+          "low": 54.3,
+          "precip": 5.25,
+          "highNormal": 76.7,
+          "change": -0.5
+        },
+        {
+          "high": 84.8,
+          "low": 62.1,
+          "precip": 4.13,
+          "highNormal": 84.1,
+          "change": 0.8
+        },
+        {
+          "high": 87.7,
+          "low": 67.4,
+          "precip": 5.99,
+          "highNormal": 87.0,
+          "change": 0.6
+        },
+        {
+          "high": 86.0,
+          "low": 64.6,
+          "precip": 3.67,
+          "highNormal": 86.3,
+          "change": -0.3
+        },
+        {
+          "high": 81.3,
+          "low": 57.8,
+          "precip": 3.72,
+          "highNormal": 80.7,
+          "change": 0.6
+        },
+        {
+          "high": 71.6,
+          "low": 46.8,
+          "precip": 2.63,
+          "highNormal": 69.7,
+          "change": 1.9
+        },
+        {
+          "high": 58.7,
+          "low": 36.1,
+          "precip": 2.72,
+          "highNormal": 57.2,
+          "change": 1.5
+        },
+        {
+          "high": 50.8,
+          "low": 31.7,
+          "precip": 3.58,
+          "highNormal": 47.0,
+          "change": 3.7
+        }
+      ]
+    },
+    "LA": {
+      "name": "Louisiana",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 60.1,
+          "low": 39.0,
+          "precip": 5.56,
+          "highNormal": 60.0,
+          "change": 0.0
+        },
+        {
+          "high": 64.7,
+          "low": 43.8,
+          "precip": 3.89,
+          "highNormal": 64.1,
+          "change": 0.6
+        },
+        {
+          "high": 73.2,
+          "low": 50.7,
+          "precip": 5.04,
+          "highNormal": 71.0,
+          "change": 2.1
+        },
+        {
+          "high": 77.9,
+          "low": 57.3,
+          "precip": 6.08,
+          "highNormal": 77.5,
+          "change": 0.4
+        },
+        {
+          "high": 84.5,
+          "low": 65.9,
+          "precip": 7.36,
+          "highNormal": 84.4,
+          "change": 0.2
+        },
+        {
+          "high": 91.0,
+          "low": 72.1,
+          "precip": 4.58,
+          "highNormal": 89.8,
+          "change": 1.2
+        },
+        {
+          "high": 92.5,
+          "low": 74.1,
+          "precip": 5.83,
+          "highNormal": 91.9,
+          "change": 0.6
+        },
+        {
+          "high": 93.7,
+          "low": 73.9,
+          "precip": 5.02,
+          "highNormal": 92.2,
+          "change": 1.4
+        },
+        {
+          "high": 88.9,
+          "low": 67.8,
+          "precip": 4.04,
+          "highNormal": 88.2,
+          "change": 0.7
+        },
+        {
+          "high": 82.2,
+          "low": 57.5,
+          "precip": 1.91,
+          "highNormal": 79.7,
+          "change": 2.5
+        },
+        {
+          "high": 70.9,
+          "low": 49.3,
+          "precip": 3.78,
+          "highNormal": 69.4,
+          "change": 1.6
+        },
+        {
+          "high": 65.8,
+          "low": 45.7,
+          "precip": 4.95,
+          "highNormal": 62.0,
+          "change": 3.8
+        }
+      ]
+    },
+    "MA": {
+      "name": "Massachusetts",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 36.3,
+          "low": 20.6,
+          "precip": 4.16,
+          "highNormal": 34.8,
+          "change": 1.5
+        },
+        {
+          "high": 39.1,
+          "low": 20.7,
+          "precip": 2.9,
+          "highNormal": 37.4,
+          "change": 1.6
+        },
+        {
+          "high": 48.8,
+          "low": 28.9,
+          "precip": 4.39,
+          "highNormal": 45.0,
+          "change": 3.8
+        },
+        {
+          "high": 58.9,
+          "low": 37.1,
+          "precip": 4.03,
+          "highNormal": 57.2,
+          "change": 1.7
+        },
+        {
+          "high": 69.4,
+          "low": 47.3,
+          "precip": 4.63,
+          "highNormal": 68.2,
+          "change": 1.2
+        },
+        {
+          "high": 77.9,
+          "low": 56.5,
+          "precip": 3.1,
+          "highNormal": 76.5,
+          "change": 1.4
+        },
+        {
+          "high": 83.0,
+          "low": 63.1,
+          "precip": 5.72,
+          "highNormal": 81.9,
+          "change": 1.1
+        },
+        {
+          "high": 80.7,
+          "low": 60.1,
+          "precip": 4.03,
+          "highNormal": 80.3,
+          "change": 0.4
+        },
+        {
+          "high": 73.8,
+          "low": 53.4,
+          "precip": 5.02,
+          "highNormal": 73.0,
+          "change": 0.7
+        },
+        {
+          "high": 64.2,
+          "low": 43.7,
+          "precip": 4.16,
+          "highNormal": 61.3,
+          "change": 2.9
+        },
+        {
+          "high": 51.6,
+          "low": 31.8,
+          "precip": 2.55,
+          "highNormal": 50.1,
+          "change": 1.6
+        },
+        {
+          "high": 41.3,
+          "low": 24.7,
+          "precip": 4.7,
+          "highNormal": 39.8,
+          "change": 1.5
+        }
+      ]
+    },
+    "MD": {
+      "name": "Maryland",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 43.1,
+          "low": 26.6,
+          "precip": 3.1,
+          "highNormal": 42.5,
+          "change": 0.5
+        },
+        {
+          "high": 48.0,
+          "low": 28.9,
+          "precip": 2.69,
+          "highNormal": 45.7,
+          "change": 2.4
+        },
+        {
+          "high": 58.4,
+          "low": 36.2,
+          "precip": 3.35,
+          "highNormal": 53.8,
+          "change": 4.5
+        },
+        {
+          "high": 67.1,
+          "low": 44.5,
+          "precip": 3.43,
+          "highNormal": 65.6,
+          "change": 1.6
+        },
+        {
+          "high": 74.1,
+          "low": 53.2,
+          "precip": 4.48,
+          "highNormal": 74.3,
+          "change": -0.1
+        },
+        {
+          "high": 83.3,
+          "low": 62.0,
+          "precip": 3.39,
+          "highNormal": 82.5,
+          "change": 0.8
+        },
+        {
+          "high": 88.1,
+          "low": 68.5,
+          "precip": 4.73,
+          "highNormal": 86.8,
+          "change": 1.3
+        },
+        {
+          "high": 85.0,
+          "low": 65.2,
+          "precip": 3.73,
+          "highNormal": 84.9,
+          "change": 0.0
+        },
+        {
+          "high": 78.7,
+          "low": 59.1,
+          "precip": 3.82,
+          "highNormal": 78.4,
+          "change": 0.3
+        },
+        {
+          "high": 69.1,
+          "low": 47.7,
+          "precip": 2.25,
+          "highNormal": 67.6,
+          "change": 1.5
+        },
+        {
+          "high": 57.5,
+          "low": 36.4,
+          "precip": 2.01,
+          "highNormal": 56.1,
+          "change": 1.3
+        },
+        {
+          "high": 48.1,
+          "low": 29.8,
+          "precip": 3.33,
+          "highNormal": 46.7,
+          "change": 1.4
+        }
+      ]
+    },
+    "ME": {
+      "name": "Maine",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 26.7,
+          "low": 10.4,
+          "precip": 3.02,
+          "highNormal": 24.7,
+          "change": 2.1
+        },
+        {
+          "high": 29.4,
+          "low": 8.9,
+          "precip": 2.42,
+          "highNormal": 27.9,
+          "change": 1.5
+        },
+        {
+          "high": 39.8,
+          "low": 20.8,
+          "precip": 3.94,
+          "highNormal": 37.0,
+          "change": 2.8
+        },
+        {
+          "high": 51.6,
+          "low": 31.0,
+          "precip": 3.51,
+          "highNormal": 49.6,
+          "change": 2.0
+        },
+        {
+          "high": 65.2,
+          "low": 41.1,
+          "precip": 3.57,
+          "highNormal": 63.2,
+          "change": 2.0
+        },
+        {
+          "high": 73.2,
+          "low": 51.0,
+          "precip": 4.01,
+          "highNormal": 72.1,
+          "change": 1.0
+        },
+        {
+          "high": 78.4,
+          "low": 57.3,
+          "precip": 4.52,
+          "highNormal": 77.2,
+          "change": 1.3
+        },
+        {
+          "high": 76.5,
+          "low": 55.2,
+          "precip": 4.15,
+          "highNormal": 76.0,
+          "change": 0.5
+        },
+        {
+          "high": 69.8,
+          "low": 48.0,
+          "precip": 4.04,
+          "highNormal": 68.0,
+          "change": 1.8
+        },
+        {
+          "high": 59.3,
+          "low": 39.6,
+          "precip": 4.02,
+          "highNormal": 54.6,
+          "change": 4.7
+        },
+        {
+          "high": 43.3,
+          "low": 27.5,
+          "precip": 3.17,
+          "highNormal": 41.9,
+          "change": 1.5
+        },
+        {
+          "high": 32.2,
+          "low": 16.3,
+          "precip": 4.77,
+          "highNormal": 30.7,
+          "change": 1.5
+        }
+      ]
+    },
+    "MI": {
+      "name": "Michigan",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 28.5,
+          "low": 16.2,
+          "precip": 1.65,
+          "highNormal": 27.6,
+          "change": 0.9
+        },
+        {
+          "high": 32.1,
+          "low": 14.4,
+          "precip": 1.62,
+          "highNormal": 30.6,
+          "change": 1.5
+        },
+        {
+          "high": 44.2,
+          "low": 24.3,
+          "precip": 2.89,
+          "highNormal": 41.0,
+          "change": 3.2
+        },
+        {
+          "high": 54.5,
+          "low": 33.4,
+          "precip": 3.22,
+          "highNormal": 53.8,
+          "change": 0.7
+        },
+        {
+          "high": 67.9,
+          "low": 43.5,
+          "precip": 2.71,
+          "highNormal": 66.8,
+          "change": 1.1
+        },
+        {
+          "high": 77.8,
+          "low": 54.2,
+          "precip": 3.7,
+          "highNormal": 76.3,
+          "change": 1.5
+        },
+        {
+          "high": 80.4,
+          "low": 58.0,
+          "precip": 3.91,
+          "highNormal": 80.3,
+          "change": 0.0
+        },
+        {
+          "high": 78.8,
+          "low": 57.1,
+          "precip": 3.55,
+          "highNormal": 78.4,
+          "change": 0.4
+        },
+        {
+          "high": 73.3,
+          "low": 50.8,
+          "precip": 2.22,
+          "highNormal": 71.1,
+          "change": 2.2
+        },
+        {
+          "high": 61.8,
+          "low": 41.5,
+          "precip": 3.01,
+          "highNormal": 57.7,
+          "change": 4.1
+        },
+        {
+          "high": 45.7,
+          "low": 29.9,
+          "precip": 2.28,
+          "highNormal": 43.8,
+          "change": 1.8
+        },
+        {
+          "high": 34.9,
+          "low": 22.2,
+          "precip": 2.36,
+          "highNormal": 32.8,
+          "change": 2.1
+        }
+      ]
+    },
+    "MN": {
+      "name": "Minnesota",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 21.0,
+          "low": 3.9,
+          "precip": 0.59,
+          "highNormal": 19.2,
+          "change": 1.8
+        },
+        {
+          "high": 23.8,
+          "low": 2.7,
+          "precip": 0.67,
+          "highNormal": 24.8,
+          "change": -1.1
+        },
+        {
+          "high": 40.0,
+          "low": 18.6,
+          "precip": 1.39,
+          "highNormal": 37.8,
+          "change": 2.1
+        },
+        {
+          "high": 50.7,
+          "low": 30.4,
+          "precip": 2.96,
+          "highNormal": 53.1,
+          "change": -2.4
+        },
+        {
+          "high": 68.8,
+          "low": 44.4,
+          "precip": 3.33,
+          "highNormal": 66.6,
+          "change": 2.2
+        },
+        {
+          "high": 78.8,
+          "low": 55.0,
+          "precip": 3.78,
+          "highNormal": 75.9,
+          "change": 2.9
+        },
+        {
+          "high": 80.8,
+          "low": 58.3,
+          "precip": 3.06,
+          "highNormal": 80.1,
+          "change": 0.8
+        },
+        {
+          "high": 78.6,
+          "low": 57.0,
+          "precip": 3.44,
+          "highNormal": 78.1,
+          "change": 0.5
+        },
+        {
+          "high": 74.2,
+          "low": 50.9,
+          "precip": 2.11,
+          "highNormal": 69.8,
+          "change": 4.4
+        },
+        {
+          "high": 60.1,
+          "low": 39.2,
+          "precip": 1.94,
+          "highNormal": 54.9,
+          "change": 5.2
+        },
+        {
+          "high": 40.6,
+          "low": 24.2,
+          "precip": 1.32,
+          "highNormal": 38.0,
+          "change": 2.7
+        },
+        {
+          "high": 26.5,
+          "low": 10.7,
+          "precip": 1.54,
+          "highNormal": 24.5,
+          "change": 2.0
+        }
+      ]
+    },
+    "MO": {
+      "name": "Missouri",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 39.7,
+          "low": 21.9,
+          "precip": 2.59,
+          "highNormal": 40.2,
+          "change": -0.5
+        },
+        {
+          "high": 46.0,
+          "low": 23.7,
+          "precip": 1.77,
+          "highNormal": 45.6,
+          "change": 0.4
+        },
+        {
+          "high": 60.2,
+          "low": 36.2,
+          "precip": 3.91,
+          "highNormal": 56.2,
+          "change": 4.0
+        },
+        {
+          "high": 67.7,
+          "low": 44.1,
+          "precip": 4.78,
+          "highNormal": 67.0,
+          "change": 0.6
+        },
+        {
+          "high": 75.8,
+          "low": 54.3,
+          "precip": 4.87,
+          "highNormal": 75.6,
+          "change": 0.2
+        },
+        {
+          "high": 86.0,
+          "low": 63.9,
+          "precip": 4.23,
+          "highNormal": 84.1,
+          "change": 1.9
+        },
+        {
+          "high": 88.4,
+          "low": 67.6,
+          "precip": 4.77,
+          "highNormal": 88.2,
+          "change": 0.2
+        },
+        {
+          "high": 87.1,
+          "low": 65.3,
+          "precip": 3.41,
+          "highNormal": 87.0,
+          "change": 0.1
+        },
+        {
+          "high": 82.9,
+          "low": 58.1,
+          "precip": 2.29,
+          "highNormal": 79.8,
+          "change": 3.1
+        },
+        {
+          "high": 72.2,
+          "low": 47.1,
+          "precip": 3.22,
+          "highNormal": 68.5,
+          "change": 3.7
+        },
+        {
+          "high": 57.7,
+          "low": 35.3,
+          "precip": 2.58,
+          "highNormal": 55.0,
+          "change": 2.7
+        },
+        {
+          "high": 48.5,
+          "low": 29.1,
+          "precip": 2.0,
+          "highNormal": 44.0,
+          "change": 4.5
+        }
+      ]
+    },
+    "MS": {
+      "name": "Mississippi",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 56.2,
+          "low": 34.5,
+          "precip": 5.47,
+          "highNormal": 56.0,
+          "change": 0.2
+        },
+        {
+          "high": 62.4,
+          "low": 39.6,
+          "precip": 4.72,
+          "highNormal": 60.6,
+          "change": 1.9
+        },
+        {
+          "high": 71.4,
+          "low": 46.8,
+          "precip": 6.55,
+          "highNormal": 68.4,
+          "change": 3.0
+        },
+        {
+          "high": 76.5,
+          "low": 52.9,
+          "precip": 6.29,
+          "highNormal": 75.8,
+          "change": 0.7
+        },
+        {
+          "high": 83.6,
+          "low": 62.5,
+          "precip": 5.5,
+          "highNormal": 83.1,
+          "change": 0.6
+        },
+        {
+          "high": 90.3,
+          "low": 69.3,
+          "precip": 5.42,
+          "highNormal": 89.0,
+          "change": 1.2
+        },
+        {
+          "high": 92.2,
+          "low": 72.5,
+          "precip": 5.32,
+          "highNormal": 91.3,
+          "change": 0.9
+        },
+        {
+          "high": 92.3,
+          "low": 71.0,
+          "precip": 4.7,
+          "highNormal": 91.2,
+          "change": 1.1
+        },
+        {
+          "high": 87.6,
+          "low": 64.8,
+          "precip": 2.97,
+          "highNormal": 86.8,
+          "change": 0.8
+        },
+        {
+          "high": 79.8,
+          "low": 53.5,
+          "precip": 2.15,
+          "highNormal": 77.4,
+          "change": 2.4
+        },
+        {
+          "high": 68.5,
+          "low": 45.0,
+          "precip": 3.3,
+          "highNormal": 66.3,
+          "change": 2.2
+        },
+        {
+          "high": 62.2,
+          "low": 41.2,
+          "precip": 4.23,
+          "highNormal": 58.3,
+          "change": 3.9
+        }
+      ]
+    },
+    "MT": {
+      "name": "Montana",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 31.3,
+          "low": 12.4,
+          "precip": 0.87,
+          "highNormal": 30.7,
+          "change": 0.6
+        },
+        {
+          "high": 30.4,
+          "low": 10.1,
+          "precip": 1.24,
+          "highNormal": 34.0,
+          "change": -3.6
+        },
+        {
+          "high": 43.7,
+          "low": 20.7,
+          "precip": 1.04,
+          "highNormal": 43.9,
+          "change": -0.2
+        },
+        {
+          "high": 52.5,
+          "low": 27.6,
+          "precip": 1.41,
+          "highNormal": 53.3,
+          "change": -0.8
+        },
+        {
+          "high": 63.7,
+          "low": 38.5,
+          "precip": 2.66,
+          "highNormal": 63.1,
+          "change": 0.6
+        },
+        {
+          "high": 74.4,
+          "low": 46.9,
+          "precip": 2.31,
+          "highNormal": 71.7,
+          "change": 2.7
+        },
+        {
+          "high": 84.6,
+          "low": 53.5,
+          "precip": 1.29,
+          "highNormal": 81.7,
+          "change": 2.9
+        },
+        {
+          "high": 81.5,
+          "low": 51.8,
+          "precip": 1.56,
+          "highNormal": 80.9,
+          "change": 0.6
+        },
+        {
+          "high": 75.0,
+          "low": 44.8,
+          "precip": 1.13,
+          "highNormal": 69.9,
+          "change": 5.1
+        },
+        {
+          "high": 58.0,
+          "low": 33.1,
+          "precip": 1.48,
+          "highNormal": 54.8,
+          "change": 3.2
+        },
+        {
+          "high": 42.0,
+          "low": 21.9,
+          "precip": 1.13,
+          "highNormal": 40.6,
+          "change": 1.4
+        },
+        {
+          "high": 33.7,
+          "low": 14.9,
+          "precip": 1.5,
+          "highNormal": 31.4,
+          "change": 2.3
+        }
+      ]
+    },
+    "NC": {
+      "name": "North Carolina",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 51.1,
+          "low": 30.2,
+          "precip": 4.2,
+          "highNormal": 51.3,
+          "change": -0.2
+        },
+        {
+          "high": 57.4,
+          "low": 35.5,
+          "precip": 3.7,
+          "highNormal": 54.8,
+          "change": 2.5
+        },
+        {
+          "high": 65.6,
+          "low": 41.0,
+          "precip": 3.91,
+          "highNormal": 62.1,
+          "change": 3.4
+        },
+        {
+          "high": 72.7,
+          "low": 47.9,
+          "precip": 3.11,
+          "highNormal": 71.4,
+          "change": 1.3
+        },
+        {
+          "high": 78.0,
+          "low": 56.2,
+          "precip": 4.75,
+          "highNormal": 78.3,
+          "change": -0.4
+        },
+        {
+          "high": 85.1,
+          "low": 63.7,
+          "precip": 3.91,
+          "highNormal": 84.9,
+          "change": 0.1
+        },
+        {
+          "high": 88.4,
+          "low": 69.1,
+          "precip": 6.38,
+          "highNormal": 88.1,
+          "change": 0.4
+        },
+        {
+          "high": 85.7,
+          "low": 66.8,
+          "precip": 5.9,
+          "highNormal": 86.3,
+          "change": -0.6
+        },
+        {
+          "high": 80.8,
+          "low": 60.3,
+          "precip": 4.48,
+          "highNormal": 81.0,
+          "change": -0.2
+        },
+        {
+          "high": 72.2,
+          "low": 49.1,
+          "precip": 2.08,
+          "highNormal": 71.9,
+          "change": 0.2
+        },
+        {
+          "high": 63.5,
+          "low": 39.6,
+          "precip": 2.1,
+          "highNormal": 62.0,
+          "change": 1.5
+        },
+        {
+          "high": 55.8,
+          "low": 33.8,
+          "precip": 3.61,
+          "highNormal": 54.1,
+          "change": 1.6
+        }
+      ]
+    },
+    "ND": {
+      "name": "North Dakota",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 22.0,
+          "low": 4.1,
+          "precip": 0.26,
+          "highNormal": 19.9,
+          "change": 2.1
+        },
+        {
+          "high": 22.8,
+          "low": 2.1,
+          "precip": 0.29,
+          "highNormal": 24.4,
+          "change": -1.7
+        },
+        {
+          "high": 38.3,
+          "low": 15.7,
+          "precip": 0.46,
+          "highNormal": 37.2,
+          "change": 1.1
+        },
+        {
+          "high": 50.5,
+          "low": 27.5,
+          "precip": 1.76,
+          "highNormal": 53.3,
+          "change": -2.7
+        },
+        {
+          "high": 68.1,
+          "low": 42.2,
+          "precip": 3.3,
+          "highNormal": 66.3,
+          "change": 1.8
+        },
+        {
+          "high": 78.7,
+          "low": 53.2,
+          "precip": 2.93,
+          "highNormal": 75.5,
+          "change": 3.2
+        },
+        {
+          "high": 83.0,
+          "low": 57.6,
+          "precip": 2.27,
+          "highNormal": 81.5,
+          "change": 1.4
+        },
+        {
+          "high": 80.7,
+          "low": 55.6,
+          "precip": 2.26,
+          "highNormal": 80.9,
+          "change": -0.2
+        },
+        {
+          "high": 76.3,
+          "low": 48.6,
+          "precip": 1.39,
+          "highNormal": 71.1,
+          "change": 5.2
+        },
+        {
+          "high": 59.3,
+          "low": 35.4,
+          "precip": 1.65,
+          "highNormal": 54.7,
+          "change": 4.6
+        },
+        {
+          "high": 39.2,
+          "low": 20.2,
+          "precip": 0.61,
+          "highNormal": 37.3,
+          "change": 1.9
+        },
+        {
+          "high": 25.2,
+          "low": 6.6,
+          "precip": 0.86,
+          "highNormal": 24.5,
+          "change": 0.8
+        }
+      ]
+    },
+    "NE": {
+      "name": "Nebraska",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 34.9,
+          "low": 14.0,
+          "precip": 0.7,
+          "highNormal": 36.3,
+          "change": -1.4
+        },
+        {
+          "high": 38.3,
+          "low": 13.9,
+          "precip": 0.54,
+          "highNormal": 40.0,
+          "change": -1.7
+        },
+        {
+          "high": 52.9,
+          "low": 26.5,
+          "precip": 1.59,
+          "highNormal": 51.4,
+          "change": 1.5
+        },
+        {
+          "high": 62.7,
+          "low": 33.8,
+          "precip": 1.63,
+          "highNormal": 61.1,
+          "change": 1.6
+        },
+        {
+          "high": 72.3,
+          "low": 46.5,
+          "precip": 3.94,
+          "highNormal": 71.1,
+          "change": 1.2
+        },
+        {
+          "high": 84.6,
+          "low": 57.8,
+          "precip": 3.33,
+          "highNormal": 81.8,
+          "change": 2.8
+        },
+        {
+          "high": 87.4,
+          "low": 61.6,
+          "precip": 3.46,
+          "highNormal": 87.3,
+          "change": 0.1
+        },
+        {
+          "high": 86.8,
+          "low": 60.8,
+          "precip": 2.37,
+          "highNormal": 85.1,
+          "change": 1.7
+        },
+        {
+          "high": 82.4,
+          "low": 52.5,
+          "precip": 1.73,
+          "highNormal": 77.6,
+          "change": 4.7
+        },
+        {
+          "high": 67.8,
+          "low": 39.4,
+          "precip": 1.35,
+          "highNormal": 63.9,
+          "change": 3.9
+        },
+        {
+          "high": 53.1,
+          "low": 26.6,
+          "precip": 0.74,
+          "highNormal": 49.6,
+          "change": 3.5
+        },
+        {
+          "high": 43.6,
+          "low": 19.3,
+          "precip": 0.57,
+          "highNormal": 38.2,
+          "change": 5.4
+        }
+      ]
+    },
+    "NH": {
+      "name": "New Hampshire",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 30.0,
+          "low": 14.0,
+          "precip": 3.31,
+          "highNormal": 28.7,
+          "change": 1.3
+        },
+        {
+          "high": 33.2,
+          "low": 12.8,
+          "precip": 2.52,
+          "highNormal": 31.8,
+          "change": 1.4
+        },
+        {
+          "high": 43.3,
+          "low": 23.0,
+          "precip": 3.98,
+          "highNormal": 40.3,
+          "change": 3.0
+        },
+        {
+          "high": 54.8,
+          "low": 32.5,
+          "precip": 3.78,
+          "highNormal": 53.5,
+          "change": 1.3
+        },
+        {
+          "high": 67.4,
+          "low": 43.3,
+          "precip": 4.16,
+          "highNormal": 66.0,
+          "change": 1.4
+        },
+        {
+          "high": 75.2,
+          "low": 52.6,
+          "precip": 3.91,
+          "highNormal": 74.4,
+          "change": 0.9
+        },
+        {
+          "high": 80.2,
+          "low": 58.4,
+          "precip": 6.03,
+          "highNormal": 79.1,
+          "change": 1.1
+        },
+        {
+          "high": 77.8,
+          "low": 56.1,
+          "precip": 3.97,
+          "highNormal": 77.5,
+          "change": 0.4
+        },
+        {
+          "high": 71.2,
+          "low": 48.8,
+          "precip": 4.0,
+          "highNormal": 70.0,
+          "change": 1.2
+        },
+        {
+          "high": 60.7,
+          "low": 39.5,
+          "precip": 3.63,
+          "highNormal": 57.1,
+          "change": 3.6
+        },
+        {
+          "high": 46.0,
+          "low": 27.5,
+          "precip": 2.86,
+          "highNormal": 44.7,
+          "change": 1.3
+        },
+        {
+          "high": 35.1,
+          "low": 18.8,
+          "precip": 4.71,
+          "highNormal": 33.9,
+          "change": 1.2
+        }
+      ]
+    },
+    "NJ": {
+      "name": "New Jersey",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 41.2,
+          "low": 25.3,
+          "precip": 3.17,
+          "highNormal": 40.3,
+          "change": 0.9
+        },
+        {
+          "high": 44.9,
+          "low": 26.2,
+          "precip": 2.67,
+          "highNormal": 43.1,
+          "change": 1.8
+        },
+        {
+          "high": 55.0,
+          "low": 33.8,
+          "precip": 4.13,
+          "highNormal": 50.9,
+          "change": 4.1
+        },
+        {
+          "high": 64.2,
+          "low": 41.7,
+          "precip": 4.11,
+          "highNormal": 62.7,
+          "change": 1.5
+        },
+        {
+          "high": 72.6,
+          "low": 51.0,
+          "precip": 4.26,
+          "highNormal": 72.3,
+          "change": 0.3
+        },
+        {
+          "high": 81.8,
+          "low": 60.1,
+          "precip": 3.16,
+          "highNormal": 81.0,
+          "change": 0.8
+        },
+        {
+          "high": 87.4,
+          "low": 67.4,
+          "precip": 5.06,
+          "highNormal": 85.7,
+          "change": 1.7
+        },
+        {
+          "high": 84.3,
+          "low": 64.0,
+          "precip": 4.24,
+          "highNormal": 83.8,
+          "change": 0.4
+        },
+        {
+          "high": 77.7,
+          "low": 58.0,
+          "precip": 4.12,
+          "highNormal": 77.2,
+          "change": 0.5
+        },
+        {
+          "high": 68.1,
+          "low": 46.7,
+          "precip": 3.39,
+          "highNormal": 65.8,
+          "change": 2.3
+        },
+        {
+          "high": 56.1,
+          "low": 35.2,
+          "precip": 2.2,
+          "highNormal": 54.7,
+          "change": 1.3
+        },
+        {
+          "high": 45.6,
+          "low": 28.4,
+          "precip": 4.24,
+          "highNormal": 45.0,
+          "change": 0.6
+        }
+      ]
+    },
+    "NM": {
+      "name": "New Mexico",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 48.4,
+          "low": 20.2,
+          "precip": 0.53,
+          "highNormal": 49.7,
+          "change": -1.3
+        },
+        {
+          "high": 54.1,
+          "low": 23.7,
+          "precip": 0.42,
+          "highNormal": 54.0,
+          "change": 0.1
+        },
+        {
+          "high": 60.5,
+          "low": 30.0,
+          "precip": 0.58,
+          "highNormal": 61.8,
+          "change": -1.3
+        },
+        {
+          "high": 70.2,
+          "low": 36.9,
+          "precip": 0.29,
+          "highNormal": 69.2,
+          "change": 1.0
+        },
+        {
+          "high": 79.1,
+          "low": 46.0,
+          "precip": 0.9,
+          "highNormal": 78.1,
+          "change": 1.0
+        },
+        {
+          "high": 88.0,
+          "low": 56.9,
+          "precip": 1.81,
+          "highNormal": 87.8,
+          "change": 0.2
+        },
+        {
+          "high": 89.9,
+          "low": 60.9,
+          "precip": 2.13,
+          "highNormal": 88.6,
+          "change": 1.2
+        },
+        {
+          "high": 87.8,
+          "low": 59.8,
+          "precip": 2.23,
+          "highNormal": 86.3,
+          "change": 1.5
+        },
+        {
+          "high": 82.8,
+          "low": 53.0,
+          "precip": 1.33,
+          "highNormal": 80.4,
+          "change": 2.3
+        },
+        {
+          "high": 72.5,
+          "low": 42.0,
+          "precip": 1.19,
+          "highNormal": 70.6,
+          "change": 1.9
+        },
+        {
+          "high": 60.1,
+          "low": 30.0,
+          "precip": 0.63,
+          "highNormal": 58.6,
+          "change": 1.5
+        },
+        {
+          "high": 55.0,
+          "low": 25.8,
+          "precip": 0.46,
+          "highNormal": 49.3,
+          "change": 5.7
+        }
+      ]
+    },
+    "NV": {
+      "name": "Nevada",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 43.2,
+          "low": 21.9,
+          "precip": 1.07,
+          "highNormal": 43.5,
+          "change": -0.3
+        },
+        {
+          "high": 46.6,
+          "low": 23.6,
+          "precip": 1.03,
+          "highNormal": 46.9,
+          "change": -0.3
+        },
+        {
+          "high": 51.3,
+          "low": 27.8,
+          "precip": 1.32,
+          "highNormal": 54.6,
+          "change": -3.2
+        },
+        {
+          "high": 62.5,
+          "low": 33.7,
+          "precip": 0.51,
+          "highNormal": 60.7,
+          "change": 1.8
+        },
+        {
+          "high": 71.2,
+          "low": 42.1,
+          "precip": 0.68,
+          "highNormal": 70.4,
+          "change": 0.8
+        },
+        {
+          "high": 83.9,
+          "low": 52.4,
+          "precip": 0.32,
+          "highNormal": 81.3,
+          "change": 2.7
+        },
+        {
+          "high": 92.4,
+          "low": 60.1,
+          "precip": 0.43,
+          "highNormal": 89.9,
+          "change": 2.5
+        },
+        {
+          "high": 88.0,
+          "low": 57.2,
+          "precip": 0.92,
+          "highNormal": 88.1,
+          "change": -0.1
+        },
+        {
+          "high": 80.6,
+          "low": 49.8,
+          "precip": 0.77,
+          "highNormal": 79.4,
+          "change": 1.2
+        },
+        {
+          "high": 67.1,
+          "low": 38.5,
+          "precip": 0.9,
+          "highNormal": 66.0,
+          "change": 1.0
+        },
+        {
+          "high": 53.1,
+          "low": 28.3,
+          "precip": 0.67,
+          "highNormal": 52.3,
+          "change": 0.8
+        },
+        {
+          "high": 46.9,
+          "low": 25.0,
+          "precip": 1.33,
+          "highNormal": 42.6,
+          "change": 4.3
+        }
+      ]
+    },
+    "NY": {
+      "name": "New York",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 30.6,
+          "low": 16.3,
+          "precip": 2.93,
+          "highNormal": 30.2,
+          "change": 0.4
+        },
+        {
+          "high": 34.8,
+          "low": 15.7,
+          "precip": 2.52,
+          "highNormal": 32.9,
+          "change": 1.9
+        },
+        {
+          "high": 45.4,
+          "low": 24.9,
+          "precip": 2.98,
+          "highNormal": 41.4,
+          "change": 4.0
+        },
+        {
+          "high": 56.9,
+          "low": 34.6,
+          "precip": 3.94,
+          "highNormal": 54.9,
+          "change": 2.0
+        },
+        {
+          "high": 67.9,
+          "low": 45.0,
+          "precip": 3.6,
+          "highNormal": 67.3,
+          "change": 0.6
+        },
+        {
+          "high": 76.3,
+          "low": 54.5,
+          "precip": 4.02,
+          "highNormal": 75.4,
+          "change": 0.9
+        },
+        {
+          "high": 80.8,
+          "low": 59.7,
+          "precip": 5.11,
+          "highNormal": 79.7,
+          "change": 1.1
+        },
+        {
+          "high": 78.3,
+          "low": 57.6,
+          "precip": 4.65,
+          "highNormal": 78.0,
+          "change": 0.2
+        },
+        {
+          "high": 71.9,
+          "low": 51.1,
+          "precip": 3.54,
+          "highNormal": 71.1,
+          "change": 0.8
+        },
+        {
+          "high": 61.8,
+          "low": 41.2,
+          "precip": 3.83,
+          "highNormal": 58.6,
+          "change": 3.2
+        },
+        {
+          "high": 46.8,
+          "low": 30.0,
+          "precip": 3.16,
+          "highNormal": 46.2,
+          "change": 0.6
+        },
+        {
+          "high": 36.7,
+          "low": 21.9,
+          "precip": 3.89,
+          "highNormal": 35.4,
+          "change": 1.3
+        }
+      ]
+    },
+    "OH": {
+      "name": "Ohio",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 35.6,
+          "low": 21.9,
+          "precip": 2.87,
+          "highNormal": 35.8,
+          "change": -0.3
+        },
+        {
+          "high": 42.0,
+          "low": 23.5,
+          "precip": 2.76,
+          "highNormal": 39.5,
+          "change": 2.5
+        },
+        {
+          "high": 55.0,
+          "low": 32.5,
+          "precip": 3.16,
+          "highNormal": 49.4,
+          "change": 5.6
+        },
+        {
+          "high": 63.3,
+          "low": 40.4,
+          "precip": 3.97,
+          "highNormal": 62.6,
+          "change": 0.7
+        },
+        {
+          "high": 72.6,
+          "low": 50.2,
+          "precip": 4.26,
+          "highNormal": 72.6,
+          "change": -0.0
+        },
+        {
+          "high": 81.8,
+          "low": 59.5,
+          "precip": 3.78,
+          "highNormal": 80.7,
+          "change": 1.1
+        },
+        {
+          "high": 84.3,
+          "low": 63.9,
+          "precip": 4.78,
+          "highNormal": 84.0,
+          "change": 0.3
+        },
+        {
+          "high": 82.8,
+          "low": 61.5,
+          "precip": 3.35,
+          "highNormal": 82.6,
+          "change": 0.2
+        },
+        {
+          "high": 78.1,
+          "low": 55.0,
+          "precip": 2.73,
+          "highNormal": 76.6,
+          "change": 1.5
+        },
+        {
+          "high": 67.2,
+          "low": 44.6,
+          "precip": 2.66,
+          "highNormal": 64.6,
+          "change": 2.6
+        },
+        {
+          "high": 52.6,
+          "low": 33.4,
+          "precip": 2.28,
+          "highNormal": 51.4,
+          "change": 1.2
+        },
+        {
+          "high": 43.5,
+          "low": 27.5,
+          "precip": 2.73,
+          "highNormal": 40.4,
+          "change": 3.1
+        }
+      ]
+    },
+    "OK": {
+      "name": "Oklahoma",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 49.5,
+          "low": 25.4,
+          "precip": 1.56,
+          "highNormal": 50.0,
+          "change": -0.5
+        },
+        {
+          "high": 53.3,
+          "low": 27.7,
+          "precip": 1.39,
+          "highNormal": 54.6,
+          "change": -1.3
+        },
+        {
+          "high": 66.5,
+          "low": 39.7,
+          "precip": 2.62,
+          "highNormal": 63.4,
+          "change": 3.0
+        },
+        {
+          "high": 73.2,
+          "low": 47.4,
+          "precip": 4.09,
+          "highNormal": 72.2,
+          "change": 1.0
+        },
+        {
+          "high": 79.9,
+          "low": 57.4,
+          "precip": 5.57,
+          "highNormal": 80.0,
+          "change": -0.1
+        },
+        {
+          "high": 89.6,
+          "low": 67.0,
+          "precip": 4.7,
+          "highNormal": 88.7,
+          "change": 0.9
+        },
+        {
+          "high": 94.2,
+          "low": 70.5,
+          "precip": 3.45,
+          "highNormal": 93.8,
+          "change": 0.4
+        },
+        {
+          "high": 94.3,
+          "low": 70.0,
+          "precip": 2.81,
+          "highNormal": 92.9,
+          "change": 1.4
+        },
+        {
+          "high": 89.3,
+          "low": 61.9,
+          "precip": 1.71,
+          "highNormal": 85.1,
+          "change": 4.2
+        },
+        {
+          "high": 78.3,
+          "low": 51.0,
+          "precip": 2.9,
+          "highNormal": 73.9,
+          "change": 4.5
+        },
+        {
+          "high": 64.1,
+          "low": 38.9,
+          "precip": 2.89,
+          "highNormal": 61.5,
+          "change": 2.6
+        },
+        {
+          "high": 57.3,
+          "low": 32.9,
+          "precip": 1.52,
+          "highNormal": 51.3,
+          "change": 6.0
+        }
+      ]
+    },
+    "OR": {
+      "name": "Oregon",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 41.7,
+          "low": 25.9,
+          "precip": 4.06,
+          "highNormal": 41.0,
+          "change": 0.7
+        },
+        {
+          "high": 43.1,
+          "low": 25.2,
+          "precip": 3.41,
+          "highNormal": 44.3,
+          "change": -1.2
+        },
+        {
+          "high": 48.8,
+          "low": 28.8,
+          "precip": 3.53,
+          "highNormal": 50.2,
+          "change": -1.4
+        },
+        {
+          "high": 56.3,
+          "low": 32.1,
+          "precip": 2.28,
+          "highNormal": 55.7,
+          "change": 0.6
+        },
+        {
+          "high": 64.5,
+          "low": 39.0,
+          "precip": 1.94,
+          "highNormal": 64.3,
+          "change": 0.2
+        },
+        {
+          "high": 75.2,
+          "low": 46.7,
+          "precip": 1.19,
+          "highNormal": 71.7,
+          "change": 3.5
+        },
+        {
+          "high": 85.9,
+          "low": 53.7,
+          "precip": 0.22,
+          "highNormal": 82.2,
+          "change": 3.7
+        },
+        {
+          "high": 82.9,
+          "low": 52.4,
+          "precip": 0.51,
+          "highNormal": 81.7,
+          "change": 1.2
+        },
+        {
+          "high": 75.1,
+          "low": 46.4,
+          "precip": 1.16,
+          "highNormal": 74.1,
+          "change": 1.0
+        },
+        {
+          "high": 62.0,
+          "low": 37.8,
+          "precip": 2.21,
+          "highNormal": 60.6,
+          "change": 1.3
+        },
+        {
+          "high": 47.7,
+          "low": 30.7,
+          "precip": 4.05,
+          "highNormal": 47.1,
+          "change": 0.6
+        },
+        {
+          "high": 42.3,
+          "low": 28.4,
+          "precip": 5.95,
+          "highNormal": 39.7,
+          "change": 2.6
+        }
+      ]
+    },
+    "PA": {
+      "name": "Pennsylvania",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 35.1,
+          "low": 20.9,
+          "precip": 3.0,
+          "highNormal": 34.7,
+          "change": 0.4
+        },
+        {
+          "high": 40.6,
+          "low": 21.7,
+          "precip": 2.88,
+          "highNormal": 38.0,
+          "change": 2.6
+        },
+        {
+          "high": 51.6,
+          "low": 29.3,
+          "precip": 2.98,
+          "highNormal": 46.9,
+          "change": 4.7
+        },
+        {
+          "high": 61.5,
+          "low": 38.1,
+          "precip": 4.07,
+          "highNormal": 60.2,
+          "change": 1.3
+        },
+        {
+          "high": 70.6,
+          "low": 47.0,
+          "precip": 4.72,
+          "highNormal": 70.5,
+          "change": 0.1
+        },
+        {
+          "high": 79.3,
+          "low": 56.1,
+          "precip": 3.9,
+          "highNormal": 78.3,
+          "change": 1.0
+        },
+        {
+          "high": 83.7,
+          "low": 61.7,
+          "precip": 4.67,
+          "highNormal": 82.3,
+          "change": 1.4
+        },
+        {
+          "high": 80.8,
+          "low": 59.1,
+          "precip": 4.48,
+          "highNormal": 80.6,
+          "change": 0.2
+        },
+        {
+          "high": 74.6,
+          "low": 53.1,
+          "precip": 4.03,
+          "highNormal": 73.8,
+          "change": 0.7
+        },
+        {
+          "high": 64.3,
+          "low": 42.1,
+          "precip": 3.18,
+          "highNormal": 62.1,
+          "change": 2.3
+        },
+        {
+          "high": 50.7,
+          "low": 31.6,
+          "precip": 2.62,
+          "highNormal": 49.8,
+          "change": 1.0
+        },
+        {
+          "high": 40.8,
+          "low": 25.0,
+          "precip": 3.29,
+          "highNormal": 39.2,
+          "change": 1.6
+        }
+      ]
+    },
+    "RI": {
+      "name": "Rhode Island",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 39.0,
+          "low": 23.4,
+          "precip": 4.49,
+          "highNormal": 37.5,
+          "change": 1.4
+        },
+        {
+          "high": 41.0,
+          "low": 23.7,
+          "precip": 3.33,
+          "highNormal": 39.6,
+          "change": 1.3
+        },
+        {
+          "high": 50.6,
+          "low": 31.5,
+          "precip": 4.86,
+          "highNormal": 46.7,
+          "change": 3.9
+        },
+        {
+          "high": 59.0,
+          "low": 39.2,
+          "precip": 3.74,
+          "highNormal": 57.8,
+          "change": 1.3
+        },
+        {
+          "high": 68.6,
+          "low": 48.5,
+          "precip": 5.14,
+          "highNormal": 67.9,
+          "change": 0.7
+        },
+        {
+          "high": 77.4,
+          "low": 58.0,
+          "precip": 3.2,
+          "highNormal": 76.4,
+          "change": 1.0
+        },
+        {
+          "high": 82.4,
+          "low": 65.1,
+          "precip": 4.82,
+          "highNormal": 81.8,
+          "change": 0.6
+        },
+        {
+          "high": 80.7,
+          "low": 62.0,
+          "precip": 3.89,
+          "highNormal": 80.6,
+          "change": 0.1
+        },
+        {
+          "high": 74.0,
+          "low": 55.7,
+          "precip": 5.49,
+          "highNormal": 73.8,
+          "change": 0.2
+        },
+        {
+          "high": 65.3,
+          "low": 46.2,
+          "precip": 4.33,
+          "highNormal": 62.8,
+          "change": 2.5
+        },
+        {
+          "high": 53.7,
+          "low": 34.2,
+          "precip": 2.6,
+          "highNormal": 52.3,
+          "change": 1.4
+        },
+        {
+          "high": 43.9,
+          "low": 27.4,
+          "precip": 5.17,
+          "highNormal": 42.7,
+          "change": 1.1
+        }
+      ]
+    },
+    "SC": {
+      "name": "South Carolina",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 56.3,
+          "low": 34.1,
+          "precip": 4.26,
+          "highNormal": 56.4,
+          "change": -0.1
+        },
+        {
+          "high": 63.2,
+          "low": 39.8,
+          "precip": 3.45,
+          "highNormal": 60.2,
+          "change": 3.0
+        },
+        {
+          "high": 70.0,
+          "low": 45.1,
+          "precip": 3.86,
+          "highNormal": 67.3,
+          "change": 2.7
+        },
+        {
+          "high": 76.5,
+          "low": 50.9,
+          "precip": 3.23,
+          "highNormal": 75.6,
+          "change": 0.9
+        },
+        {
+          "high": 81.7,
+          "low": 59.5,
+          "precip": 4.23,
+          "highNormal": 82.5,
+          "change": -0.8
+        },
+        {
+          "high": 88.1,
+          "low": 67.0,
+          "precip": 4.58,
+          "highNormal": 88.3,
+          "change": -0.3
+        },
+        {
+          "high": 91.1,
+          "low": 71.7,
+          "precip": 6.01,
+          "highNormal": 91.3,
+          "change": -0.2
+        },
+        {
+          "high": 88.3,
+          "low": 70.1,
+          "precip": 6.77,
+          "highNormal": 89.5,
+          "change": -1.3
+        },
+        {
+          "high": 84.2,
+          "low": 63.4,
+          "precip": 3.71,
+          "highNormal": 84.5,
+          "change": -0.3
+        },
+        {
+          "high": 75.5,
+          "low": 52.2,
+          "precip": 2.39,
+          "highNormal": 75.7,
+          "change": -0.2
+        },
+        {
+          "high": 67.6,
+          "low": 43.6,
+          "precip": 2.09,
+          "highNormal": 66.1,
+          "change": 1.5
+        },
+        {
+          "high": 60.0,
+          "low": 37.8,
+          "precip": 3.53,
+          "highNormal": 58.7,
+          "change": 1.3
+        }
+      ]
+    },
+    "SD": {
+      "name": "South Dakota",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 29.5,
+          "low": 9.9,
+          "precip": 0.38,
+          "highNormal": 28.6,
+          "change": 0.8
+        },
+        {
+          "high": 32.0,
+          "low": 8.9,
+          "precip": 0.41,
+          "highNormal": 32.8,
+          "change": -0.8
+        },
+        {
+          "high": 46.4,
+          "low": 21.6,
+          "precip": 0.86,
+          "highNormal": 44.7,
+          "change": 1.8
+        },
+        {
+          "high": 56.2,
+          "low": 30.5,
+          "precip": 2.28,
+          "highNormal": 57.0,
+          "change": -0.8
+        },
+        {
+          "high": 69.9,
+          "low": 44.1,
+          "precip": 3.09,
+          "highNormal": 68.3,
+          "change": 1.6
+        },
+        {
+          "high": 82.0,
+          "low": 55.5,
+          "precip": 3.05,
+          "highNormal": 78.6,
+          "change": 3.4
+        },
+        {
+          "high": 86.4,
+          "low": 60.1,
+          "precip": 2.68,
+          "highNormal": 85.6,
+          "change": 0.8
+        },
+        {
+          "high": 85.0,
+          "low": 58.6,
+          "precip": 2.75,
+          "highNormal": 83.8,
+          "change": 1.2
+        },
+        {
+          "high": 80.2,
+          "low": 51.1,
+          "precip": 1.59,
+          "highNormal": 75.2,
+          "change": 5.0
+        },
+        {
+          "high": 63.9,
+          "low": 37.6,
+          "precip": 1.62,
+          "highNormal": 59.6,
+          "change": 4.2
+        },
+        {
+          "high": 46.9,
+          "low": 23.5,
+          "precip": 0.58,
+          "highNormal": 44.1,
+          "change": 2.8
+        },
+        {
+          "high": 35.0,
+          "low": 14.0,
+          "precip": 0.84,
+          "highNormal": 31.9,
+          "change": 3.1
+        }
+      ]
+    },
+    "TN": {
+      "name": "Tennessee",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 46.9,
+          "low": 28.1,
+          "precip": 5.13,
+          "highNormal": 47.4,
+          "change": -0.5
+        },
+        {
+          "high": 54.5,
+          "low": 33.0,
+          "precip": 5.74,
+          "highNormal": 52.0,
+          "change": 2.5
+        },
+        {
+          "high": 64.5,
+          "low": 40.2,
+          "precip": 5.95,
+          "highNormal": 60.8,
+          "change": 3.7
+        },
+        {
+          "high": 70.7,
+          "low": 46.6,
+          "precip": 4.53,
+          "highNormal": 70.7,
+          "change": 0.0
+        },
+        {
+          "high": 77.5,
+          "low": 56.4,
+          "precip": 5.56,
+          "highNormal": 78.1,
+          "change": -0.6
+        },
+        {
+          "high": 85.7,
+          "low": 63.6,
+          "precip": 3.9,
+          "highNormal": 85.0,
+          "change": 0.7
+        },
+        {
+          "high": 88.6,
+          "low": 68.6,
+          "precip": 4.88,
+          "highNormal": 87.9,
+          "change": 0.7
+        },
+        {
+          "high": 86.9,
+          "low": 65.8,
+          "precip": 4.37,
+          "highNormal": 87.4,
+          "change": -0.5
+        },
+        {
+          "high": 82.0,
+          "low": 59.1,
+          "precip": 4.1,
+          "highNormal": 82.0,
+          "change": -0.0
+        },
+        {
+          "high": 73.1,
+          "low": 48.2,
+          "precip": 2.56,
+          "highNormal": 71.6,
+          "change": 1.5
+        },
+        {
+          "high": 61.5,
+          "low": 38.4,
+          "precip": 2.72,
+          "highNormal": 59.8,
+          "change": 1.7
+        },
+        {
+          "high": 53.8,
+          "low": 34.1,
+          "precip": 4.34,
+          "highNormal": 50.4,
+          "change": 3.4
+        }
+      ]
+    },
+    "TX": {
+      "name": "Texas",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 58.9,
+          "low": 33.8,
+          "precip": 1.68,
+          "highNormal": 59.5,
+          "change": -0.6
+        },
+        {
+          "high": 63.0,
+          "low": 36.9,
+          "precip": 1.11,
+          "highNormal": 63.9,
+          "change": -0.9
+        },
+        {
+          "high": 73.6,
+          "low": 46.5,
+          "precip": 1.46,
+          "highNormal": 71.2,
+          "change": 2.5
+        },
+        {
+          "high": 79.6,
+          "low": 53.9,
+          "precip": 2.42,
+          "highNormal": 78.7,
+          "change": 0.8
+        },
+        {
+          "high": 86.8,
+          "low": 63.1,
+          "precip": 4.33,
+          "highNormal": 85.7,
+          "change": 1.1
+        },
+        {
+          "high": 93.8,
+          "low": 70.5,
+          "precip": 2.89,
+          "highNormal": 92.3,
+          "change": 1.6
+        },
+        {
+          "high": 95.4,
+          "low": 72.3,
+          "precip": 2.75,
+          "highNormal": 94.6,
+          "change": 0.7
+        },
+        {
+          "high": 96.4,
+          "low": 72.3,
+          "precip": 2.26,
+          "highNormal": 94.6,
+          "change": 1.8
+        },
+        {
+          "high": 91.3,
+          "low": 66.1,
+          "precip": 1.88,
+          "highNormal": 88.2,
+          "change": 3.1
+        },
+        {
+          "high": 83.1,
+          "low": 56.5,
+          "precip": 2.05,
+          "highNormal": 79.5,
+          "change": 3.6
+        },
+        {
+          "high": 70.5,
+          "low": 45.8,
+          "precip": 1.89,
+          "highNormal": 68.4,
+          "change": 2.0
+        },
+        {
+          "high": 66.1,
+          "low": 41.4,
+          "precip": 1.16,
+          "highNormal": 60.4,
+          "change": 5.8
+        }
+      ]
+    },
+    "UT": {
+      "name": "Utah",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 38.2,
+          "low": 17.5,
+          "precip": 1.1,
+          "highNormal": 38.2,
+          "change": 0.0
+        },
+        {
+          "high": 42.9,
+          "low": 20.4,
+          "precip": 1.1,
+          "highNormal": 43.1,
+          "change": -0.2
+        },
+        {
+          "high": 49.7,
+          "low": 26.6,
+          "precip": 1.67,
+          "highNormal": 52.6,
+          "change": -2.8
+        },
+        {
+          "high": 60.6,
+          "low": 33.0,
+          "precip": 0.73,
+          "highNormal": 59.5,
+          "change": 1.1
+        },
+        {
+          "high": 70.6,
+          "low": 42.0,
+          "precip": 0.72,
+          "highNormal": 69.6,
+          "change": 1.1
+        },
+        {
+          "high": 83.8,
+          "low": 53.2,
+          "precip": 0.48,
+          "highNormal": 81.1,
+          "change": 2.7
+        },
+        {
+          "high": 90.5,
+          "low": 60.2,
+          "precip": 0.73,
+          "highNormal": 88.2,
+          "change": 2.4
+        },
+        {
+          "high": 86.0,
+          "low": 57.6,
+          "precip": 1.73,
+          "highNormal": 85.6,
+          "change": 0.4
+        },
+        {
+          "high": 79.2,
+          "low": 50.1,
+          "precip": 0.88,
+          "highNormal": 76.7,
+          "change": 2.5
+        },
+        {
+          "high": 64.4,
+          "low": 38.0,
+          "precip": 1.4,
+          "highNormal": 62.9,
+          "change": 1.5
+        },
+        {
+          "high": 50.2,
+          "low": 26.9,
+          "precip": 0.84,
+          "highNormal": 48.8,
+          "change": 1.4
+        },
+        {
+          "high": 43.1,
+          "low": 22.5,
+          "precip": 1.23,
+          "highNormal": 38.1,
+          "change": 5.0
+        }
+      ]
+    },
+    "VA": {
+      "name": "Virginia",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 45.5,
+          "low": 26.5,
+          "precip": 3.72,
+          "highNormal": 45.6,
+          "change": -0.0
+        },
+        {
+          "high": 51.8,
+          "low": 30.7,
+          "precip": 3.81,
+          "highNormal": 49.2,
+          "change": 2.6
+        },
+        {
+          "high": 61.6,
+          "low": 36.6,
+          "precip": 3.18,
+          "highNormal": 57.2,
+          "change": 4.4
+        },
+        {
+          "high": 69.7,
+          "low": 44.5,
+          "precip": 3.09,
+          "highNormal": 68.0,
+          "change": 1.7
+        },
+        {
+          "high": 75.0,
+          "low": 52.8,
+          "precip": 4.72,
+          "highNormal": 75.4,
+          "change": -0.3
+        },
+        {
+          "high": 83.4,
+          "low": 60.7,
+          "precip": 3.37,
+          "highNormal": 82.6,
+          "change": 0.8
+        },
+        {
+          "high": 87.4,
+          "low": 66.8,
+          "precip": 5.51,
+          "highNormal": 86.3,
+          "change": 1.1
+        },
+        {
+          "high": 84.4,
+          "low": 64.1,
+          "precip": 4.41,
+          "highNormal": 84.6,
+          "change": -0.2
+        },
+        {
+          "high": 78.7,
+          "low": 57.5,
+          "precip": 4.19,
+          "highNormal": 78.6,
+          "change": 0.1
+        },
+        {
+          "high": 69.7,
+          "low": 46.3,
+          "precip": 2.1,
+          "highNormal": 68.6,
+          "change": 1.1
+        },
+        {
+          "high": 59.4,
+          "low": 35.8,
+          "precip": 2.13,
+          "highNormal": 57.9,
+          "change": 1.5
+        },
+        {
+          "high": 50.6,
+          "low": 29.8,
+          "precip": 3.11,
+          "highNormal": 48.8,
+          "change": 1.7
+        }
+      ]
+    },
+    "VT": {
+      "name": "Vermont",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 27.9,
+          "low": 12.1,
+          "precip": 2.65,
+          "highNormal": 26.8,
+          "change": 1.1
+        },
+        {
+          "high": 31.8,
+          "low": 11.2,
+          "precip": 2.37,
+          "highNormal": 29.9,
+          "change": 1.9
+        },
+        {
+          "high": 42.1,
+          "low": 21.6,
+          "precip": 3.5,
+          "highNormal": 38.5,
+          "change": 3.5
+        },
+        {
+          "high": 54.1,
+          "low": 31.7,
+          "precip": 4.0,
+          "highNormal": 52.1,
+          "change": 2.0
+        },
+        {
+          "high": 66.9,
+          "low": 42.5,
+          "precip": 3.78,
+          "highNormal": 65.4,
+          "change": 1.5
+        },
+        {
+          "high": 75.0,
+          "low": 52.1,
+          "precip": 4.18,
+          "highNormal": 73.6,
+          "change": 1.4
+        },
+        {
+          "high": 79.3,
+          "low": 57.4,
+          "precip": 6.11,
+          "highNormal": 78.0,
+          "change": 1.3
+        },
+        {
+          "high": 77.2,
+          "low": 55.4,
+          "precip": 4.06,
+          "highNormal": 76.2,
+          "change": 0.9
+        },
+        {
+          "high": 70.8,
+          "low": 48.1,
+          "precip": 3.56,
+          "highNormal": 69.0,
+          "change": 1.8
+        },
+        {
+          "high": 60.1,
+          "low": 38.8,
+          "precip": 3.92,
+          "highNormal": 55.9,
+          "change": 4.2
+        },
+        {
+          "high": 44.2,
+          "low": 26.9,
+          "precip": 3.16,
+          "highNormal": 43.3,
+          "change": 0.9
+        },
+        {
+          "high": 33.9,
+          "low": 17.7,
+          "precip": 4.14,
+          "highNormal": 32.3,
+          "change": 1.6
+        }
+      ]
+    },
+    "WA": {
+      "name": "Washington",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 37.7,
+          "low": 26.3,
+          "precip": 5.51,
+          "highNormal": 37.4,
+          "change": 0.3
+        },
+        {
+          "high": 39.8,
+          "low": 25.9,
+          "precip": 4.22,
+          "highNormal": 41.9,
+          "change": -2.1
+        },
+        {
+          "high": 49.2,
+          "low": 30.8,
+          "precip": 3.59,
+          "highNormal": 48.7,
+          "change": 0.5
+        },
+        {
+          "high": 55.4,
+          "low": 33.8,
+          "precip": 2.77,
+          "highNormal": 55.8,
+          "change": -0.3
+        },
+        {
+          "high": 64.2,
+          "low": 41.4,
+          "precip": 2.03,
+          "highNormal": 64.2,
+          "change": -0.1
+        },
+        {
+          "high": 72.8,
+          "low": 48.3,
+          "precip": 1.68,
+          "highNormal": 69.9,
+          "change": 3.0
+        },
+        {
+          "high": 82.5,
+          "low": 54.4,
+          "precip": 0.3,
+          "highNormal": 78.7,
+          "change": 3.7
+        },
+        {
+          "high": 80.4,
+          "low": 54.3,
+          "precip": 0.87,
+          "highNormal": 78.7,
+          "change": 1.7
+        },
+        {
+          "high": 72.8,
+          "low": 48.5,
+          "precip": 1.55,
+          "highNormal": 70.8,
+          "change": 2.0
+        },
+        {
+          "high": 59.0,
+          "low": 38.8,
+          "precip": 3.73,
+          "highNormal": 56.9,
+          "change": 2.0
+        },
+        {
+          "high": 43.9,
+          "low": 31.4,
+          "precip": 6.82,
+          "highNormal": 43.8,
+          "change": 0.1
+        },
+        {
+          "high": 38.0,
+          "low": 27.7,
+          "precip": 7.82,
+          "highNormal": 36.5,
+          "change": 1.5
+        }
+      ]
+    },
+    "WI": {
+      "name": "Wisconsin",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 25.0,
+          "low": 10.1,
+          "precip": 0.9,
+          "highNormal": 23.8,
+          "change": 1.2
+        },
+        {
+          "high": 29.4,
+          "low": 8.8,
+          "precip": 1.04,
+          "highNormal": 28.8,
+          "change": 0.7
+        },
+        {
+          "high": 43.6,
+          "low": 22.7,
+          "precip": 2.7,
+          "highNormal": 40.7,
+          "change": 2.9
+        },
+        {
+          "high": 53.6,
+          "low": 32.6,
+          "precip": 3.33,
+          "highNormal": 54.3,
+          "change": -0.7
+        },
+        {
+          "high": 68.3,
+          "low": 44.3,
+          "precip": 3.31,
+          "highNormal": 67.2,
+          "change": 1.1
+        },
+        {
+          "high": 78.3,
+          "low": 55.0,
+          "precip": 4.37,
+          "highNormal": 76.4,
+          "change": 2.0
+        },
+        {
+          "high": 80.6,
+          "low": 58.2,
+          "precip": 4.13,
+          "highNormal": 80.4,
+          "change": 0.3
+        },
+        {
+          "high": 78.6,
+          "low": 56.9,
+          "precip": 4.15,
+          "highNormal": 78.2,
+          "change": 0.3
+        },
+        {
+          "high": 73.6,
+          "low": 50.8,
+          "precip": 2.43,
+          "highNormal": 70.6,
+          "change": 3.0
+        },
+        {
+          "high": 61.6,
+          "low": 39.9,
+          "precip": 2.07,
+          "highNormal": 57.0,
+          "change": 4.6
+        },
+        {
+          "high": 44.1,
+          "low": 26.7,
+          "precip": 1.92,
+          "highNormal": 41.5,
+          "change": 2.6
+        },
+        {
+          "high": 30.9,
+          "low": 16.1,
+          "precip": 1.64,
+          "highNormal": 29.0,
+          "change": 1.9
+        }
+      ]
+    },
+    "WV": {
+      "name": "West Virginia",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 39.3,
+          "low": 22.8,
+          "precip": 3.72,
+          "highNormal": 40.3,
+          "change": -1.0
+        },
+        {
+          "high": 47.5,
+          "low": 26.5,
+          "precip": 4.14,
+          "highNormal": 44.3,
+          "change": 3.2
+        },
+        {
+          "high": 58.3,
+          "low": 32.6,
+          "precip": 2.92,
+          "highNormal": 53.0,
+          "change": 5.3
+        },
+        {
+          "high": 66.3,
+          "low": 40.4,
+          "precip": 3.76,
+          "highNormal": 65.4,
+          "change": 0.9
+        },
+        {
+          "high": 73.1,
+          "low": 49.1,
+          "precip": 4.77,
+          "highNormal": 73.4,
+          "change": -0.3
+        },
+        {
+          "high": 80.9,
+          "low": 56.8,
+          "precip": 4.12,
+          "highNormal": 80.1,
+          "change": 0.8
+        },
+        {
+          "high": 84.6,
+          "low": 62.8,
+          "precip": 4.75,
+          "highNormal": 83.2,
+          "change": 1.4
+        },
+        {
+          "high": 82.7,
+          "low": 60.7,
+          "precip": 4.25,
+          "highNormal": 82.1,
+          "change": 0.6
+        },
+        {
+          "high": 77.0,
+          "low": 54.0,
+          "precip": 3.44,
+          "highNormal": 76.5,
+          "change": 0.5
+        },
+        {
+          "high": 67.2,
+          "low": 42.7,
+          "precip": 2.51,
+          "highNormal": 65.7,
+          "change": 1.5
+        },
+        {
+          "high": 55.0,
+          "low": 32.8,
+          "precip": 2.73,
+          "highNormal": 54.0,
+          "change": 1.0
+        },
+        {
+          "high": 47.0,
+          "low": 27.4,
+          "precip": 2.76,
+          "highNormal": 44.1,
+          "change": 2.9
+        }
+      ]
+    },
+    "WY": {
+      "name": "Wyoming",
+      "proxyFor": null,
+      "months": [
+        {
+          "high": 31.4,
+          "low": 9.6,
+          "precip": 0.93,
+          "highNormal": 32.4,
+          "change": -1.0
+        },
+        {
+          "high": 32.9,
+          "low": 10.3,
+          "precip": 1.13,
+          "highNormal": 34.9,
+          "change": -2.0
+        },
+        {
+          "high": 43.2,
+          "low": 18.7,
+          "precip": 1.32,
+          "highNormal": 44.8,
+          "change": -1.6
+        },
+        {
+          "high": 51.5,
+          "low": 25.1,
+          "precip": 1.51,
+          "highNormal": 52.4,
+          "change": -0.9
+        },
+        {
+          "high": 62.4,
+          "low": 35.9,
+          "precip": 2.14,
+          "highNormal": 62.0,
+          "change": 0.3
+        },
+        {
+          "high": 75.8,
+          "low": 45.8,
+          "precip": 1.53,
+          "highNormal": 73.2,
+          "change": 2.6
+        },
+        {
+          "high": 83.9,
+          "low": 51.9,
+          "precip": 1.04,
+          "highNormal": 82.1,
+          "change": 1.8
+        },
+        {
+          "high": 80.8,
+          "low": 50.2,
+          "precip": 1.36,
+          "highNormal": 80.3,
+          "change": 0.5
+        },
+        {
+          "high": 74.4,
+          "low": 43.0,
+          "precip": 1.14,
+          "highNormal": 70.3,
+          "change": 4.1
+        },
+        {
+          "high": 58.4,
+          "low": 31.6,
+          "precip": 1.57,
+          "highNormal": 55.7,
+          "change": 2.8
+        },
+        {
+          "high": 44.2,
+          "low": 20.8,
+          "precip": 0.74,
+          "highNormal": 41.8,
+          "change": 2.4
+        },
+        {
+          "high": 37.6,
+          "low": 16.2,
+          "precip": 1.12,
+          "highNormal": 32.2,
+          "change": 5.3
+        }
+      ]
+    }
+  }
+}

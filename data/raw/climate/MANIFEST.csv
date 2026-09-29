@@ -1,0 +1,4 @@
+file,measure,meaning,issued,downloaded,bytes,source
+climdiv-tmaxst-v1.0.0-20260904,tmaxst,average daily high (F),20260904,2026-09-28,1255380,https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-tmaxst-v1.0.0-20260904
+climdiv-tminst-v1.0.0-20260904,tminst,average daily low (F),20260904,2026-09-28,1255380,https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-tminst-v1.0.0-20260904
+climdiv-pcpnst-v1.0.0-20260904,pcpnst,precipitation (inches),20260904,2026-09-28,1255380,https://www.ncei.noaa.gov/monitoring-content/data/us/climdiv/monthly/current/climdiv-pcpnst-v1.0.0-20260904

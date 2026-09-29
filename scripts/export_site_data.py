@@ -12,6 +12,8 @@ from pathlib import Path
 import pandas as pd
 from PIL import Image
 
+from us_states import STATE_CODES
+
 ROOT = Path(__file__).resolve().parents[1]
 CLOSET = ROOT / 'assets' / 'closet'
 SITE = ROOT / 'site'
@@ -28,19 +30,6 @@ FITS = {'slim', 'regular', 'relaxed', 'oversized'}
 LIFESTYLE = {'comfort', 'sturdy', 'polished', 'layer', 'statement'}
 ITEM_FLAGS = {'skinny', 'logo', 'shorts', 'print', 'graphic', 'cargo', 'chain', 'sandals', 'tight', 'neon'}
 
-STATE_CODES = {
-    'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA',
-    'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE', 'District of Columbia': 'DC',
-    'Florida': 'FL', 'Georgia': 'GA', 'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL',
-    'Indiana': 'IN', 'Iowa': 'IA', 'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA',
-    'Maine': 'ME', 'Maryland': 'MD', 'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN',
-    'Mississippi': 'MS', 'Missouri': 'MO', 'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV',
-    'New Hampshire': 'NH', 'New Jersey': 'NJ', 'New Mexico': 'NM', 'New York': 'NY',
-    'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH', 'Oklahoma': 'OK', 'Oregon': 'OR',
-    'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC', 'South Dakota': 'SD',
-    'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT', 'Virginia': 'VA',
-    'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY',
-}
 
 # Known data problems travel with the data, so the site can warn about them (see data/README.md)
 FLAGS = {
@@ -197,6 +186,47 @@ def export_brands():
     return len(brands), sum(brand['trends'] for brand in brands)
 
 
+def export_climate():
+    """data/clean/climate_by_state.csv -> site/data/climate.json: 12 months of weather per state.
+
+    Stops if a state is missing months or a month looks impossible (a high below its low, or a
+    temperature outside -40..130 F).
+    """
+    table = pd.read_csv(ROOT / 'data' / 'clean' / 'climate_by_state.csv', keep_default_na=False)
+    manifest = pd.read_csv(ROOT / 'data' / 'raw' / 'climate' / 'MANIFEST.csv', dtype=str)
+    problems = []
+    states = {}
+    for code, rows in table.groupby('state'):
+        rows = rows.sort_values('month')
+        if list(rows['month']) != list(range(1, 13)):
+            problems.append(f'{code}: months {list(rows["month"])}')
+        for row in rows.itertuples(index=False):
+            if not -40 <= row.low_recent < row.high_recent <= 130:
+                problems.append(f'{code} month {row.month}: low {row.low_recent}, high {row.high_recent}')
+        states[code] = {
+            'name': rows['state_name'].iloc[0],
+            'proxyFor': rows['proxy_for'].iloc[0] or None,
+            'months': [
+                {'high': row.high_recent, 'low': row.low_recent, 'precip': row.precip_recent,
+                 'highNormal': row.high_normal, 'change': row.high_change}
+                for row in rows.itertuples(index=False)
+            ],
+        }
+    if set(states) != set(STATE_CODES.values()):
+        problems.append(f'states missing: {sorted(set(STATE_CODES.values()) - set(states))}')
+    if problems:
+        raise SystemExit('climate_by_state.csv has problems:\n  ' + '\n  '.join(problems))
+
+    write_json('climate.json', {
+        'source': 'NOAA nClimDiv statewide monthly averages',
+        'issued': manifest['issued'].max(),
+        'recent': [2021, 2025],
+        'normal': [1991, 2020],
+        'states': dict(sorted(states.items())),
+    })
+    return len(states)
+
+
 def write_json(name, payload):
     out = SITE / 'data' / name
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -211,3 +241,4 @@ if __name__ == '__main__':
     print(f'Trends: {brand_count} brands x {state_count} states exported')
     listed, with_data = export_brands()
     print(f'Brands: {listed} listed, {with_data} with Trends data')
+    print(f'Climate: {export_climate()} states x 12 months exported')

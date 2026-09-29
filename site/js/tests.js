@@ -1,10 +1,10 @@
 // Tests for the site's logic, run in the browser: open /tests.html while the local server runs.
 // They use the real data pack, so they also catch data changes that would break a rule.
 import { loadData } from './data.js';
-import { buildProfile, buildOutfit, isStrong, SLOTS } from './model.js';
+import { buildProfile, buildOutfit, isStrong, warmthFor, leftOut, SLOTS } from './model.js';
 import { tasteFromSwipes } from './taste.js';
-import { parsePlace } from './quiz.js';
-import { normalize } from './format.js';
+import { parsePlace, WEIGHTS } from './quiz.js';
+import { normalize, wholePercents } from './format.js';
 import { encodeFit, decodeFit } from './share.js';
 
 const results = [];
@@ -33,7 +33,9 @@ const run = (saved, overrides = {}) => {
 };
 const idsOf = (outfit) => outfit.pieces.map((piece) => piece.pick.item.id);
 
-// A realistic visitor: likes quiet, rugged pieces, lives in Baltimore, works in an office
+// A realistic visitor: likes quiet, rugged pieces, lives in Baltimore, works in an office.
+// month 9 = October (months count from 0), a mild 69°F month in Maryland, so every test gets the
+// same weather no matter when it runs.
 const SAMPLE = {
   swipes: [
     { id: 'top-denim-jacket', vote: 1 }, { id: 'bottom-folded-jeans', vote: 1 }, { id: 'eyewear-tortoiseshell', vote: 1 },
@@ -43,6 +45,7 @@ const SAMPLE = {
   ],
   answers: { city: 'Baltimore, MD', week: 'office', fit: 'regular', colors: ['navy', 'brown', 'cream'], inspo: ['quiet', 'workwear'], acc: 'few', nos: ['chains'] },
   brands: ['COS', 'Carhartt', 'Uniqlo'],
+  month: 9,
 };
 const withAnswers = (patch) => ({ ...SAMPLE, answers: { ...SAMPLE.answers, ...patch } });
 
@@ -52,6 +55,18 @@ test('parsePlace reads "City, ST"', () => same(parsePlace('Baltimore, MD', state
 test('parsePlace reads full state names', () => same(parsePlace('Wichita, Kansas', states).code, 'KS', 'state code'));
 test('parsePlace reads "D.C." with dots', () => same(parsePlace('Washington, D.C.', states).code, 'DC', 'state code'));
 test('parsePlace without a state gives no code', () => same(parsePlace('Baltimore', states).code, null, 'state code'));
+test('parsePlace reads a state on its own ("Maryland", "MD")', () => {
+  same(parsePlace('Maryland', states).code, 'MD', 'Maryland');
+  same(parsePlace('MD', states).code, 'MD', 'MD');
+});
+test('parsePlace ignores two lowercase letters, so typing "Al" for Albany isn\'t Alabama', () => {
+  same(parsePlace('Al', states).code, null, 'Al');
+});
+test('wholePercents adds up to exactly 100 (plain rounding gives 101 here)', () => {
+  same(wholePercents([50, 15, 10, 5]), [63, 19, 12, 6], 'no weather');
+  same(wholePercents([50, 20, 15, 10, 5]), [50, 20, 15, 10, 5], 'every signal');
+  same(wholePercents([]), [], 'nothing');
+});
 test('normalize ignores accents and punctuation', () => {
   same(normalize('Stüssy'), 'stussy', 'Stüssy');
   same(normalize('H&M'), 'h m', 'H&M');
@@ -88,15 +103,25 @@ test('the pieces you liked win their slots', () => {
     check(ids.includes(liked), `${liked} should be in ${ids.join(', ')}`);
   }
 });
+// Two swipes, and an unseen cobalt tee that trends better in Maryland and sits close to navy
+const LIKED_VS_UNSEEN = {
+  swipes: [{ id: 'top-denim-jacket', vote: 1 }, { id: 'shoes-penny-loafers', vote: 1 }],
+  answers: { city: 'Baltimore, MD', colors: ['navy'], acc: 'none' },
+  brands: ['COS'],
+};
 test('a liked piece beats an unseen one even when trends and color lean the other way', () => {
-  // Found by testing: with just two swipes, an unseen cobalt tee (trendier style in Maryland, close
-  // to navy) used to beat the denim jacket the visitor had liked.
-  const saved = {
-    swipes: [{ id: 'top-denim-jacket', vote: 1 }, { id: 'shoes-penny-loafers', vote: 1 }],
-    answers: { city: 'Baltimore, MD', colors: ['navy'], acc: 'none' },
-    brands: ['COS'],
-  };
-  check(idsOf(run(saved).outfit).includes('top-denim-jacket'), 'the liked denim jacket should be the top');
+  // Found by testing: the unseen cobalt tee used to beat the denim jacket the visitor had liked.
+  // The weather is switched off here to test just that; the next test adds it back.
+  const profile = buildProfile(LIKED_VS_UNSEEN, data);
+  profile.need = null;
+  check(idsOf(buildOutfit(data, profile)).includes('top-denim-jacket'), 'the liked denim jacket should be the top');
+});
+test('the weather can outvote a like: a Maryland September picks the tee, a January the jacket', () => {
+  // A trade-off, on purpose: weather is 20% of the score. In a 79°F September the light tee gets the
+  // full climate score and the jacket half, and with trends and color that's enough to win.
+  const top = (month) => idsOf(run({ ...LIKED_VS_UNSEEN, month }).outfit).find((id) => id.startsWith('top-'));
+  same(top(8), 'top-cobalt-tee', 'September');
+  same(top(0), 'top-denim-jacket', 'January');
 });
 test('hard no: "Chains" removes the chain before scoring', () => {
   const { outfit } = run(SAMPLE);
@@ -137,18 +162,56 @@ test('trends: Maryland scores minimal from its minimal brands (Uniqlo 1.74, COS 
   const { profile } = run(SAMPLE);
   check(Math.abs(profile.styleTrends.minimal - 1.54) < 0.001, `minimal = ${profile.styleTrends.minimal}`);
 });
-test('trends: a flagged state (Kansas) adds nothing', () => {
+test('trends: a flagged state (Kansas) adds nothing, but still gets its weather', () => {
   const { profile, outfit } = run(withAnswers({ city: 'Wichita, KS' }));
   same(profile.styleTrends, null, 'styleTrends');
   check(!outfit.used.some((w) => w.key === 'trends'), 'trends not used');
+  check(profile.weather !== null, 'the flag is about Trends only, so Kansas weather is used');
 });
-test('the weights that are used always add up to 100%', () => {
-  for (const saved of [SAMPLE, withAnswers({ colors: [], week: undefined }), { swipes: [], answers: {}, brands: [] }]) {
-    const { outfit } = run(saved);
-    const piece = outfit.pieces[0].pick;
-    const share = outfit.used.reduce((sum, w) => sum + w.pct / piece.weightSum, 0);
-    check(Math.abs(share - 1) < 1e-9 || outfit.used.length === 0, `shares add to ${share}`);
+test("every piece's weights add up to 100%, whatever was left out", () => {
+  const skipped = { swipes: [], answers: {}, brands: [] };
+  for (const saved of [SAMPLE, withAnswers({ colors: [], week: undefined }), withAnswers({ nos: ['hats'] }), skipped]) {
+    for (const { pick } of run(saved).outfit.pieces) {
+      const share = WEIGHTS.filter((w) => pick.parts[w.key] !== undefined).reduce((sum, w) => sum + w.pct / pick.weightSum, 0);
+      check(Object.keys(pick.parts).length === 0 || Math.abs(share - 1) < 1e-9, `${pick.item.id}: shares add to ${share}`);
+    }
   }
+});
+
+// ---------- Weather ----------
+
+const inState = (city, month) => run({ swipes: [], answers: { city }, brands: [], month });
+test('weather: under 50°F asks for warm pieces, under 72°F mid-weight, then light', () => {
+  same([warmthFor(21), warmthFor(49.9), warmthFor(50), warmthFor(71.9), warmthFor(72), warmthFor(95)], [3, 3, 2, 2, 1, 1], 'warmth');
+});
+test('weather: a Minnesota January (21°F) wants the beanie, not the cap', () => {
+  const { profile, outfit } = inState('Minneapolis, MN', 0);
+  same(profile.need, 3, 'need');
+  const hat = (id) => outfit.ranked.hat.find((r) => r.item.id === id).parts.climate;
+  same([hat('hat-grey-beanie'), hat('hat-mustard-cap')], [1, 0], 'beanie, cap');
+});
+test('weather: a Texas July (95°F) wants a tee over a jacket', () => {
+  const { profile, outfit } = inState('Austin, TX', 6);
+  same(profile.need, 1, 'need');
+  const top = (id) => outfit.ranked.top.find((r) => r.item.id === id).parts.climate;
+  same([top('top-sage-tee'), top('top-denim-jacket')], [1, 0.5], 'tee, jacket');
+});
+test("weather: Washington, D.C. uses Maryland's numbers and says so", () => {
+  const { profile } = inState('Washington, DC', 6);
+  same(profile.weather, data.climate.states.MD.months[6], 'July weather');
+  same(profile.weatherProxy, 'MD', 'proxy');
+});
+test('weather: eyewear and jewelry are never scored on it', () => {
+  const { outfit } = run(SAMPLE);
+  check(outfit.used.some((w) => w.key === 'climate'), 'climate used by the outfit');
+  for (const slot of ['eyewear', 'jewelry']) {
+    check(outfit.ranked[slot].every((r) => r.parts.climate === undefined), `${slot} has a climate score`);
+  }
+});
+test('weather: no state means no climate score, and the page says why', () => {
+  const { profile, outfit } = run({ swipes: [], answers: { city: 'Baltimore' }, brands: [], month: 0 });
+  check(!outfit.used.some((w) => w.key === 'climate'), 'climate not used');
+  check(leftOut(profile).includes('no state from question 1'), leftOut(profile));
 });
 test('your own swap is kept', () => {
   const { outfit } = run(SAMPLE, { top: 'top-sage-tee' });
@@ -168,11 +231,18 @@ test('a visitor who skipped everything still gets an outfit', () => {
 
 test('a share link rebuilds the same outfit, without the city or typed-in brands', () => {
   const saved = { ...SAMPLE, brands: [...SAMPLE.brands, 'zzbrand'], customBrands: ['zzbrand'], overrides: { top: 'top-sage-tee' } };
-  const decoded = decodeFit(encodeFit(saved, data));
+  const decoded = decodeFit(encodeFit(saved, data, saved.month));
   same(idsOf(run(decoded, decoded.overrides).outfit), idsOf(run(saved, saved.overrides).outfit), 'outfit');
   check(!JSON.stringify(decoded).includes('Baltimore'), 'the city should be left out');
   same(parsePlace(decoded.answers.city, states).code, 'MD', 'state kept');
   check(!decoded.brands.includes('zzbrand'), 'typed-in brand should be left out');
+});
+test('a share link keeps the month, so the weather matches', () => same(decodeFit(encodeFit(SAMPLE, data, 9)).month, 9, 'month'));
+test('an older share link without a month still opens, using this month', () => {
+  const old = btoa(JSON.stringify({ v: 1, swipes: [], answers: {}, brands: [], overrides: {} }));
+  const decoded = decodeFit(old);
+  check(decoded !== null, 'decoded');
+  same(decoded.month, undefined, 'month');
 });
 test('a broken share link is rejected, not half-read', () => same(decodeFit('not-a-real-link'), null, 'decoded'));
 

@@ -1,0 +1,2 @@
+# Raw NOAA files stay byte for byte as downloaded (MANIFEST.csv records their sizes), so git never changes their line endings
+data/raw/climate/climdiv-* -text

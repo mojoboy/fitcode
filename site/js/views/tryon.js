@@ -4,6 +4,7 @@
 import { tick } from '../sound.js';
 import * as store from '../store.js';
 import { h } from '../dom.js';
+import { wholePercents } from '../format.js';
 import { PALETTE } from '../quiz.js';
 import { STYLES } from '../taste.js';
 import { buildProfile, buildOutfit, explain, bodyPart, leftOut } from '../model.js';
@@ -141,16 +142,20 @@ export function mount(root, { data, setNote }) {
     if (!piece) { ui.why.replaceChildren(); return; }
     const scored = piece.pick;
     const reasons = explain(scored, profile);
+    const signals = outfit.used.filter((w) => scored.parts[w.key] !== undefined);
+    const shares = wholePercents(signals.map((w) => w.pct));
+    const noWeather = scored.parts.climate === undefined && outfit.used.some((w) => w.key === 'climate');
     ui.why.replaceChildren(h('section', { class: 'q-panel why-panel' },
       h('p', { class: 'eyebrow' }, `Why this piece · #${piece.ranked.indexOf(scored) + 1} of ${piece.ranked.length} ${SLOT_PLURALS[piece.slot]} for you`),
       h('p', { class: 'why-name' }, scored.item.name),
       h('p', { class: 'why-match' }, h('span', { class: 'why-pct' }, `${Math.round(scored.total * 100)}%`), ' match'),
-      outfit.used.length ? h('ul', { class: 'why-signals' }, outfit.used.map((w) => h('li', { class: 'why-signal' },
+      signals.length ? h('ul', { class: 'why-signals' }, signals.map((w, i) => h('li', { class: 'why-signal' },
         h('span', { class: 'why-signal-name' }, w.name),
-        h('span', { class: 'why-signal-weight' }, `${Math.round((100 * w.pct) / scored.weightSum)}% of the score`),
+        h('span', { class: 'why-signal-weight' }, `${shares[i]}% of the score`),
         h('span', { class: 'why-track' }, h('span', { class: 'why-fill', style: `width: ${Math.round(scored.parts[w.key] * 100)}%` })),
         h('span', { class: 'why-value' }, scored.parts[w.key].toFixed(2))))) : null,
       reasons.length ? h('ul', { class: 'why-reasons' }, reasons.map((reason) => h('li', null, reason.text))) : null,
+      noWeather ? h('p', { class: 'why-note' }, "Weather isn't scored for eyewear or jewelry, so its share goes to the other signals.") : null,
       piece.note ? h('p', { class: 'why-note' }, piece.note) : null,
       piece.yours ? h('p', { class: 'why-note' }, 'You swapped this one in yourself.') : null,
       h('p', { class: 'why-note' }, leftOut(profile)),

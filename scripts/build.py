@@ -3,8 +3,11 @@
     .venv/Scripts/python scripts/build.py
 
 1. clean_trends.py       raw Google Trends exports -> data/clean/ and the DuckDB table
-2. export_site_data.py   project tables -> the website's data pack (site/data/, site/img/)
-3. data tests            tests/test_data_pack.py checks the data pack
+2. clean_climate.py      raw NOAA climate files -> data/clean/ and the DuckDB table
+3. export_site_data.py   project tables -> the website's data pack (site/data/, site/img/)
+4. data tests            tests/test_data_pack.py checks the data pack
+
+(Downloading new data is separate: scripts/import_trends.py and scripts/import_climate.py.)
 
 Each step only runs if the one before it worked. Then, with the local server running,
 open http://localhost:8000/tests.html for the logic tests.
@@ -17,6 +20,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 STEPS = [
     ('Clean the Trends exports', [sys.executable, 'scripts/clean_trends.py']),
+    ('Clean the NOAA climate files', [sys.executable, 'scripts/clean_climate.py']),
     ('Export the site data pack', [sys.executable, 'scripts/export_site_data.py']),
     ('Test the data pack', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests']),
 ]

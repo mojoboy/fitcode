@@ -1,12 +1,13 @@
 // The questions: seven quick ones, one at a time, each at its own address (#/questions/1 to 7).
 // Answers are saved in the browser as you go (store.js). The sidebar lists every answer, the
-// side panel shows which part of the score the question feeds, and question 1 shows real
-// Google Trends data for the state you type.
+// side panel shows which part of the score the question feeds, and question 1 shows real NOAA
+// weather and Google Trends data for the state you type.
 import { tick } from '../sound.js';
 import * as store from '../store.js';
 import { h, setPressed } from '../dom.js';
 import { monthYear } from '../format.js';
 import { STYLES } from '../taste.js';
+import { MONTH_NAMES, warmthFor } from '../model.js';
 import {
   WEIGHTS, CITIES, WEEKS, FITS, COLORS, MAX_COLORS, INSPIRATIONS, ACCESSORIES, NEVER, QUESTIONS, parsePlace,
 } from '../quiz.js';
@@ -14,6 +15,8 @@ import {
 const TOTAL = QUESTIONS.length + 1;   // question 8, your brands, has its own page
 
 const labelOf = (options, key) => options.find((o) => o.key === key)?.label ?? null;
+const deg = (f) => `${Math.round(f)}°F`;
+const LEAN = { 1: 'lighter pieces', 2: 'mid-weight pieces', 3: 'warm pieces' };   // by warmthFor()
 
 // One line per question for the sidebar; null means "not answered yet"
 const SUMMARIES = {
@@ -28,6 +31,7 @@ const SUMMARIES = {
 
 export function mount(root, { data, param, setNote }) {
   const { states, flags = {}, period, brands } = data.trends;
+  const { recent, normal } = data.climate;
   const answers = () => store.get().answers;
   let index = toIndex(param, answers());
   let current = null;   // the question on screen: { el, refresh }
@@ -65,6 +69,14 @@ export function mount(root, { data, param, setNote }) {
           </div>
           <p class="q-note" data-note></p>
         </section>
+        <section class="q-panel" data-weather hidden>
+          <p class="eyebrow">Weather near you · real data</p>
+          <p class="q-near-title" data-weather-title></p>
+          <div class="q-temps" role="img" data-temps></div>
+          <p class="q-weather-note" data-weather-note></p>
+          <p class="q-source">NOAA statewide monthly averages, ${recent[0]}–${recent[1]}. Each bar runs from the
+            average low to the average high; the dark one is this month.</p>
+        </section>
         <section class="q-panel" data-near hidden>
           <p class="eyebrow">Near you · real data</p>
           <p class="q-near-title" data-near-title></p>
@@ -81,6 +93,7 @@ export function mount(root, { data, param, setNote }) {
     progress: $('[data-progress]'), steps: $('[data-steps]'), question: $('[data-question]'),
     hint: $('[data-hint]'), back: $('[data-back]'), next: $('[data-next]'), note: $('[data-note]'),
     near: $('[data-near]'), nearTitle: $('[data-near-title]'), nearRows: $('[data-near-rows]'), nearFlag: $('[data-near-flag]'),
+    weather: $('[data-weather]'), weatherTitle: $('[data-weather-title]'), temps: $('[data-temps]'), weatherNote: $('[data-weather-note]'),
   };
 
   // Saving: merge the change into the stored answers, then refresh everything that shows it
@@ -160,18 +173,20 @@ export function mount(root, { data, param, setNote }) {
     showNear(q, a);
   }
 
-  // Question 1's side card: the three brands your state searches for most, from the real data
+  // Question 1's side cards: your state's weather this month, and the three brands it searches for
+  // most, both from the real data
   function showNear(q, a) {
     ui.near.hidden = q.key !== 'where';
-    if (q.key !== 'where') return;
     const place = parsePlace(a.city, states);
+    showWeather(q.key === 'where' && place.code ? data.climate.states[place.code] : null);
+    if (q.key !== 'where') return;
     const state = place.code && states[place.code];
     ui.nearRows.replaceChildren();
     ui.nearFlag.hidden = true;
     if (!state) {
       ui.nearTitle.textContent = place.typed
         ? `We don't know “${place.typed}” yet. Try a state name or its two-letter code, like MD.`
-        : 'Add your state, like “Baltimore, MD”, to see what people near you search for.';
+        : 'Add your state, like “Baltimore, MD”, to see your weather and what people near you search for.';
       return;
     }
     const top = Object.entries(state.index)
@@ -191,6 +206,28 @@ export function mount(root, { data, param, setNote }) {
       ui.nearFlag.textContent = `Flagged: ${flags[place.code]}`;
       ui.nearFlag.hidden = false;
     }
+  }
+
+  // This month's average high and low, what that means for the outfit, and all 12 months as bars
+  function showWeather(climate) {
+    ui.weather.hidden = !climate;
+    if (!climate) return;
+    const month = new Date().getMonth();
+    const now = climate.months[month];
+    const where = climate.proxyFor ? 'Washington, D.C.' : climate.name;
+    ui.weatherTitle.textContent = `${MONTH_NAMES[month]} in ${where} averages a ${deg(now.high)} high and a ${deg(now.low)} low, so we'll lean toward ${LEAN[warmthFor(now.high)]}.`;
+
+    const bottom = Math.min(...climate.months.map((m) => m.low)) - 3;
+    const range = Math.max(...climate.months.map((m) => m.high)) + 3 - bottom;
+    const pct = (value) => `${((100 * value) / range).toFixed(1)}%`;
+    ui.temps.setAttribute('aria-label', `Average highs by month in ${where}: ${climate.months.map((m, i) => `${MONTH_NAMES[i]} ${deg(m.high)}`).join(', ')}.`);
+    ui.temps.replaceChildren(...climate.months.map((m, i) => h('span', { class: `q-temp${i === month ? ' now' : ''}`, title: `${MONTH_NAMES[i]}: ${deg(m.high)} high, ${deg(m.low)} low` },
+      h('span', { class: 'q-temp-plot' }, h('span', { class: 'q-temp-bar', style: `bottom: ${pct(m.low - bottom)}; height: ${pct(m.high - m.low)}` })),
+      h('span', { class: 'q-temp-month', 'aria-hidden': 'true' }, MONTH_NAMES[i][0]))));
+
+    const change = Math.abs(now.change) < 0.5 ? 'about the same as' : `${Math.abs(now.change).toFixed(1)}°F ${now.change > 0 ? 'warmer' : 'cooler'} than`;
+    ui.weatherNote.textContent = `${MONTH_NAMES[month]}s from ${recent[0]}–${recent[1]} ran ${change} the ${normal[0]}–${normal[1]} normal.`
+      + (climate.proxyFor ? " NOAA's state files leave out D.C., so these are Maryland's numbers." : '');
   }
 
   show();
@@ -238,8 +275,8 @@ function buildWhere(ctx) {
       h('label', { class: 'q-field' }, h('span', { class: 'eyebrow' }, 'City, state'), input),
       h('div', { class: 'q-chips', role: 'group', 'aria-label': 'Suggested cities' }, chips),
       h('div', { class: 'q-readouts' },
-        h('div', { class: 'q-readout' }, h('span', { class: 'eyebrow' }, 'City → climate'), cityOut),
-        h('div', { class: 'q-readout' }, h('span', { class: 'eyebrow' }, 'State → trends'), stateOut))),
+        h('div', { class: 'q-readout' }, h('span', { class: 'eyebrow' }, 'City'), cityOut),
+        h('div', { class: 'q-readout' }, h('span', { class: 'eyebrow' }, 'State → weather + trends'), stateOut))),
     refresh() {
       const text = ctx.answers().city || '';
       const place = parsePlace(text, ctx.states);

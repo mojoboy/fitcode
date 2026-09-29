@@ -3,8 +3,9 @@
 // (#/fit/<code>) shows someone else's fit without touching your own saved answers.
 import * as store from '../store.js';
 import { h } from '../dom.js';
+import { wholePercents } from '../format.js';
 import { encodeFit, decodeFit } from '../share.js';
-import { buildProfile, buildOutfit, explain, outfitName, leftOut, SLOT_NAMES } from '../model.js';
+import { buildProfile, buildOutfit, explain, outfitName, leftOut, SLOT_NAMES, MONTH_NAMES } from '../model.js';
 
 export function mount(root, { data, param, setNote }) {
   const shared = param ? decodeFit(param) : null;
@@ -36,7 +37,7 @@ export function mount(root, { data, param, setNote }) {
         <h2 id="why-title">Why it <span class="serif">works</span></h2>
         <div class="why-list" data-why></div>
         <p class="fit-used" data-used></p>
-        <p class="q-source">Sample pieces, not for sale. Photos: Burst by Shopify. Trends: Google Trends, interest by US state.</p>
+        <p class="q-source">Sample pieces, not for sale. Photos: Burst by Shopify. Weather: NOAA statewide monthly averages, 2021–2025. Trends: Google Trends, interest by US state.</p>
       </aside>
     </section>`;
 
@@ -70,9 +71,18 @@ export function mount(root, { data, param, setNote }) {
     h('p', null, h('strong', null, `${piece.pick.item.name}. `), top.map((r) => r.text).join(' '))))
     : [h('p', { class: 'why-empty' }, "These are neutral picks: there's nothing to explain yet. Swipe and answer a few questions and every piece gets a reason.")]));
 
-  const weightSum = outfit.pieces.length ? outfit.pieces[0].pick.weightSum : 0;
-  const used = outfit.used.map((w) => `${w.name} ${Math.round((100 * w.pct) / weightSum)}%`);
-  $('[data-used]').textContent = `${used.length ? `What the score used: ${used.join(' · ')}. ` : ''}${leftOut(profile)}`;
+  // What the score used, as shares of the signals that had data. Eyewear and jewelry have no
+  // warmth, so for them the weather's share goes to the other signals.
+  const shares = wholePercents(outfit.used.map((w) => w.pct));
+  const used = outfit.used.map((w, i) => `${w.name} ${shares[i]}%`);
+  const noWeather = outfit.used.some((w) => w.key === 'climate')
+    ? [...new Set(outfit.pieces.filter((p) => p.pick.parts.climate === undefined).map((p) => SLOT_NAMES[p.slot].toLowerCase()))]
+    : [];
+  $('[data-used]').textContent = [
+    used.length ? `What the score used: ${used.join(' · ')}.` : '',
+    noWeather.length ? `Weather isn't scored for the ${noWeather.join(' or ')}.` : '',
+    leftOut(profile),
+  ].filter(Boolean).join(' ');
 
   // A shared fit is read-only: no share, swap or start-over buttons, just a way to make your own
   if (shared) {
@@ -85,11 +95,11 @@ export function mount(root, { data, param, setNote }) {
 
   // Copy a link: the page address with everything that shapes this outfit packed after #/fit/
   $('[data-share]').addEventListener('click', async () => {
-    const link = `${location.origin}${location.pathname}#/fit/${encodeFit(store.get(), data)}`;
+    const link = `${location.origin}${location.pathname}#/fit/${encodeFit(store.get(), data, profile.month)}`;
     const note = $('[data-share-note]');
     try {
       await navigator.clipboard.writeText(link);
-      note.textContent = 'Link copied. It carries your answers and your state, not your city.';
+      note.textContent = `Link copied. It carries your answers, your state and the month (${MONTH_NAMES[profile.month]}), not your city.`;
     } catch {
       note.textContent = `Copy this link: ${link}`;   // clipboard blocked: show it instead
     }
@@ -103,7 +113,7 @@ export function mount(root, { data, param, setNote }) {
   });
 }
 
-// "Built from your 12 swipes, 6 answers and 3 brands." (a shared fit leaves out the "your")
+// "Built from your 12 swipes, 6 answers and 3 brands, for Maryland in October." (a shared fit leaves out the "your")
 function describe(profile, shared) {
   const { swipes, answered, brands } = profile.counts;
   const parts = [];
@@ -112,5 +122,6 @@ function describe(profile, shared) {
   if (brands) parts.push(`${brands} ${brands === 1 ? 'brand' : 'brands'}`);
   if (!parts.length) return 'Built from nothing yet: swipe a few pieces and answer the questions, and this becomes yours.';
   const list = parts.length > 1 ? `${parts.slice(0, -1).join(', ')} and ${parts[parts.length - 1]}` : parts[0];
-  return `Built from ${shared ? '' : 'your '}${list}${profile.place ? `, for ${profile.place.name}` : ''}.`;
+  const when = profile.weather ? ` in ${MONTH_NAMES[profile.month]}` : '';
+  return `Built from ${shared ? '' : 'your '}${list}${profile.place ? `, for ${profile.place.name}${when}` : ''}.`;
 }

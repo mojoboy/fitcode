@@ -4,7 +4,7 @@
 //   1. Hard no's first: pieces you'd never wear are removed before anything is scored.
 //   2. Every remaining piece gets a score from 0 to 1 on each signal:
 //        Your style 50% · Climate fit 20% · Trends near you 15% · Color match 10% · Lifestyle fit 5%
-//      A signal with nothing to go on (a skipped question, or data we haven't collected yet) is
+//      A signal with nothing to go on (a skipped question, or weather for a pair of sunglasses) is
 //      left out, and the other weights are scaled up so they still add up to 100%.
 //   3. The best piece in each slot wins, head to toe. Then the color rule: at most one strong
 //      (not neutral) color per outfit.
@@ -13,6 +13,16 @@ import { STYLES } from './taste.js';
 
 export const SLOTS = ['hat', 'eyewear', 'jewelry', 'top', 'bottom', 'shoes'];
 export const SLOT_NAMES = { hat: 'Hat', eyewear: 'Eyewear', jewelry: 'Jewelry', top: 'Top', bottom: 'Bottoms', shoes: 'Shoes' };
+export const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+// What the weather asks for, from your state's average high: a cold month wants warm pieces (3),
+// a mild one mid-weight pieces (2), a hot one light pieces (1). Pieces carry the same 1-3 warmth tag.
+export function warmthFor(high) {
+  if (high < 50) return 3;
+  if (high < 72) return 2;
+  return 1;
+}
+
 const ACCESSORY_SLOTS = ['hat', 'eyewear', 'jewelry'];
 
 // How many style points each source adds
@@ -72,6 +82,12 @@ export function buildProfile(saved, data) {
     for (const [style, values] of Object.entries(byStyle)) styleTrends[style] = mean(values);
   }
 
+  // Weather: your state's 2021-2025 average for the month you're dressing for (this month, or the month
+  // saved in a shared link). NOAA's statewide files leave out Washington, D.C., so it uses Maryland's.
+  const month = Number.isInteger(saved.month) ? saved.month : new Date().getMonth();
+  const climate = state && data.climate.states[place.code];
+  const weather = climate ? climate.months[month] : null;
+
   const answered = ['city', 'week', 'fit', 'colors', 'inspo', 'acc', 'nos'].filter((key) => {
     const value = answers[key];
     return key === 'nos' ? value !== undefined : Array.isArray(value) ? value.length > 0 : Boolean(value);
@@ -89,6 +105,10 @@ export function buildProfile(saved, data) {
     accessories: answers.acc || 'few',
     place: state ? { code: place.code, name: place.code === 'DC' ? 'Washington, D.C.' : state.name, flagged } : null,
     styleTrends,
+    month,
+    weather,
+    need: weather ? warmthFor(weather.high) : null,
+    weatherProxy: climate ? climate.proxyFor : null,
     counts: { swipes: swipes.length, answered, brands: picks.length },
   };
 }
@@ -108,7 +128,9 @@ export function scorePiece(item, profile) {
     parts.taste = clamp(style);
   }
 
-  // Climate fit (20%) needs NOAA's climate normals, which aren't collected yet, so it's left out
+  // Climate fit (20%): how close the piece's warmth is to what this month asks for. Same warmth 1,
+  // one step off 0.5, two steps off 0. Eyewear and jewelry have no warmth, so weather doesn't touch them.
+  if (profile.need && item.warmth) parts.climate = 1 - Math.abs(profile.need - item.warmth) / 2;
 
   // Trends near you (15%): 1.0x (the average state) scores 0.5, 2x or more scores 1
   if (profile.styleTrends) {
@@ -122,8 +144,8 @@ export function scorePiece(item, profile) {
   // Lifestyle fit (5%): suits your kind of week, or not
   if (profile.week) parts.life = item.lifestyle.some((tag) => profile.week.wants.includes(tag)) ? 1 : 0.35;
 
-  // The total: a weighted average of the signals we have. If climate is missing, the rest add up
-  // to 80, so "your style" counts 50/80 = 62.5% of the total.
+  // The total: a weighted average of the signals we have. If, say, climate is missing, the rest add
+  // up to 80, so "your style" counts 50/80 = 62.5% of the total.
   const used = WEIGHTS.filter((w) => parts[w.key] !== undefined);
   const weightSum = used.reduce((sum, w) => sum + w.pct, 0);
   const total = weightSum ? used.reduce((sum, w) => sum + w.pct * parts[w.key], 0) / weightSum : 0.5;
@@ -150,6 +172,14 @@ export function explain(scored, profile) {
     if (profile.fit && item.fit === profile.fit) {
       reasons.push({ key: 'fit', label: 'Your fit', text: `A ${profile.fit} fit, the way you like it.` });
     }
+  }
+  if (parts.climate === 1) {
+    const where = profile.weatherProxy ? `${profile.place.name} (using Maryland's statewide numbers)` : profile.place.name;
+    const fits = { 1: 'lighter pieces fit', 2: 'a mid-weight piece fits', 3: 'something warm fits' }[profile.need];
+    reasons.push({
+      key: 'climate', label: 'Weather near you · real data',
+      text: `${where} averages a ${Math.round(profile.weather.high)}°F high in ${MONTH_NAMES[profile.month]} (2021–2025), so ${fits}.`,
+    });
   }
   if (parts.trends !== undefined) {
     const best = item.styles
@@ -242,7 +272,8 @@ export function buildOutfit(data, profile, overrides = {}) {
     }
   }
 
-  const used = pieces.length ? WEIGHTS.filter((w) => pieces[0].pick.parts[w.key] !== undefined) : [];
+  // The signals at least one piece used (eyewear and jewelry skip the weather, for example)
+  const used = WEIGHTS.filter((w) => pieces.some((p) => p.pick.parts[w.key] !== undefined));
   return { pieces, removed, ranked, used };
 }
 
@@ -260,12 +291,13 @@ export function leftOut(profile) {
   const name = (key) => WEIGHTS.find((w) => w.key === key).name;
   const missing = [];
   if (!(profile.hasStyle || profile.fit || profile.liked.size || profile.passed.size)) missing.push(`${name('taste')} (nothing swiped or picked yet)`);
-  missing.push(`${name('climate')} (NOAA climate data comes in a later step)`);
+  if (!profile.weather) missing.push(`${name('climate')} (no state from question 1)`);
   if (!profile.styleTrends) {
     missing.push(`${name('trends')} (${profile.place && profile.place.flagged ? `${profile.place.name}'s data is flagged` : 'no state from question 1'})`);
   }
   if (!profile.colors.length) missing.push(`${name('color')} (no colors picked)`);
   if (!profile.week) missing.push(`${name('life')} (question 2 skipped)`);
+  if (!missing.length) return 'Every signal had data for this outfit.';
   return `Not in this score: ${missing.join(', ')}. Their weight is shared by the other signals.`;
 }
 

@@ -1,10 +1,10 @@
 // Loads the data pack that scripts/export_site_data.py writes into site/data/.
 export async function loadData() {
   // The files download at the same time; the site waits until all of them have arrived
-  const [closet, trends, brands] = await Promise.all(
-    ['closet', 'trends', 'brands'].map((name) => getJSON(`data/${name}.json`))
+  const [closet, trends, brands, climate] = await Promise.all(
+    ['closet', 'trends', 'brands', 'climate'].map((name) => getJSON(`data/${name}.json`))
   );
-  return { closet, trends, brands };
+  return { closet, trends, brands, climate };
 }
 
 async function getJSON(path) {
