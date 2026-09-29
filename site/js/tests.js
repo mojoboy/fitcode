@@ -6,14 +6,19 @@ import { tasteFromSwipes } from './taste.js';
 import { parsePlace, WEIGHTS } from './quiz.js';
 import { normalize, wholePercents } from './format.js';
 import { encodeFit, decodeFit } from './share.js';
+import { renderMusic, tickNote } from './sound.js';
 
 const results = [];
+const waiting = [];   // tests that take a while (like recording the music) finish in the background
 function test(name, fn) {
+  const pass = () => results.push({ name, ok: true });
+  const fail = (error) => results.push({ name, ok: false, error: error.message });
   try {
-    fn();
-    results.push({ name, ok: true });
+    const outcome = fn();
+    if (outcome instanceof Promise) waiting.push(outcome.then(pass, fail));
+    else pass();
   } catch (error) {
-    results.push({ name, ok: false, error: error.message });
+    fail(error);
   }
 }
 function check(condition, message) {
@@ -246,7 +251,29 @@ test('an older share link without a month still opens, using this month', () => 
 });
 test('a broken share link is rejected, not half-read', () => same(decodeFit('not-a-real-link'), null, 'decoded'));
 
+// ---------- Sound ----------
+
+test('tap sounds snap to the music\'s key: 620 Hz -> D, 880 Hz -> A, 1320 Hz -> E', () => {
+  same([620, 880, 1320].map(tickNote), [74, 81, 88], 'notes');
+});
+test('the music plays 8 bars without going silent or distorting', async () => {
+  // Records the music silently, then measures it. Sound distorts ("clips") at 1.0.
+  const { samples } = await renderMusic(8);
+  let peak = 0;
+  let sum = 0;
+  for (const value of samples) {
+    peak = Math.max(peak, Math.abs(value));
+    sum += value * value;
+  }
+  const rms = Math.sqrt(sum / samples.length);   // the average loudness
+  check(Number.isFinite(peak), 'the recording has broken values');
+  check(peak < 0.95, `peak ${peak.toFixed(2)}: too close to distorting`);
+  check(rms > 0.05, `average loudness ${rms.toFixed(3)}: too quiet`);
+});
+
 // ---------- Show the results ----------
+
+await Promise.all(waiting);
 
 const failed = results.filter((r) => !r.ok);
 document.title = failed.length ? `✗ ${failed.length} failed · fitcode tests` : `✓ all ${results.length} passed · fitcode tests`;
