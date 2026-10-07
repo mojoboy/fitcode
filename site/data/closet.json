@@ -1,5 +1,5 @@
 {
-  "note": "Sample pieces from free Burst (Shopify) stock photos, not real products for sale.",
+  "note": "Real pieces from David's closet (his own photos, own: true) plus sample pieces from free Burst (Shopify) stock photos. Nothing here is for sale.",
   "items": [
     {
       "id": "hat-mustard-cap",
@@ -13,6 +13,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/tan-colored-hat-on-monochrome-background",
+      "own": false,
       "colors": [
         "mustard"
       ],
@@ -37,6 +38,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/kids-beanie",
+      "own": false,
       "colors": [
         "grey"
       ],
@@ -60,6 +62,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/childrens-black-beanie",
+      "own": false,
       "colors": [
         "navy"
       ],
@@ -82,6 +85,7 @@
       "w": 699,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/pink-sunglasses-on-white",
+      "own": false,
       "colors": [
         "pink"
       ],
@@ -105,6 +109,7 @@
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/black-sunglasses-on-pink",
+      "own": false,
       "colors": [
         "black"
       ],
@@ -125,6 +130,7 @@
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/pair-of-silver-framed-sunglasses-on-a-stone-surface",
+      "own": false,
       "colors": [
         "silver",
         "black"
@@ -148,6 +154,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/black-round-sunglasses-on-top-right-of-yellow-background",
+      "own": false,
       "colors": [
         "brown"
       ],
@@ -171,6 +178,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/black-round-sunglasses-on-top-left-of-blue-background",
+      "own": false,
       "colors": [
         "black"
       ],
@@ -194,6 +202,7 @@
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/tortoise-shell-sunglass-frames-on-a-white-surface",
+      "own": false,
       "colors": [
         "brown"
       ],
@@ -217,6 +226,7 @@
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/mens-watch-in-sun",
+      "own": false,
       "colors": [
         "black"
       ],
@@ -240,6 +250,7 @@
       "w": 667,
       "h": 1000,
       "source": "https://www.shopify.com/stock-photos/photos/gold-chain-necklace-on-corner",
+      "own": false,
       "colors": [
         "gold"
       ],
@@ -265,6 +276,7 @@
       "w": 800,
       "h": 534,
       "source": "https://www.shopify.com/stock-photos/photos/anchor-bracelet-leather",
+      "own": false,
       "colors": [
         "brown"
       ],
@@ -285,6 +297,7 @@
       "w": 800,
       "h": 534,
       "source": "https://www.shopify.com/stock-photos/photos/simple-gold-bracelet",
+      "own": false,
       "colors": [
         "gold"
       ],
@@ -308,6 +321,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/teal-t-shirt",
+      "own": false,
       "colors": [
         "teal"
       ],
@@ -330,6 +344,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/cobalt-blue-t-shirt",
+      "own": false,
       "colors": [
         "cobalt"
       ],
@@ -354,6 +369,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/grey-t-shirt",
+      "own": false,
       "colors": [
         "sage"
       ],
@@ -366,49 +382,104 @@
       "flags": []
     },
     {
-      "id": "top-denim-jacket",
-      "name": "Light-wash denim jacket",
+      "id": "top-black-hoodie",
+      "name": "Bershka black hoodie",
       "slot": "top",
       "styles": [
-        "vintage",
-        "workwear"
+        "streetwear",
+        "minimal"
       ],
-      "img": "img/closet/top-denim-jacket.webp",
-      "w": 800,
-      "h": 800,
-      "source": "https://www.shopify.com/stock-photos/photos/set-of-custom-enamel-pins",
+      "img": "img/closet/top-black-hoodie.webp",
+      "w": 1000,
+      "h": 857,
+      "source": null,
+      "own": true,
       "colors": [
-        "denim"
+        "black"
       ],
       "warmth": 2,
       "formality": 1,
-      "fit": "regular",
+      "fit": "oversized",
       "lifestyle": [
-        "layer"
+        "comfort"
       ],
       "flags": []
     },
     {
-      "id": "top-oxblood-overshirt",
-      "name": "Oxblood knit overshirt",
+      "id": "top-pink-sweater",
+      "name": "Nude Project pink sweater",
       "slot": "top",
       "styles": [
-        "smart",
+        "streetwear",
+        "trend"
+      ],
+      "img": "img/closet/top-pink-sweater.webp",
+      "w": 1000,
+      "h": 854,
+      "source": null,
+      "own": true,
+      "colors": [
+        "pink"
+      ],
+      "warmth": 3,
+      "formality": 1,
+      "fit": "relaxed",
+      "lifestyle": [
+        "comfort",
+        "statement"
+      ],
+      "flags": [
+        "logo"
+      ]
+    },
+    {
+      "id": "top-brown-leather-jacket",
+      "name": "Bershka brown leather jacket",
+      "slot": "top",
+      "styles": [
+        "trend",
         "vintage"
       ],
-      "img": "img/closet/top-oxblood-overshirt.webp",
-      "w": 667,
-      "h": 1000,
-      "source": "https://www.shopify.com/stock-photos/photos/dark-red-shirt-with-wooden-buttons",
+      "img": "img/closet/top-brown-leather-jacket.webp",
+      "w": 1000,
+      "h": 824,
+      "source": null,
+      "own": true,
       "colors": [
-        "burgundy"
+        "brown"
       ],
       "warmth": 2,
       "formality": 2,
       "fit": "relaxed",
       "lifestyle": [
         "layer",
-        "polished"
+        "statement"
+      ],
+      "flags": []
+    },
+    {
+      "id": "top-carhartt-jacket",
+      "name": "Carhartt work jacket",
+      "slot": "top",
+      "styles": [
+        "workwear",
+        "vintage"
+      ],
+      "img": "img/closet/top-carhartt-jacket.webp",
+      "w": 1000,
+      "h": 739,
+      "source": null,
+      "own": true,
+      "colors": [
+        "khaki",
+        "brown"
+      ],
+      "warmth": 3,
+      "formality": 1,
+      "fit": "regular",
+      "lifestyle": [
+        "layer",
+        "sturdy"
       ],
       "flags": []
     },
@@ -422,7 +493,8 @@
       "img": "img/closet/mood-folded-stack.webp",
       "w": 800,
       "h": 533,
-      "source": "https://www.shopify.com/stock-photos/photos/folded-clothes"
+      "source": "https://www.shopify.com/stock-photos/photos/folded-clothes",
+      "own": false
     },
     {
       "id": "mood-black-tees",
@@ -435,7 +507,8 @@
       "img": "img/closet/mood-black-tees.webp",
       "w": 800,
       "h": 533,
-      "source": "https://www.shopify.com/stock-photos/photos/clothes-hangers-on-a-rail"
+      "source": "https://www.shopify.com/stock-photos/photos/clothes-hangers-on-a-rail",
+      "own": false
     },
     {
       "id": "mood-black-overshirts",
@@ -448,7 +521,8 @@
       "img": "img/closet/mood-black-overshirts.webp",
       "w": 800,
       "h": 533,
-      "source": "https://www.shopify.com/stock-photos/photos/fine-wooden-hangers-display-dark-clothes"
+      "source": "https://www.shopify.com/stock-photos/photos/fine-wooden-hangers-display-dark-clothes",
+      "own": false
     },
     {
       "id": "mood-denim-rack",
@@ -460,7 +534,8 @@
       "img": "img/closet/mood-denim-rack.webp",
       "w": 800,
       "h": 533,
-      "source": "https://www.shopify.com/stock-photos/photos/urban-vintage-denimn-on-hangers"
+      "source": "https://www.shopify.com/stock-photos/photos/urban-vintage-denimn-on-hangers",
+      "own": false
     },
     {
       "id": "shoes-chunky-sneakers-studio",
@@ -473,55 +548,85 @@
       "img": "img/closet/shoes-chunky-sneakers-studio.webp",
       "w": 667,
       "h": 1000,
-      "source": "https://www.shopify.com/stock-photos/photos/black-and-white-sneakers-against-purple-and-white"
+      "source": "https://www.shopify.com/stock-photos/photos/black-and-white-sneakers-against-purple-and-white",
+      "own": false
     },
     {
-      "id": "bottom-folded-jeans",
-      "name": "Folded indigo jeans",
+      "id": "bottom-blue-baggy-jeans",
+      "name": "Bershka blue baggy jeans",
       "slot": "bottom",
       "styles": [
-        "workwear",
+        "streetwear",
         "vintage"
       ],
-      "img": "img/closet/bottom-folded-jeans.webp",
-      "w": 667,
+      "img": "img/closet/bottom-blue-baggy-jeans.webp",
+      "w": 697,
       "h": 1000,
-      "source": "https://www.shopify.com/stock-photos/photos/a-pile-of-denim-jeans-in-different-shades-of-blue",
-      "colors": [
-        "denim",
-        "navy"
-      ],
-      "warmth": 2,
-      "formality": 2,
-      "fit": "regular",
-      "lifestyle": [
-        "sturdy"
-      ],
-      "flags": []
-    },
-    {
-      "id": "bottom-light-jeans",
-      "name": "Light-wash jeans",
-      "slot": "bottom",
-      "styles": [
-        "minimal",
-        "vintage"
-      ],
-      "img": "img/closet/bottom-light-jeans.webp",
-      "w": 667,
-      "h": 1000,
-      "source": "https://www.shopify.com/stock-photos/photos/close-up-of-the-pocket-of-lite-blue-jeans",
+      "source": null,
+      "own": true,
       "colors": [
         "denim"
       ],
       "warmth": 2,
       "formality": 1,
-      "fit": "slim",
+      "fit": "relaxed",
       "lifestyle": [
         "comfort"
       ],
+      "flags": []
+    },
+    {
+      "id": "bottom-star-patch-jeans",
+      "name": "Zara star-patch jeans",
+      "slot": "bottom",
+      "styles": [
+        "streetwear",
+        "trend"
+      ],
+      "img": "img/closet/bottom-star-patch-jeans.webp",
+      "w": 806,
+      "h": 1000,
+      "source": null,
+      "own": true,
+      "colors": [
+        "grey",
+        "khaki"
+      ],
+      "warmth": 2,
+      "formality": 1,
+      "fit": "relaxed",
+      "lifestyle": [
+        "statement"
+      ],
       "flags": [
-        "tight"
+        "graphic"
+      ]
+    },
+    {
+      "id": "bottom-pinstripe-trousers",
+      "name": "Banana Republic pinstripe dress pants",
+      "slot": "bottom",
+      "styles": [
+        "smart",
+        "vintage"
+      ],
+      "img": "img/closet/bottom-pinstripe-trousers.webp",
+      "w": 743,
+      "h": 1000,
+      "source": null,
+      "own": true,
+      "colors": [
+        "black",
+        "grey"
+      ],
+      "warmth": 2,
+      "formality": 3,
+      "fit": "relaxed",
+      "lifestyle": [
+        "polished"
+      ],
+      "flags": [
+        "print"
       ]
     },
     {
@@ -536,6 +641,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/fashionable-black-and-white-sneakers",
+      "own": false,
       "colors": [
         "white",
         "black"
@@ -559,6 +665,7 @@
       "w": 800,
       "h": 533,
       "source": "https://www.shopify.com/stock-photos/photos/steel-toed-boots",
+      "own": false,
       "colors": [
         "brown"
       ],
@@ -582,6 +689,7 @@
       "w": 800,
       "h": 572,
       "source": "https://www.shopify.com/stock-photos/photos/loafers-leaning-along-white-wall",
+      "own": false,
       "colors": [
         "brown"
       ],

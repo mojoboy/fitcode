@@ -16,6 +16,18 @@ def load(name):
     return json.loads((SITE / 'data' / name).read_text(encoding='utf-8'))
 
 
+def webp_metadata(path):
+    """A WebP file is a list of labeled chunks (RIFF). Returns the metadata chunks it has."""
+    data = path.read_bytes()
+    found, at = set(), 12   # skip the 12-byte header: 'RIFF', the file size, 'WEBP'
+    while at + 8 <= len(data):
+        label, size = data[at:at + 4], int.from_bytes(data[at + 4:at + 8], 'little')
+        if label in (b'EXIF', b'XMP '):
+            found.add(label.decode().strip())
+        at += 8 + size + (size % 2)   # chunks are padded to an even length
+    return found
+
+
 class ClosetTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -48,6 +60,20 @@ class ClosetTests(unittest.TestCase):
         for slot in WEARABLE:
             count = sum(item['slot'] == slot for item in self.wearable)
             self.assertGreaterEqual(count, 2, f'only {count} piece(s) for {slot}')
+
+    def test_no_photo_carries_hidden_data(self):
+        """Phone photos hide the GPS location and camera in metadata (EXIF / XMP). Both the
+        site's WebP copies and the JPGs in assets/closet/ are public, so neither may have any."""
+        for item in self.items:
+            self.assertEqual(webp_metadata(SITE / item['img']), set(), item['img'])
+        for photo in (SITE.parent / 'assets' / 'closet').glob('*.jpg'):
+            self.assertNotIn(b'Exif\x00\x00', photo.read_bytes()[:65536], photo.name)
+
+    def test_own_pieces_are_marked(self):
+        own = [item for item in self.items if item['own']]
+        self.assertTrue(own, "no pieces from David's closet")
+        for item in own:
+            self.assertIsNone(item['source'], f"{item['id']} is David's photo, so it has no stock source")
 
 
 class BrandTests(unittest.TestCase):

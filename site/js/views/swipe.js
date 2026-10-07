@@ -1,11 +1,10 @@
-// Swipe warm-up: twelve pieces, like or pass. Each swipe is saved in the browser (store.js)
-// and the taste bars are recalculated from all the swipes so far (taste.js).
+// Swipe warm-up: every real piece plus a few samples, like or pass. Each swipe is saved in the
+// browser (store.js) and the taste bars are recalculated from all the swipes so far (taste.js).
 import { tick } from '../sound.js';
 import * as store from '../store.js';
 import { tasteFromSwipes } from '../taste.js';
 
-const DECK_SIZE = 12;
-const PER_SLOT = 2;
+const PER_SLOT = 2;   // samples top each slot up to two cards; real pieces always get a card
 const DEAL_ORDER = ['shoes', 'top', 'eyewear', 'hat', 'jewelry', 'bottom'];
 const SLOT_NAMES = { hat: 'Hat', eyewear: 'Eyewear', jewelry: 'Jewelry', top: 'Top', bottom: 'Bottoms', shoes: 'Shoes' };
 const DECIDE_AT = 110;   // px of drag that counts as a swipe
@@ -16,7 +15,8 @@ export function mount(root, { data, setNote }) {
   const items = data.closet.items;
   const byId = new Map(items.map((item) => [item.id, item]));
   const deck = buildDeck(items);
-  setNote(`Sample closet · ${deck.length} pieces to swipe`);
+  const real = deck.filter((item) => item.own).length;
+  setNote(`${real ? 'Real closet + samples' : 'Sample closet'} · ${deck.length} pieces to swipe`);
   const deckIds = new Set(deck.map((item) => item.id));
   const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -25,7 +25,7 @@ export function mount(root, { data, setNote }) {
       <div class="swipe-intro">
         <p class="eyebrow">Step 1 of 4 · Warm-up</p>
         <h1 id="swipe-title">Swipe what you'd <span class="serif">actually</span> wear.</h1>
-        <p class="swipe-lede">Twelve pieces from the sample closet. Every like and pass teaches the site a little more about your taste.</p>
+        <p class="swipe-lede">${deck.length} pieces, ${real} of them from a real closet and the rest samples. Every like and pass teaches the site a little more about your taste.</p>
         <p class="swipe-count" data-count></p>
       </div>
 
@@ -230,8 +230,9 @@ export function mount(root, { data, setNote }) {
   };
 }
 
-// The warm-up deck: two pieces from each slot, picked so every style gets a turn.
-// Greedy picking: each round, take the piece whose styles the deck has seen least so far.
+// The warm-up deck: every real piece (from David's own closet) gets a card. Then samples top up
+// any slot that has fewer than two, picked so every style gets a turn.
+// Greedy picking: each round, take the sample whose styles the deck has seen least so far.
 // A style is worth less every time the deck already has it (1, then 1/2, then 1/3...), so
 // the picks spread across styles instead of piling onto one.
 function buildDeck(items) {
@@ -239,7 +240,13 @@ function buildDeck(items) {
   const seen = {};       // style -> how many picked pieces have it
   const perSlot = {};
   const picked = [];
-  while (picked.length < DECK_SIZE) {
+  const add = (item) => {
+    picked.push(item);
+    perSlot[item.slot] = (perSlot[item.slot] || 0) + 1;
+    for (const style of item.styles) seen[style] = (seen[style] || 0) + 1;
+  };
+  pool.filter((item) => item.own).forEach(add);
+  for (;;) {
     let best = null;
     let bestValue = -1;
     for (const item of pool) {
@@ -250,16 +257,15 @@ function buildDeck(items) {
         bestValue = value;
       }
     }
-    if (!best) break;
-    picked.push(best);
-    perSlot[best.slot] = (perSlot[best.slot] || 0) + 1;
-    for (const style of best.styles) seen[style] = (seen[style] || 0) + 1;
+    if (!best) break;   // every slot has its two
+    add(best);
   }
 
   // Deal in a mixed order (shoes, top, eyewear, hat, jewelry, bottoms, then again),
-  // so two hats never come in a row
+  // so two hats never come in a row. A slot with more real pieces just gets more rounds.
   const deck = [];
-  for (let round = 0; round < PER_SLOT; round++) {
+  const rounds = Math.max(...Object.values(perSlot));
+  for (let round = 0; round < rounds; round++) {
     for (const slot of DEAL_ORDER) {
       const piece = picked.filter((item) => item.slot === slot)[round];
       if (piece) deck.push(piece);
@@ -277,7 +283,7 @@ function makeCard(item) {
     <span class="stamp stamp-pass" aria-hidden="true">Pass</span>
     <div class="swipe-caption"><span class="eyebrow"></span><span class="swipe-name"></span></div>`;
   node.querySelector('img').src = item.img;
-  node.querySelector('.eyebrow').textContent = `${SLOT_NAMES[item.slot]} · sample`;
+  node.querySelector('.eyebrow').textContent = `${SLOT_NAMES[item.slot]} · ${item.own ? 'real closet' : 'sample'}`;
   node.querySelector('.swipe-name').textContent = item.name;
   return node;
 }

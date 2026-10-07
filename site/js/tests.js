@@ -43,10 +43,10 @@ const idsOf = (outfit) => outfit.pieces.map((piece) => piece.pick.item.id);
 // same weather no matter when it runs.
 const SAMPLE = {
   swipes: [
-    { id: 'top-denim-jacket', vote: 1 }, { id: 'bottom-folded-jeans', vote: 1 }, { id: 'eyewear-tortoiseshell', vote: 1 },
+    { id: 'top-carhartt-jacket', vote: 1 }, { id: 'bottom-blue-baggy-jeans', vote: 1 }, { id: 'eyewear-tortoiseshell', vote: 1 },
     { id: 'jewelry-leather-watch', vote: 1 }, { id: 'shoes-penny-loafers', vote: 1 }, { id: 'hat-grey-beanie', vote: 1 },
     { id: 'shoes-chunky-sneakers', vote: -1 }, { id: 'jewelry-gold-chain', vote: -1 }, { id: 'eyewear-mirrored-round', vote: -1 },
-    { id: 'hat-mustard-cap', vote: -1 }, { id: 'top-teal-tee', vote: -1 }, { id: 'bottom-light-jeans', vote: -1 },
+    { id: 'hat-mustard-cap', vote: -1 }, { id: 'top-teal-tee', vote: -1 }, { id: 'bottom-star-patch-jeans', vote: -1 },
   ],
   answers: { city: 'Baltimore, MD', week: 'office', fit: 'regular', colors: ['navy', 'brown', 'cream'], inspo: ['quiet', 'workwear'], acc: 'few', nos: ['chains'] },
   brands: ['COS', 'Carhartt', 'Uniqlo'],
@@ -104,29 +104,29 @@ test('every score is between 0 and 1', () => {
 });
 test('the pieces you liked win their slots', () => {
   const ids = idsOf(run(SAMPLE).outfit);
-  for (const liked of ['top-denim-jacket', 'bottom-folded-jeans', 'shoes-penny-loafers', 'jewelry-leather-watch']) {
+  for (const liked of ['top-carhartt-jacket', 'bottom-blue-baggy-jeans', 'shoes-penny-loafers', 'jewelry-leather-watch']) {
     check(ids.includes(liked), `${liked} should be in ${ids.join(', ')}`);
   }
 });
 // Two swipes, and an unseen cobalt tee that trends better in Maryland and sits close to navy
 const LIKED_VS_UNSEEN = {
-  swipes: [{ id: 'top-denim-jacket', vote: 1 }, { id: 'shoes-penny-loafers', vote: 1 }],
+  swipes: [{ id: 'top-carhartt-jacket', vote: 1 }, { id: 'shoes-penny-loafers', vote: 1 }],
   answers: { city: 'Baltimore, MD', colors: ['navy'], acc: 'none' },
   brands: ['COS'],
 };
 test('a liked piece beats an unseen one even when trends and color lean the other way', () => {
-  // Found by testing: the unseen cobalt tee used to beat the denim jacket the visitor had liked.
+  // Found by testing: the unseen cobalt tee used to beat the jacket the visitor had liked.
   // The weather is switched off here to test just that; the next test adds it back.
   const profile = buildProfile(LIKED_VS_UNSEEN, data);
   profile.need = null;
-  check(idsOf(buildOutfit(data, profile)).includes('top-denim-jacket'), 'the liked denim jacket should be the top');
+  check(idsOf(buildOutfit(data, profile)).includes('top-carhartt-jacket'), 'the liked work jacket should be the top');
 });
 test('the weather can outvote a like: a Maryland September picks the tee, a January the jacket', () => {
   // A trade-off, on purpose: weather is 20% of the score. In a 79°F September the light tee gets the
-  // full climate score and the jacket half, and with trends and color that's enough to win.
+  // full climate score and the warm work jacket none, and with trends and color that's enough to win.
   const top = (month) => idsOf(run({ ...LIKED_VS_UNSEEN, month }).outfit).find((id) => id.startsWith('top-'));
   same(top(8), 'top-cobalt-tee', 'September');
-  same(top(0), 'top-denim-jacket', 'January');
+  same(top(0), 'top-carhartt-jacket', 'January');
 });
 test('hard no: "Chains" removes the chain before scoring', () => {
   const { outfit } = run(SAMPLE);
@@ -153,7 +153,7 @@ test('accessories: "Stack it" adds a second piece of jewelry', () => {
 test('color rule: at most one strong color in any outfit', () => {
   // A visitor who likes every loud piece
   const loud = {
-    swipes: ['hat-mustard-cap', 'eyewear-rose-aviators', 'top-teal-tee', 'top-oxblood-overshirt', 'jewelry-gold-chain']
+    swipes: ['hat-mustard-cap', 'eyewear-rose-aviators', 'top-teal-tee', 'top-pink-sweater', 'jewelry-gold-chain']
       .map((id) => ({ id, vote: 1 })),
     answers: { colors: ['rust', 'burgundy', 'forest'] },
     brands: [],
@@ -199,7 +199,7 @@ test('weather: a Texas July (95°F) wants a tee over a jacket', () => {
   const { profile, outfit } = inState('Austin, TX', 6);
   same(profile.need, 1, 'need');
   const top = (id) => outfit.ranked.top.find((r) => r.item.id === id).parts.climate;
-  same([top('top-sage-tee'), top('top-denim-jacket')], [1, 0.5], 'tee, jacket');
+  same([top('top-sage-tee'), top('top-brown-leather-jacket')], [1, 0.5], 'tee, jacket');
 });
 test("weather: Washington, D.C. uses Maryland's numbers and says so", () => {
   const { profile } = inState('Washington, DC', 6);

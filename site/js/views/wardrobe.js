@@ -19,7 +19,8 @@ const SLOT_NAMES = {
 
 export function mount(root, { data, setNote }) {
   const items = data.closet.items;
-  setNote(`Sample closet · ${items.length} pieces`);
+  const real = items.filter((item) => item.own).length;
+  setNote(`${real ? 'Real closet + samples' : 'Sample closet'} · ${items.length} pieces`);
 
   root.innerHTML = `
     <section class="wardrobe" aria-labelledby="wardrobe-title">
@@ -32,7 +33,7 @@ export function mount(root, { data, setNote }) {
           <p class="eyebrow">Drag to spin · point at a piece to inspect</p>
         </div>
         <a class="pill pill-dark" href="#/swipe">Style me <span class="arrow" aria-hidden="true">→</span></a>
-        <p class="wardrobe-credit">Sample items, not for sale<br>Photos: Burst by Shopify, free license</p>
+        <p class="wardrobe-credit">Real pieces from my closet + sample items, not for sale<br>Photos: mine, and Burst by Shopify (free license)</p>
       </div>
     </section>`;
 
@@ -269,7 +270,7 @@ function makePiece(item) {
   name.textContent = item.name;
   const meta = document.createElement('span');
   meta.className = 'piece-meta';
-  meta.textContent = `${SLOT_NAMES[item.slot] || item.slot} · sample`;
+  meta.textContent = `${SLOT_NAMES[item.slot] || item.slot} · ${item.own ? 'real closet' : 'sample'}`;
   const label = document.createElement('span');
   label.className = 'piece-label';
   label.append(name, meta);

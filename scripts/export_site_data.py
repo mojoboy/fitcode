@@ -79,7 +79,8 @@ def check_tags(closet, tags):
 def export_closet():
     """Photos and credits (assets/closet/CREDITS.csv) joined with each piece's tags
     (data/closet_tags.csv) -> site/data/closet.json; photos -> site/img/closet/."""
-    table = pd.read_csv(CLOSET / 'CREDITS.csv')
+    # As text, so a blank cell stays '' (David's own photos have no source page) instead of NaN
+    table = pd.read_csv(CLOSET / 'CREDITS.csv', dtype=str, keep_default_na=False)
     table['id'] = table['file'].map(lambda name: Path(name).stem)
     table['slot_rank'] = table['slot'].map(SLOT_ORDER.index)
     table = table.sort_values('slot_rank', kind='stable')
@@ -90,6 +91,9 @@ def export_closet():
     photo_dir.mkdir(parents=True, exist_ok=True)
     for old_copy in photo_dir.glob('*.jpg'):   # earlier exports copied JPGs here; the site now uses WebP
         old_copy.unlink()
+    for gone in photo_dir.glob('*.webp'):   # pieces taken out of the closet (replaced by David's own)
+        if gone.stem not in set(table['id']):
+            gone.unlink()
 
     items = []
     before = after = 0
@@ -106,7 +110,8 @@ def export_closet():
             'img': f'img/closet/{row.id}.webp',
             'w': int(row.width),
             'h': int(row.height),
-            'source': row.source_page,
+            'source': row.source_page or None,
+            'own': row.sample == 'no',   # a real piece from David's closet, not a stock sample
         }
         if row.id in tags.index:   # the join: add the piece's tags by matching id
             t = tags.loc[row.id]
@@ -121,7 +126,8 @@ def export_closet():
         items.append(item)
 
     write_json('closet.json', {
-        'note': 'Sample pieces from free Burst (Shopify) stock photos, not real products for sale.',
+        'note': "Real pieces from David's closet (his own photos, own: true) plus sample pieces from "
+                'free Burst (Shopify) stock photos. Nothing here is for sale.',
         'items': items,
     })
     print(f'photos: {before / 1024:.0f} KB of JPG -> {after / 1024:.0f} KB of WebP ({1 - after / before:.0%} smaller)')

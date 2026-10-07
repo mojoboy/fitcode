@@ -37,7 +37,7 @@ export function mount(root, { data, param, setNote }) {
         <h2 id="why-title">Why it <span class="serif">works</span></h2>
         <div class="why-list" data-why></div>
         <p class="fit-used" data-used></p>
-        <p class="q-source">Sample pieces, not for sale. Photos: Burst by Shopify. Weather: NOAA statewide monthly averages, 2021–2025. Trends: Google Trends, interest by US state.</p>
+        <p class="q-source">Real pieces from my closet plus sample pieces, none for sale. Photos: mine and Burst by Shopify. Weather: NOAA statewide monthly averages, 2021–2025. Trends: Google Trends, interest by US state.</p>
       </aside>
     </section>`;
 

@@ -6,6 +6,10 @@ __pycache__/
 # Rebuilt by scripts/clean_trends.py
 data/fitcode.duckdb
 
+# Original phone photos: full size, with GPS location in them. scripts/add_closet_photos.py
+# writes clean copies to assets/closet/, and only those are committed.
+incoming/
+
 # Local tools and private notes
 .claude/
 LEARNING.md
